@@ -1,0 +1,21 @@
+//! **************************************************************************
+// Written by: Map P.20160913 on Fri May 24 13:50:17 2019
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "en" LOCATE = SITE "P124" LEVEL 1;
+COMP "inc" LOCATE = SITE "P126" LEVEL 1;
+COMP "a3<0>" LOCATE = SITE "P50" LEVEL 1;
+COMP "a3<1>" LOCATE = SITE "P47" LEVEL 1;
+COMP "tx1" LOCATE = SITE "P101" LEVEL 1;
+COMP "tx" LOCATE = SITE "P99" LEVEL 1;
+COMP "rx_in" LOCATE = SITE "P97" LEVEL 1;
+COMP "b3<0>" LOCATE = SITE "P74" LEVEL 1;
+COMP "b3<1>" LOCATE = SITE "P55" LEVEL 1;
+COMP "hall3<0>" LOCATE = SITE "P87" LEVEL 1;
+COMP "hall3<1>" LOCATE = SITE "P92" LEVEL 1;
+COMP "hall3<2>" LOCATE = SITE "P94" LEVEL 1;
+COMP "c3<0>" LOCATE = SITE "P80" LEVEL 1;
+COMP "c3<1>" LOCATE = SITE "P78" LEVEL 1;
+SCHEMATIC END;
+

@@ -1,0 +1,17 @@
+//! **************************************************************************
+// Written by: Map P.20160913 on Fri Feb 28 21:22:45 2020
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "Q0" LOCATE = SITE "P104" LEVEL 1;
+PIN Q0_pin<0> = BEL "Q0" PINNAME PAD;
+PIN "Q0_pin<0>" CLOCK_DEDICATED_ROUTE = FALSE;
+COMP "clk" LOCATE = SITE "P126" LEVEL 1;
+COMP "HALL<0>" LOCATE = SITE "P87" LEVEL 1;
+COMP "HALL<1>" LOCATE = SITE "P92" LEVEL 1;
+COMP "HALL<2>" LOCATE = SITE "P94" LEVEL 1;
+COMP "PHASE_A" LOCATE = SITE "P50" LEVEL 1;
+COMP "PHASE_B" LOCATE = SITE "P74" LEVEL 1;
+COMP "PHASE_C" LOCATE = SITE "P80" LEVEL 1;
+SCHEMATIC END;
+

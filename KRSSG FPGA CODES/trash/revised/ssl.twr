@@ -1,0 +1,159 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 3
+-n 3 -fastpaths -xml ssl.twx ssl.ncd -o ssl.twr ssl.pcf -ucf ssl_ucf.ucf
+
+Design file:              ssl.ncd
+Physical constraint file: ssl.pcf
+Device,package,speed:     xc6slx9,tqg144,C,-3 (PRODUCTION 1.23 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Setup/Hold to clock CLK
+------------+------------+------------+------------+------------+------------------+--------+
+            |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
+Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
+------------+------------+------------+------------+------------+------------------+--------+
+E1_1        |    1.528(R)|      SLOW  |   -0.631(R)|      SLOW  |CLK_BUFGP         |   0.000|
+E1_2        |    1.408(R)|      SLOW  |   -0.510(R)|      SLOW  |CLK_BUFGP         |   0.000|
+E1_3        |    1.964(R)|      SLOW  |   -1.003(R)|      SLOW  |CLK_BUFGP         |   0.000|
+E1_4        |    2.501(R)|      SLOW  |   -1.361(R)|      FAST  |CLK_BUFGP         |   0.000|
+E2_1        |    0.879(R)|      SLOW  |   -0.009(R)|      SLOW  |CLK_BUFGP         |   0.000|
+E2_2        |    0.735(R)|      SLOW  |    0.125(R)|      SLOW  |CLK_BUFGP         |   0.000|
+E2_3        |    1.806(R)|      SLOW  |   -0.854(R)|      SLOW  |CLK_BUFGP         |   0.000|
+E2_4        |    2.689(R)|      SLOW  |   -1.479(R)|      FAST  |CLK_BUFGP         |   0.000|
+Rx          |    0.845(R)|      FAST  |    0.089(R)|      SLOW  |CLK_BUFGP         |   0.000|
+reset       |    7.384(R)|      SLOW  |   -0.540(R)|      SLOW  |CLK_BUFGP         |   0.000|
+------------+------------+------------+------------+------------+------------------+--------+
+
+Clock CLK to Pad
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+speed1      |         7.089(R)|      SLOW  |         3.617(R)|      FAST  |CLK_BUFGP         |   0.000|
+speed2      |         7.579(R)|      SLOW  |         3.902(R)|      FAST  |CLK_BUFGP         |   0.000|
+speed3      |         7.430(R)|      SLOW  |         3.853(R)|      FAST  |CLK_BUFGP         |   0.000|
+speed4      |         7.664(R)|      SLOW  |         4.026(R)|      FAST  |CLK_BUFGP         |   0.000|
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock to Setup on destination clock CLK
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+CLK            |    9.913|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+DIR1           |An1            |    8.392|
+DIR1           |Ap1            |    8.906|
+DIR1           |Bn1            |    8.993|
+DIR1           |Bp1            |    8.168|
+DIR1           |Cn1            |    8.559|
+DIR1           |Cp1            |    7.921|
+DIR2           |An2            |   10.432|
+DIR2           |Ap2            |    8.990|
+DIR2           |Bn2            |    9.613|
+DIR2           |Bp2            |    8.539|
+DIR2           |Cn2            |    9.026|
+DIR2           |Cp2            |    8.505|
+DIR3           |An3            |   11.906|
+DIR3           |Ap3            |   12.250|
+DIR3           |Bn3            |   11.989|
+DIR3           |Bp3            |   12.142|
+DIR3           |Cn3            |   11.930|
+DIR3           |Cp3            |   12.097|
+DIR4           |An4            |   11.927|
+DIR4           |Ap4            |   11.940|
+DIR4           |Bn4            |   11.807|
+DIR4           |Bp4            |   11.548|
+DIR4           |Cn4            |   10.763|
+DIR4           |Cp4            |   10.523|
+H1_1           |An1            |    9.530|
+H1_1           |Ap1            |   10.044|
+H1_1           |Cn1            |    9.697|
+H1_1           |Cp1            |    8.840|
+H1_2           |An2            |   10.984|
+H1_2           |Ap2            |    9.696|
+H1_2           |Cn2            |    9.494|
+H1_2           |Cp2            |    9.091|
+H1_3           |An3            |    8.960|
+H1_3           |Ap3            |    9.351|
+H1_3           |Cn3            |    9.031|
+H1_3           |Cp3            |    9.152|
+H1_4           |An4            |    9.292|
+H1_4           |Ap4            |    9.419|
+H1_4           |Cn4            |    8.303|
+H1_4           |Cp4            |    8.052|
+H2_1           |An1            |    7.892|
+H2_1           |Ap1            |    8.346|
+H2_1           |Bn1            |    8.737|
+H2_1           |Bp1            |    7.958|
+H2_2           |An2            |    9.808|
+H2_2           |Ap2            |    8.162|
+H2_2           |Bn2            |    8.679|
+H2_2           |Bp2            |    7.915|
+H2_3           |An3            |    9.518|
+H2_3           |Ap3            |    9.440|
+H2_3           |Bn3            |    9.216|
+H2_3           |Bp3            |    9.754|
+H2_4           |An4            |    9.509|
+H2_4           |Ap4            |    9.522|
+H2_4           |Bn4            |    9.389|
+H2_4           |Bp4            |    9.130|
+H3_1           |Bn1            |    9.098|
+H3_1           |Bp1            |    8.052|
+H3_1           |Cn1            |    8.198|
+H3_1           |Cp1            |    8.026|
+H3_2           |Bn2            |    8.928|
+H3_2           |Bp2            |    7.733|
+H3_2           |Cn2            |    8.341|
+H3_2           |Cp2            |    7.820|
+H3_3           |Bn3            |    9.656|
+H3_3           |Bp3            |    9.269|
+H3_3           |Cn3            |    9.427|
+H3_3           |Cp3            |    9.764|
+H3_4           |Bn4            |    9.511|
+H3_4           |Bp4            |    9.158|
+H3_4           |Cn4            |    8.805|
+H3_4           |Cp4            |    8.757|
+---------------+---------------+---------+
+
+
+Analysis completed Sun Aug 19 00:58:46 2018 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 4573 MB
+
+
+

@@ -1,0 +1,9 @@
+vhdtdtfi -lib work ../revised/receiver.vhd -prj december -o UART_RX.spl -module UART_RX -template /opt/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 UART_RX.spl {/home/ise/ism_projects/xi share/december/UART_RX.sym} 
+xst -intstyle ise -ifn "/home/ise/ism_projects/xi share/december/UART_RX.xst" -ofn "/home/ise/ism_projects/xi share/december/UART_RX.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx9-tqg144-3 "UART_RX.ngc" UART_RX.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o UART_RX_map.ncd UART_RX.ngd UART_RX.pcf 
+par -w -intstyle ise -ol high -mt off UART_RX_map.ncd UART_RX.ncd UART_RX.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml UART_RX.twx UART_RX.ncd -o UART_RX.twr UART_RX.pcf 
+bitgen -intstyle ise -f UART_RX.ut UART_RX.ncd 
+bitgen -intstyle ise -f UART_RX.ut UART_RX.ncd 

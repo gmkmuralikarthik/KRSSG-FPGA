@@ -1,0 +1,82 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : spwmmodule_drc.vf
+// /___/   /\     Timestamp : 02/28/2020 18:40:54
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/sch2hdl -intstyle ise -family spartan6 -verilog spwmmodule_drc.vf -w "/home/ise/ism_projects/xi share/KRSSG FPGA CODES/FPGA codes 2019/SPWM_module/spwmmodule.sch"
+//Design Name: spwmmodule
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 100 ps / 10 ps
+
+module FTP_HXILINX_spwmmodule(Q, C, PRE, T);
+   
+   output             Q;
+
+   input 	      C;	
+   input 	      PRE;	
+   input              T;
+   
+   parameter INIT = 1'b1;
+   reg                Q = INIT;
+
+   always @(posedge C or posedge PRE)
+     begin
+	if (PRE)
+	  Q <= 1'b1;
+	else if(T)
+          Q <= !Q;
+     end
+   
+endmodule
+`timescale 1ns / 1ps
+
+module spwmmodule(angle, 
+                  inclock, 
+                  tan, 
+                  pwm, 
+                  sw, 
+                  tw);
+
+    input [31:0] angle;
+    input inclock;
+    input [31:0] tan;
+   output pwm;
+   output [15:0] sw;
+   output [15:0] tw;
+   
+   wire inc;
+   wire XLXN_1;
+   wire [15:0] sw_DUMMY;
+   wire [15:0] tw_DUMMY;
+   
+   assign sw[15:0] = sw_DUMMY[15:0];
+   assign tw[15:0] = tw_DUMMY[15:0];
+   scompare  XLXI_3 (.clk(inc), 
+                    .swave(sw_DUMMY[15:0]), 
+                    .twave(tw_DUMMY[15:0]), 
+                    .pwm(pwm));
+   trianglewave  XLXI_5 (.clk(inc), 
+                        .outwave(tw_DUMMY[15:0]));
+   (* HU_SET = "XLXI_6_0" *) 
+   FTP_HXILINX_spwmmodule  XLXI_6 (.C(inclock), 
+                                  .PRE(), 
+                                  .T(XLXN_1), 
+                                  .Q(inc));
+   VCC  XLXI_7 (.P(XLXN_1));
+   cordic  XLXI_8 (.angle(angle[31:0]), 
+                  .atan_table(tan[31:0]), 
+                  .clock(inc), 
+                  .sine(sw_DUMMY[15:0]));
+endmodule

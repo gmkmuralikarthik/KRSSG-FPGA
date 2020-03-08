@@ -1,0 +1,11 @@
+[Inputs]
+done
+clk
+sig
+[Outputs]
+Charge
+Trigger
+[BiDir]
+[ATTRIBUTES]
+VeriModel kicker1
+

@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="HDLCompiler" num="327" delta="old" >"/home/ise/ism_projects/xi share/KRSSG FPGA CODES/FPGA codes 2019/fpga module/pid.v" Line 42: Concatenation with unsized literal; will interpret as 32 bits
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="327" delta="old" >"/home/ise/ism_projects/xi share/KRSSG FPGA CODES/FPGA codes 2019/fpga module/pid.v" Line 47: Concatenation with unsized literal; will interpret as 32 bits
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="327" delta="old" >"/home/ise/ism_projects/xi share/KRSSG FPGA CODES/FPGA codes 2019/fpga module/pid.v" Line 53: Concatenation with unsized literal; will interpret as 32 bits
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="327" delta="old" >"/home/ise/ism_projects/xi share/KRSSG FPGA CODES/FPGA codes 2019/fpga module/pid.v" Line 58: Concatenation with unsized literal; will interpret as 32 bits
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="327" delta="old" >"/home/ise/ism_projects/xi share/KRSSG FPGA CODES/FPGA codes 2019/fpga module/pid.v" Line 42: Concatenation with unsized literal; will interpret as 32 bits
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="327" delta="old" >"/home/ise/ism_projects/xi share/KRSSG FPGA CODES/FPGA codes 2019/fpga module/pid.v" Line 47: Concatenation with unsized literal; will interpret as 32 bits
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="327" delta="old" >"/home/ise/ism_projects/xi share/KRSSG FPGA CODES/FPGA codes 2019/fpga module/pid.v" Line 53: Concatenation with unsized literal; will interpret as 32 bits
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="327" delta="old" >"/home/ise/ism_projects/xi share/KRSSG FPGA CODES/FPGA codes 2019/fpga module/pid.v" Line 58: Concatenation with unsized literal; will interpret as 32 bits
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="872" delta="old" >"/home/ise/ism_projects/xi share/KRSSG FPGA CODES/FPGA codes 2019/fpga module/pid.v" Line 18: Using initial value of <arg fmt="%s" index="1">k1</arg> since it is never assigned
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="872" delta="old" >"/home/ise/ism_projects/xi share/KRSSG FPGA CODES/FPGA codes 2019/fpga module/pid.v" Line 19: Using initial value of <arg fmt="%s" index="1">k2</arg> since it is never assigned
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="872" delta="old" >"/home/ise/ism_projects/xi share/KRSSG FPGA CODES/FPGA codes 2019/fpga module/pid.v" Line 20: Using initial value of <arg fmt="%s" index="1">k3</arg> since it is never assigned
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"/home/ise/ism_projects/xi share/KRSSG FPGA CODES/FPGA codes 2019/fpga module/pid.v" Line 42: Result of <arg fmt="%d" index="1">770</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">25</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"/home/ise/ism_projects/xi share/KRSSG FPGA CODES/FPGA codes 2019/fpga module/pid.v" Line 53: Result of <arg fmt="%d" index="1">770</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">25</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"/home/ise/ism_projects/xi share/KRSSG FPGA CODES/FPGA codes 2019/fpga module/pid.v" Line 72: Result of <arg fmt="%d" index="1">19</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">18</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"/home/ise/ism_projects/xi share/KRSSG FPGA CODES/FPGA codes 2019/fpga module/pid.v" Line 78: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">8</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/ise/ism_projects/xi share/KRSSG FPGA CODES/FPGA codes 2019/fpga module/zerobit.v" Line 27: Net &lt;<arg fmt="%s" index="1">k[7]</arg>&gt; does not have a driver.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"/home/ise/ism_projects/xi share/KRSSG FPGA CODES/FPGA codes 2019/fpga module/directionbit.v" Line 11: Signal &lt;<arg fmt="%s" index="1">insignal1</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"/home/ise/ism_projects/xi share/KRSSG FPGA CODES/FPGA codes 2019/fpga module/pwm.v" Line 23: Result of <arg fmt="%d" index="1">9</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">8</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"/home/ise/ism_projects/xi share/KRSSG FPGA CODES/FPGA codes 2019/fpga module/clock.v" Line 16: Result of <arg fmt="%d" index="1">9</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">8</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"/home/ise/ism_projects/xi share/KRSSG FPGA CODES/FPGA codes 2019/fpga module/gatedriver.v" Line 29: Signal &lt;<arg fmt="%s" index="1">d</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"/home/ise/ism_projects/xi share/KRSSG FPGA CODES/FPGA codes 2019/fpga module/gatedriver.v" Line 30: Signal &lt;<arg fmt="%s" index="1">d</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"/home/ise/ism_projects/xi share/KRSSG FPGA CODES/FPGA codes 2019/fpga module/gatedriver.v" Line 31: Signal &lt;<arg fmt="%s" index="1">d</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"/home/ise/ism_projects/xi share/KRSSG FPGA CODES/FPGA codes 2019/fpga module/gatedriver.v" Line 32: Signal &lt;<arg fmt="%s" index="1">d</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"/home/ise/ism_projects/xi share/KRSSG FPGA CODES/FPGA codes 2019/fpga module/gatedriver.v" Line 33: Signal &lt;<arg fmt="%s" index="1">d</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"/home/ise/ism_projects/xi share/KRSSG FPGA CODES/FPGA codes 2019/fpga module/gatedriver.v" Line 34: Signal &lt;<arg fmt="%s" index="1">d</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"/home/ise/ism_projects/xi share/KRSSG FPGA CODES/FPGA codes 2019/fpga module/gatedriver.v" Line 38: Signal &lt;<arg fmt="%s" index="1">brake</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"/home/ise/ism_projects/xi share/KRSSG FPGA CODES/FPGA codes 2019/fpga module/decoder.v" Line 33: Result of <arg fmt="%d" index="1">19</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">18</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"/home/ise/ism_projects/xi share/KRSSG FPGA CODES/FPGA codes 2019/fpga module/decoder.v" Line 51: Result of <arg fmt="%d" index="1">9</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">8</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="552" delta="old" >"/home/ise/ism_projects/xi share/KRSSG FPGA CODES/FPGA codes 2019/fpga module/motorpackage.vf" Line 66: Input port <arg fmt="%s" index="1">cl</arg> is not connected on this instance
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"/home/ise/ism_projects/xi share/KRSSG FPGA CODES/FPGA codes 2019/fpga module/kicker.v" Line 54: Result of <arg fmt="%d" index="1">29</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">28</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"/home/ise/ism_projects/xi share/KRSSG FPGA CODES/FPGA codes 2019/fpga module/kicker.v" Line 57: Result of <arg fmt="%d" index="1">29</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">28</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"/home/ise/ism_projects/xi share/KRSSG FPGA CODES/FPGA codes 2019/fpga module/kicker.v" Line 61: Result of <arg fmt="%d" index="1">29</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">28</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"/home/ise/ism_projects/xi share/KRSSG FPGA CODES/FPGA codes 2019/fpga module/kicker.v" Line 66: Result of <arg fmt="%d" index="1">8</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">7</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"/home/ise/ism_projects/xi share/KRSSG FPGA CODES/FPGA codes 2019/fpga module/kicker.v" Line 87: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">1</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"/home/ise/ism_projects/xi share/KRSSG FPGA CODES/FPGA codes 2019/fpga module/kicker.v" Line 88: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">1</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"/home/ise/ism_projects/xi share/KRSSG FPGA CODES/FPGA codes 2019/fpga module/kicker.v" Line 95: Result of <arg fmt="%d" index="1">21</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">20</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"/home/ise/ism_projects/xi share/KRSSG FPGA CODES/FPGA codes 2019/fpga module/kicker.v" Line 96: Result of <arg fmt="%d" index="1">21</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">20</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"/home/ise/ism_projects/xi share/KRSSG FPGA CODES/FPGA codes 2019/fpga module/kicker.v" Line 112: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">1</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"/home/ise/ism_projects/xi share/KRSSG FPGA CODES/FPGA codes 2019/fpga module/kicker.v" Line 113: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">1</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"/home/ise/ism_projects/xi share/KRSSG FPGA CODES/FPGA codes 2019/fpga module/kicker.v" Line 118: Result of <arg fmt="%d" index="1">5</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">4</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"/home/ise/ism_projects/xi share/KRSSG FPGA CODES/FPGA codes 2019/fpga module/kicker.v" Line 119: Result of <arg fmt="%d" index="1">5</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">4</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"/home/ise/ism_projects/xi share/KRSSG FPGA CODES/FPGA codes 2019/fpga module/kicker.v" Line 124: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">1</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"/home/ise/ism_projects/xi share/KRSSG FPGA CODES/FPGA codes 2019/fpga module/kicker.v" Line 125: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">1</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"/home/ise/ism_projects/xi share/KRSSG FPGA CODES/FPGA codes 2019/fpga module/kicker.v" Line 128: Result of <arg fmt="%d" index="1">23</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">22</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"/home/ise/ism_projects/xi share/KRSSG FPGA CODES/FPGA codes 2019/fpga module/kicker.v" Line 129: Result of <arg fmt="%d" index="1">23</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">22</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="634" delta="old" >"/home/ise/ism_projects/xi share/KRSSG FPGA CODES/FPGA codes 2019/fpga module/kicker.v" Line 20: Net &lt;<arg fmt="%s" index="1">kick</arg>&gt; does not have a driver.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"/home/ise/ism_projects/xi share/KRSSG FPGA CODES/FPGA codes 2019/fpga module/speed4motor.v" Line 58: Result of <arg fmt="%d" index="1">4</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">3</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"/home/ise/ism_projects/xi share/KRSSG FPGA CODES/FPGA codes 2019/fpga module/speed4motor.v" Line 59: Result of <arg fmt="%d" index="1">4</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">3</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"/home/ise/ism_projects/xi share/KRSSG FPGA CODES/FPGA codes 2019/fpga module/speed4motor.v" Line 60: Result of <arg fmt="%d" index="1">4</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">3</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"/home/ise/ism_projects/xi share/KRSSG FPGA CODES/FPGA codes 2019/fpga module/speed4motor.v" Line 61: Result of <arg fmt="%d" index="1">4</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">3</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"/home/ise/ism_projects/xi share/KRSSG FPGA CODES/FPGA codes 2019/fpga module/speed4motor.v" Line 62: Result of <arg fmt="%d" index="1">4</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">3</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"/home/ise/ism_projects/xi share/KRSSG FPGA CODES/FPGA codes 2019/fpga module/kickbit.v" Line 32: Signal &lt;<arg fmt="%s" index="1">inkick</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"/home/ise/ism_projects/xi share/KRSSG FPGA CODES/FPGA codes 2019/fpga module/dribbler1.v" Line 26: Signal &lt;<arg fmt="%s" index="1">en</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"/home/ise/ism_projects/xi share/KRSSG FPGA CODES/FPGA codes 2019/fpga module/dribbler1.v" Line 29: Signal &lt;<arg fmt="%s" index="1">f</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"/home/ise/ism_projects/xi share/KRSSG FPGA CODES/FPGA codes 2019/fpga module/dribbler1.v" Line 30: Signal &lt;<arg fmt="%s" index="1">e</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"/home/ise/ism_projects/xi share/KRSSG FPGA CODES/FPGA codes 2019/fpga module/dribbler1.v" Line 31: Signal &lt;<arg fmt="%s" index="1">g</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"/home/ise/ism_projects/xi share/KRSSG FPGA CODES/FPGA codes 2019/fpga module/dribbler1.v" Line 32: Signal &lt;<arg fmt="%s" index="1">f</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"/home/ise/ism_projects/xi share/KRSSG FPGA CODES/FPGA codes 2019/fpga module/dribbler1.v" Line 33: Signal &lt;<arg fmt="%s" index="1">e</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"/home/ise/ism_projects/xi share/KRSSG FPGA CODES/FPGA codes 2019/fpga module/dribbler1.v" Line 34: Signal &lt;<arg fmt="%s" index="1">e</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"/home/ise/ism_projects/xi share/KRSSG FPGA CODES/FPGA codes 2019/fpga module/Encoder_4_Motor_Transmitter (1).v" Line 39: Result of <arg fmt="%d" index="1">4</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">3</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"/home/ise/ism_projects/xi share/KRSSG FPGA CODES/FPGA codes 2019/fpga module/Encoder_4_Motor_Transmitter (1).v" Line 40: Result of <arg fmt="%d" index="1">4</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">3</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"/home/ise/ism_projects/xi share/KRSSG FPGA CODES/FPGA codes 2019/fpga module/Encoder_4_Motor_Transmitter (1).v" Line 41: Result of <arg fmt="%d" index="1">4</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">3</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"/home/ise/ism_projects/xi share/KRSSG FPGA CODES/FPGA codes 2019/fpga module/Encoder_4_Motor_Transmitter (1).v" Line 42: Result of <arg fmt="%d" index="1">4</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">3</arg>-bit target.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="24" delta="old" >"/home/ise/ism_projects/xi share/KRSSG FPGA CODES/FPGA codes 2019/fpga module/UART_Transmiter (2).v" Line 28: <arg fmt="%s" index="1">Clock_Divider</arg> expects <arg fmt="%d" index="2">3</arg> arguments
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1499" delta="old" >"/home/ise/ism_projects/xi share/KRSSG FPGA CODES/FPGA codes 2019/fpga module/Encoder_4_Motor_Transmitter (1).v" Line 21: Empty module &lt;<arg fmt="%s" index="1">Encoder_4_Motor_Transmitter</arg>&gt; remains a black box.
+</msg>
+
+</messages>
+

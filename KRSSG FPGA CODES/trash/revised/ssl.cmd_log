@@ -1,0 +1,16 @@
+xst -intstyle ise -ifn "E:/KRSSG/FPGA/programs/revised/ssl.xst" -ofn "E:/KRSSG/FPGA/programs/revised/ssl.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx9-tqg144-3 ssl.ngc ssl.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ssl_map.ncd ssl.ngd ssl.pcf 
+par -w -intstyle ise -ol high -mt off ssl_map.ncd ssl.ncd ssl.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml ssl.twx ssl.ncd -o ssl.twr ssl.pcf 
+xst -intstyle ise -ifn "E:/KRSSG/FPGA/programs/revised/ssl.xst" -ofn "E:/KRSSG/FPGA/programs/revised/ssl.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx9-tqg144-3 ssl.ngc ssl.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ssl_map.ncd ssl.ngd ssl.pcf 
+par -w -intstyle ise -ol high -mt off ssl_map.ncd ssl.ncd ssl.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml ssl.twx ssl.ncd -o ssl.twr ssl.pcf 
+bitgen -intstyle ise -f ssl.ut ssl.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ssl_ucf.ucf -p xc6slx9-tqg144-3 ssl.ngc ssl.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ssl_map.ncd ssl.ngd ssl.pcf 
+par -w -intstyle ise -ol high -mt off ssl_map.ncd ssl.ncd ssl.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml ssl.twx ssl.ncd -o ssl.twr ssl.pcf -ucf ssl_ucf.ucf 
+bitgen -intstyle ise -f ssl.ut ssl.ncd 

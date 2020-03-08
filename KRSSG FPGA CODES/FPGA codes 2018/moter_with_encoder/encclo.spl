@@ -1,0 +1,9 @@
+[Inputs]
+cka
+reset
+[Outputs]
+outbit
+[BiDir]
+[ATTRIBUTES]
+VeriModel encclo
+

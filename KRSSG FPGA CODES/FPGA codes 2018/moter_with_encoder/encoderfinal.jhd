@@ -1,0 +1,5 @@
+MODULE encoderfinal
+	SUBMODULE encclo
+		INSTANCE XLXI_1
+	SUBMODULE encde
+		INSTANCE XLXI_3

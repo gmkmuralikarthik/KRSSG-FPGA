@@ -1,0 +1,7 @@
+MODULE my_protocol_7bit_pid
+	SUBMODULE openloop7bit
+		INSTANCE XLXI_17
+	SUBMODULE pid
+		INSTANCE XLXI_21
+	SUBMODULE decoder
+		INSTANCE XLXI_25

@@ -1,0 +1,34 @@
+//! **************************************************************************
+// Written by: Map P.20160913 on Fri Aug 17 23:01:37 2018
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "clca" LOCATE = SITE "P32" LEVEL 1;
+PIN clca_pin<0> = BEL "clca" PINNAME PAD;
+PIN "clca_pin<0>" CLOCK_DEDICATED_ROUTE = FALSE;
+COMP "clk" LOCATE = SITE "P126" LEVEL 1;
+COMP "enable" LOCATE = SITE "P124" LEVEL 1;
+COMP "hall<0>" LOCATE = SITE "P43" LEVEL 1;
+COMP "hall<1>" LOCATE = SITE "P44" LEVEL 1;
+COMP "hall<2>" LOCATE = SITE "P45" LEVEL 1;
+COMP "ob<0>" LOCATE = SITE "P119" LEVEL 1;
+COMP "clear" LOCATE = SITE "P123" LEVEL 1;
+COMP "ob<1>" LOCATE = SITE "P118" LEVEL 1;
+COMP "ob<2>" LOCATE = SITE "P117" LEVEL 1;
+COMP "ob<3>" LOCATE = SITE "P116" LEVEL 1;
+COMP "ob<4>" LOCATE = SITE "P115" LEVEL 1;
+COMP "ob<5>" LOCATE = SITE "P114" LEVEL 1;
+COMP "ob<6>" LOCATE = SITE "P112" LEVEL 1;
+COMP "ob<7>" LOCATE = SITE "P111" LEVEL 1;
+COMP "a<0>" LOCATE = SITE "P17" LEVEL 1;
+COMP "a<1>" LOCATE = SITE "P16" LEVEL 1;
+COMP "b<0>" LOCATE = SITE "P15" LEVEL 1;
+COMP "b<1>" LOCATE = SITE "P14" LEVEL 1;
+COMP "c<0>" LOCATE = SITE "P12" LEVEL 1;
+COMP "c<1>" LOCATE = SITE "P11" LEVEL 1;
+COMP "log<0>" LOCATE = SITE "P27" LEVEL 1;
+COMP "log<1>" LOCATE = SITE "P26" LEVEL 1;
+COMP "log<2>" LOCATE = SITE "P24" LEVEL 1;
+COMP "log<3>" LOCATE = SITE "P23" LEVEL 1;
+SCHEMATIC END;
+

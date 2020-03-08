@@ -1,0 +1,2 @@
+vhdtdtfi -lib work {/home/ise/ism_projects/xi share/moter_with_encoder/encclo.v} -lang verilog -prj moter_with_encoder -o encclo.spl -module encclo -template /opt/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 encclo.spl {/home/ise/ism_projects/xi share/moter_with_encoder/encclo.sym} 

@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "simprims_ver" -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "E:/KRSSG/FPGA/programs/revised/pndrive_sim_isim_par.exe" -prj "E:/KRSSG/FPGA/programs/revised/pndrive_sim_par.prj" "work.pndrive_sim" "work.glbl" 

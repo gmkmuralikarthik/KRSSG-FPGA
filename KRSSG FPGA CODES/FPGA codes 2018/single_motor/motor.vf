@@ -1,0 +1,95 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : motor.vf
+// /___/   /\     Timestamp : 05/24/2019 13:49:12
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog "/home/ise/ism_projects/xi share/my codes/single_motor/motor.vf" -w "/home/ise/ism_projects/xi share/my codes/single_motor/motor.sch"
+//Design Name: motor
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module motor(en, 
+             hall3, 
+             inc, 
+             qa, 
+             qb, 
+             rx_in, 
+             a3, 
+             b3, 
+             count, 
+             c3, 
+             tx, 
+             tx1);
+
+    input en;
+    input [2:0] hall3;
+    input inc;
+    input qa;
+    input qb;
+    input rx_in;
+   output [1:0] a3;
+   output [1:0] b3;
+   output [7:0] count;
+   output [1:0] c3;
+   output tx;
+   output tx1;
+   
+   wire XLXN_1;
+   wire XLXN_21;
+   wire XLXN_36;
+   wire XLXN_37;
+   wire [7:0] XLXN_39;
+   wire [7:0] XLXN_40;
+   wire [7:0] count_DUMMY;
+   
+   assign count[7:0] = count_DUMMY[7:0];
+   clock  XLXI_1 (.inc(inc), 
+                 .outc(XLXN_1));
+   UART_Receiver  XLXI_2 (.i_Clk(inc), 
+                         .i_RX_Serial(rx_in), 
+                         .o_RX_Byte(XLXN_39[7:0]), 
+                         .o_RX_DV());
+   pwm  XLXI_3 (.cl(), 
+               .clk(XLXN_1), 
+               .en1(en), 
+               .lo(XLXN_40[7:0]), 
+               .dir(XLXN_36), 
+               .out1(XLXN_37));
+   gatedriver  XLXI_4 (.d(XLXN_36), 
+                      .h(hall3[2:0]), 
+                      .pwm(XLXN_37), 
+                      .a(a3[1:0]), 
+                      .b(b3[1:0]), 
+                      .c(c3[1:0]));
+   uart_tx  XLXI_6 (.CLK(inc), 
+                   .DATA(count_DUMMY[7:0]), 
+                   .RST(XLXN_21), 
+                   .TX(tx));
+   GND  XLXI_7 (.G(XLXN_21));
+   uart_tx  XLXI_8 (.CLK(inc), 
+                   .DATA(XLXN_39[7:0]), 
+                   .RST(XLXN_21), 
+                   .TX(tx1));
+   decoder  XLXI_12 (.clk(inc), 
+                    .quadA(qb), 
+                    .quadB(qa), 
+                    .reset(en), 
+                    .total(count_DUMMY[7:0]));
+   pid  XLXI_14 (.clk(inc), 
+                .enc(count_DUMMY[7:0]), 
+                .rst_n(en), 
+                .set_val(XLXN_39[7:0]), 
+                .Pwm(XLXN_40[7:0]));
+endmodule

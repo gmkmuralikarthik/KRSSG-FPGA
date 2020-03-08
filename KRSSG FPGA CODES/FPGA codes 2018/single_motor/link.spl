@@ -1,0 +1,9 @@
+[Inputs]
+=d[2:0]=
+[Outputs]
+q1
+q2
+[BiDir]
+[ATTRIBUTES]
+VeriModel link
+

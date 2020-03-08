@@ -1,0 +1,12 @@
+[Inputs]
+=hall[2:0]=
+=angle_in[9:0]=
+[Outputs]
+
+=sineangle_A[19:0]=
+=sineangle_B[19:0]=
+=sineangle_C[19:0]=
+[BiDir]
+[ATTRIBUTES]
+VeriModel angle_check
+

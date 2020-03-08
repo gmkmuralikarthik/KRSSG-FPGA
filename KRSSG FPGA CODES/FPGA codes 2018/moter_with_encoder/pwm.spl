@@ -1,0 +1,11 @@
+[Inputs]
+en1
+clk
+cl
+=lo[3:0]=
+[Outputs]
+out1
+[BiDir]
+[ATTRIBUTES]
+VeriModel pwm
+

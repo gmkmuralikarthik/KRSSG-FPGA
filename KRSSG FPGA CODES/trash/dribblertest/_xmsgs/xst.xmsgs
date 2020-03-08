@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="HDLCompiler" num="91" delta="new" >"/home/ise/ism_projects/xi share/not my codes/fourmotorwinter/dribbler.v" Line 28: Signal &lt;<arg fmt="%s" index="1">f</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="91" delta="new" >"/home/ise/ism_projects/xi share/not my codes/fourmotorwinter/dribbler.v" Line 29: Signal &lt;<arg fmt="%s" index="1">e</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="91" delta="new" >"/home/ise/ism_projects/xi share/not my codes/fourmotorwinter/dribbler.v" Line 30: Signal &lt;<arg fmt="%s" index="1">g</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="91" delta="new" >"/home/ise/ism_projects/xi share/not my codes/fourmotorwinter/dribbler.v" Line 31: Signal &lt;<arg fmt="%s" index="1">f</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="91" delta="new" >"/home/ise/ism_projects/xi share/not my codes/fourmotorwinter/dribbler.v" Line 32: Signal &lt;<arg fmt="%s" index="1">e</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="91" delta="new" >"/home/ise/ism_projects/xi share/not my codes/fourmotorwinter/dribbler.v" Line 33: Signal &lt;<arg fmt="%s" index="1">e</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+</msg>
+
+</messages>
+

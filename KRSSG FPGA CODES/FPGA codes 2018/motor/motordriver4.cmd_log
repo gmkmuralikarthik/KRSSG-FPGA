@@ -1,0 +1,4 @@
+sch2hdl -intstyle ise -family artix7 -verilog motordriver4_drc.vf -w C:/Users/C.RONALDO.7/motor/motordriver4.sch 
+sch2sym -intstyle ise -family artix7 -refsym motordriver4 C:/Users/C.RONALDO.7/motor/motordriver4.sch C:/Users/C.RONALDO.7/motor/motordriver4.sym 
+sch2hdl -intstyle ise -family artix7 -verilog motordriver4_drc.vf -w C:/Users/C.RONALDO.7/motor/motordriver4.sch 
+xst -intstyle ise -ifn "C:/Users/C.RONALDO.7/motor/motordriver4.xst" -ofn "C:/Users/C.RONALDO.7/motor/motordriver4.syr" 

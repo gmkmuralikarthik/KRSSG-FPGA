@@ -1,0 +1,15 @@
+Running: /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/fuse -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o /home/ise/ism_projects/xi share/not my codes/anirudth/FPGA-master/PWM_3-Bit/Schematic_Schematic_sch_tb_isim_beh.exe -prj /home/ise/ism_projects/xi share/not my codes/anirudth/FPGA-master/PWM_3-Bit/Schematic_Schematic_sch_tb_beh.prj work.Schematic_Schematic_sch_tb work.glbl 
+ISim P.20160913 (signature 0xfbc00daa)
+Number of CPUs detected in this system: 1
+Turning on mult-threading, number of parallel sub-compilation jobs: 0 
+Determining compilation order of HDL files
+Analyzing Verilog file "/home/ise/ism_projects/xi share/not my codes/anirudth/FPGA-master/PWM_3-Bit/Schematic.vf" into library work
+Analyzing Verilog file "/home/ise/ism_projects/xi share/not my codes/anirudth/FPGA-master/PWM_3-Bit/Simulation.v" into library work
+Analyzing Verilog file "/opt/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+WARNING:HDLCompiler:267 - "/home/ise/ism_projects/xi share/not my codes/anirudth/FPGA-master/PWM_3-Bit/Simulation.v" Line 24: Cannot find port CLR_JK on this module
+ERROR:HDLCompiler:25 - "/home/ise/ism_projects/xi share/not my codes/anirudth/FPGA-master/PWM_3-Bit/Simulation.v" Line 25: Module <Schematic> does not have a port named <JK>.
+ERROR:HDLCompiler:25 - "/home/ise/ism_projects/xi share/not my codes/anirudth/FPGA-master/PWM_3-Bit/Simulation.v" Line 31: Module <Schematic> does not have a port named <CE>.
+ERROR:HDLCompiler:25 - "/home/ise/ism_projects/xi share/not my codes/anirudth/FPGA-master/PWM_3-Bit/Simulation.v" Line 32: Module <Schematic> does not have a port named <CLR_CNTR>.
+ERROR:HDLCompiler:25 - "/home/ise/ism_projects/xi share/not my codes/anirudth/FPGA-master/PWM_3-Bit/Simulation.v" Line 34: Module <Schematic> does not have a port named <CLR_JK>.
+ERROR:Simulator:778 - Static elaboration of top level Verilog design unit(s) in library work failed

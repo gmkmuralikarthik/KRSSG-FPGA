@@ -1,0 +1,41 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : myenc.vf
+// /___/   /\     Timestamp : 08/17/2018 18:08:23
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog "/home/ise/ism_projects/xi share/motorwithencoder/myenc.vf" -w "/home/ise/ism_projects/xi share/moter_with_encoder/myenc.sch"
+//Design Name: myenc
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module myenc(cloc, 
+             clocka, 
+             oc);
+
+    input cloc;
+    input clocka;
+   output [7:0] oc;
+   
+   wire XLXN_1;
+   wire XLXN_2;
+   
+   encde  XLXI_2 (.clk(cloc), 
+                 .counta(XLXN_2), 
+                 .outcounta(oc[7:0]), 
+                 .rese(XLXN_1));
+   encclo  XLXI_3 (.cka(clocka), 
+                  .reset(XLXN_1), 
+                  .outbit(XLXN_2));
+endmodule

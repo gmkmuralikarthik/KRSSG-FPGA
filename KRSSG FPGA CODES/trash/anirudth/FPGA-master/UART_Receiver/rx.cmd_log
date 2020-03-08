@@ -1,0 +1,22 @@
+xst -intstyle ise -ifn "/home/ise/ism_projects/xi share/not my codes/anirudth/FPGA-master/UART_Receiver/rx.xst" -ofn "/home/ise/ism_projects/xi share/not my codes/anirudth/FPGA-master/UART_Receiver/rx.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx9-tqg144-2 "rx.ngc" rx.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o rx_map.ncd rx.ngd rx.pcf 
+par -w -intstyle ise -ol high -mt off rx_map.ncd rx.ncd rx.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml rx.twx rx.ncd -o rx.twr rx.pcf 
+xst -intstyle ise -ifn "/home/ise/ism_projects/xi share/not my codes/anirudth/FPGA-master/UART_Receiver/rx.xst" -ofn "/home/ise/ism_projects/xi share/not my codes/anirudth/FPGA-master/UART_Receiver/rx.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc test2.ucf -p xc6slx9-csg324-2 "rx.ngc" rx.ngd  
+map -intstyle ise -p xc6slx9-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o rx_map.ncd rx.ngd rx.pcf 
+par -w -intstyle ise -ol high -mt off rx_map.ncd rx.ncd rx.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml rx.twx rx.ncd -o rx.twr rx.pcf -ucf test2.ucf 
+bitgen -intstyle ise -f rx.ut rx.ncd 
+bitgen -intstyle ise -f rx.ut rx.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc test2.ucf -p xc6slx9-csg324-2 "rx.ngc" rx.ngd  
+map -intstyle ise -p xc6slx9-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o rx_map.ncd rx.ngd rx.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc test2.ucf -p xc6slx9-csg324-2 "rx.ngc" rx.ngd  
+map -intstyle ise -p xc6slx9-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o rx_map.ncd rx.ngd rx.pcf 
+xst -intstyle ise -ifn "/home/ise/ism_projects/xi share/not my codes/anirudth/FPGA-master/UART_Receiver/rx.xst" -ofn "/home/ise/ism_projects/xi share/not my codes/anirudth/FPGA-master/UART_Receiver/rx.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc test2.ucf -p xc6slx9-tqg144-2 "rx.ngc" rx.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o rx_map.ncd rx.ngd rx.pcf 
+par -w -intstyle ise -ol high -mt off rx_map.ncd rx.ncd rx.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml rx.twx rx.ncd -o rx.twr rx.pcf -ucf test2.ucf 
+bitgen -intstyle ise -f rx.ut rx.ncd 

@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "/home/ise/ism_projects/xi share/moter_with_encoder/myenc_myenc_sch_tb_isim_beh.exe" -prj "/home/ise/ism_projects/xi share/moter_with_encoder/myenc_myenc_sch_tb_beh.prj" "work.myenc_myenc_sch_tb" "work.glbl" 

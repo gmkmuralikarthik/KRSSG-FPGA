@@ -1,0 +1,28 @@
+Command line:
+   myenc_myenc_sch_tb_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  45361
+
+Fri Aug 17 17:58:55 2018
+
+
+ Elaboration Time: 0.03 sec
+
+ Current Memory Usage: 198.586 Meg
+
+ Total Signals          : 26
+ Total Nets             : 25
+ Total Signal Drivers   : 10
+ Total Blocks           : 5
+ Total Primitive Blocks : 3
+ Total Processes        : 15
+ Total Traceable Variables  : 24
+ Total Scalar Nets and Variables : 132
+
+ Total Simulation Time: 23.33 sec
+
+ Current Memory Usage: 276.185 Meg
+
+Fri Aug 17 17:59:27 2018
+

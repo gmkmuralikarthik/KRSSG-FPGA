@@ -1,0 +1,38 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : rx.vf
+// /___/   /\     Timestamp : 11/04/2018 00:42:42
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog "/home/ise/ism_projects/xi share/december/rx.vf" -w "/home/ise/ism_projects/xi share/december/rx.sch"
+//Design Name: rx
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module rx(clk, 
+          rx, 
+          b, 
+          rxbyte);
+
+    input clk;
+    input rx;
+   output b;
+   output [7:0] rxbyte;
+   
+   
+   UART_RX  XLXI_1 (.i_Clk(clk), 
+                   .i_RX_Serial(rx), 
+                   .o_RX_Byte(rxbyte[7:0]), 
+                   .o_RX_DV(b));
+endmodule

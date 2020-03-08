@@ -1,0 +1,4 @@
+verilog work "pwm.v"
+verilog work "finlogicgate.v"
+verilog work "clock.v"
+verilog work "motordriver4.vf"

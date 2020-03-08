@@ -1,0 +1,12 @@
+[Inputs]
+=A[5:0]=
+=B[5:0]=
+=C[5:0]=
+[Outputs]
+=atan_table_A[19:0]=
+=atan_table_B[19:0]=
+=atan_table_C[19:0]=
+[BiDir]
+[ATTRIBUTES]
+VeriModel TAN_DOC
+

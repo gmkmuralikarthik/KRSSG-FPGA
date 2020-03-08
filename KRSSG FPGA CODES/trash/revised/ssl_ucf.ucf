@@ -1,0 +1,39 @@
+NET "CLK" LOC = P126;
+#HEADER P1
+NET "Ap4"                   LOC = P35      | IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = FAST ;    # P3
+NET "An4"                   LOC = P34      | IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = FAST ;    # P4
+NET "Bp4"                   LOC = P33      | IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = FAST ;    # P5
+NET "Bn4"                   LOC = P32      | IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = FAST ;    # P6
+NET "Cp4"                   LOC = P30      | IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = FAST ;    # P7
+NET "Cn4"                   LOC = P29      | IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = FAST ;    # P8
+
+NET "H1_4"                  LOC = P24      | IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = FAST ;    # P11
+NET "H2_4"                  LOC = P22      | IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = FAST ;    # P13
+NET "H3_4"                  LOC = P17      | IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = FAST ;    # P15
+
+NET "Rx"                  		LOC = P15      | IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = FAST ;    # P17
+NET "speed4"                  LOC = P14      | IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = FAST ;    # P18
+NET "speed3"                  LOC = P16      | IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = FAST ;    # P16
+
+
+NET "reset" 			   LOC = P123	| IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = FAST | PULLUP;	#SW1
+NET "DIR4" 			  		LOC = P121	| IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = FAST | PULLUP;	#SW2
+NET "DIR3" 			  		LOC = P120	| IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = FAST | PULLUP; #SW3
+
+NET "E1_4"                  LOC = P12      | IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = FAST ;    # P19
+NET "E2_4"                  LOC = P11      | IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = FAST ;    # P20
+
+#HEADER P2
+NET "Ap3"                   LOC = P43      | IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = FAST ;    # P3
+NET "An3"                   LOC = P44      | IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = FAST ;    # P4
+NET "Bp3"                   LOC = P45      | IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = FAST ;    # P5
+NET "Bn3"                   LOC = P46      | IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = FAST ;    # P6
+NET "Cp3"                   LOC = P47      | IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = FAST ;    # P7
+NET "Cn3"                   LOC = P48      | IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = FAST ;    # P8
+
+NET "H1_3"                  LOC = P55      | IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = FAST ;    # P11
+NET "H2_3"                  LOC = P74      | IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = FAST ;    # P13
+NET "H3_3"                  LOC = P78      | IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = FAST ;    # P15
+
+NET "E1_3"                  LOC = P80      | IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = FAST ;    # P17
+NET "E2_3"                  LOC = P81      | IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = FAST ;    # P18

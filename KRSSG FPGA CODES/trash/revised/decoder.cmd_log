@@ -1,0 +1,2 @@
+vhdtdtfi -lib work E:/KRSSG/FPGA/programs/revised/encoder_timed.v -lang verilog -prj revised -o decoder.spl -module decoder -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 decoder.spl E:/KRSSG/FPGA/programs/revised/decoder.sym 

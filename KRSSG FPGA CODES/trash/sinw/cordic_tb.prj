@@ -1,0 +1,2 @@
+verilog work "../../cordic.v"
+verilog work "../../cordic_test.v"

@@ -1,0 +1,7 @@
+MODULE spwmmodule
+	SUBMODULE cordic
+		INSTANCE XLXI_8
+	SUBMODULE scompare
+		INSTANCE XLXI_3
+	SUBMODULE trianglewave
+		INSTANCE XLXI_5

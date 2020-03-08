@@ -1,0 +1,84 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : test_motor_encoder.vf
+// /___/   /\     Timestamp : 08/17/2018 18:48:15
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog "/home/ise/ism_projects/xi share/motorwithencoder/test_motor_encoder.vf" -w "/home/ise/ism_projects/xi share/moter_with_encoder/test_motor_encoder.sch"
+//Design Name: test_motor_encoder
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module myenc_MUSER_test_motor_encoder(cloc, 
+                                      clocka, 
+                                      oc);
+
+    input cloc;
+    input clocka;
+   output [7:0] oc;
+   
+   wire XLXN_1;
+   wire XLXN_2;
+   
+   encde  XLXI_2 (.clk(cloc), 
+                 .counta(XLXN_2), 
+                 .outcounta(oc[7:0]), 
+                 .rese(XLXN_1));
+   encclo  XLXI_3 (.cka(clocka), 
+                  .reset(XLXN_1), 
+                  .outbit(XLXN_2));
+endmodule
+`timescale 1ns / 1ps
+
+module test_motor_encoder(clca, 
+                          clear, 
+                          clk, 
+                          enable, 
+                          hall, 
+                          log, 
+                          a, 
+                          b, 
+                          c, 
+                          ob);
+
+    input clca;
+    input clear;
+    input clk;
+    input enable;
+    input [2:0] hall;
+    input [3:0] log;
+   output [1:0] a;
+   output [1:0] b;
+   output [1:0] c;
+   output [7:0] ob;
+   
+   wire XLXN_3;
+   wire XLXN_10;
+   
+   clock  XLXI_3 (.inc(clk), 
+                 .outc(XLXN_10));
+   pwm  XLXI_4 (.cl(clear), 
+               .clk(XLXN_10), 
+               .en1(enable), 
+               .lo(log[3:0]), 
+               .out1(XLXN_3));
+   gate1  XLXI_5 (.h(hall[2:0]), 
+                 .pwm(XLXN_3), 
+                 .a(a[1:0]), 
+                 .b(b[1:0]), 
+                 .c(c[1:0]));
+   myenc_MUSER_test_motor_encoder  XLXI_8 (.cloc(XLXN_10), 
+                                          .clocka(clca), 
+                                          .oc(ob[7:0]));
+endmodule

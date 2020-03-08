@@ -1,0 +1,3 @@
+MODULE kickertest
+	SUBMODULE kicker2
+		INSTANCE XLXI_4

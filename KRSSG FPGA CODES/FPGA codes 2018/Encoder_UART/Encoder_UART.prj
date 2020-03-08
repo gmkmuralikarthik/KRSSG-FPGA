@@ -1,0 +1,4 @@
+verilog work "../../not my codes/anirudth/FPGA-master/Clock_Divider/Clock_Divider.v"
+verilog work "../../not my codes/anirudth/FPGA-master/UART_Transmitter/UART_Transmiter.v"
+verilog work "../../not my codes/anirudth/FPGA-master/Encoder/Encoder.v"
+verilog work "Encoder_UART.v"

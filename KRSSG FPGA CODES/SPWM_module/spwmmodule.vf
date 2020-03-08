@@ -1,0 +1,79 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : spwmmodule.vf
+// /___/   /\     Timestamp : 02/28/2020 20:21:17
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog "/home/ise/ism_projects/xi share/KRSSG FPGA CODES/FPGA codes 2019/SPWM_module/spwmmodule.vf" -w "/home/ise/ism_projects/xi share/KRSSG FPGA CODES/FPGA codes 2019/SPWM_module/spwmmodule.sch"
+//Design Name: spwmmodule
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 100 ps / 10 ps
+
+module FTP_HXILINX_spwmmodule(Q, C, PRE, T);
+   
+   output             Q;
+
+   input 	      C;	
+   input 	      PRE;	
+   input              T;
+   
+   parameter INIT = 1'b1;
+   reg                Q = INIT;
+
+   always @(posedge C or posedge PRE)
+     begin
+	if (PRE)
+	  Q <= 1'b1;
+	else if(T)
+          Q <= !Q;
+     end
+   
+endmodule
+`timescale 1ns / 1ps
+
+module spwmmodule(angle, 
+                  i, 
+                  inclock, 
+                  tan, 
+                  pwm);
+
+    input [19:0] angle;
+    input [5:0] i;
+    input inclock;
+    input [19:0] tan;
+   output pwm;
+   
+   wire inc;
+   wire XLXN_1;
+   wire [9:0] XLXN_6;
+   wire [9:0] XLXN_7;
+   
+   scompare  XLXI_3 (.clk(inc), 
+                    .swave(XLXN_6[9:0]), 
+                    .twave(XLXN_7[9:0]), 
+                    .pwm(pwm));
+   trianglewave  XLXI_5 (.clk(inc), 
+                        .outwave(XLXN_7[9:0]));
+   (* HU_SET = "XLXI_6_0" *) 
+   FTP_HXILINX_spwmmodule  XLXI_6 (.C(inclock), 
+                                  .PRE(), 
+                                  .T(XLXN_1), 
+                                  .Q(inc));
+   VCC  XLXI_7 (.P(XLXN_1));
+   cordic  XLXI_8 (.A(i[5:0]), 
+                  .angle(angle[19:0]), 
+                  .atan_table(tan[19:0]), 
+                  .clock(inc), 
+                  .sine(XLXN_6[9:0]));
+endmodule

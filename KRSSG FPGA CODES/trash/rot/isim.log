@@ -1,0 +1,53 @@
+ISim log file
+Running: /home/ise/ism_projects/xi share/not my codes/rot/test1_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb /home/ise/ism_projects/xi share/not my codes/rot/test1_isim_beh.wdb 
+ISim P.20160913 (signature 0xfbc00daa)
+----------------------------------------------------------------------
+WARNING:Security:42 - Your software subscription period has lapsed. Your current version of Xilinx tools will continue to function, but you no longer qualify for Xilinx software updates or new releases.
+
+
+----------------------------------------------------------------------
+This is a Full version of ISim.
+WARNING:  For instance \[0].U /x_shifter/, width 4 of formal port i is not equal to width 32 of actual constant.
+WARNING:  For instance \[0].U /y_shifter/, width 4 of formal port i is not equal to width 32 of actual constant.
+WARNING:  For instance \[1].U /x_shifter/, width 4 of formal port i is not equal to width 32 of actual constant.
+WARNING:  For instance \[1].U /y_shifter/, width 4 of formal port i is not equal to width 32 of actual constant.
+WARNING:  For instance \[2].U /x_shifter/, width 4 of formal port i is not equal to width 32 of actual constant.
+WARNING:  For instance \[2].U /y_shifter/, width 4 of formal port i is not equal to width 32 of actual constant.
+WARNING:  For instance \[3].U /x_shifter/, width 4 of formal port i is not equal to width 32 of actual constant.
+WARNING:  For instance \[3].U /y_shifter/, width 4 of formal port i is not equal to width 32 of actual constant.
+WARNING:  For instance \[4].U /x_shifter/, width 4 of formal port i is not equal to width 32 of actual constant.
+WARNING:  For instance \[4].U /y_shifter/, width 4 of formal port i is not equal to width 32 of actual constant.
+WARNING:  For instance \[5].U /x_shifter/, width 4 of formal port i is not equal to width 32 of actual constant.
+WARNING:  For instance \[5].U /y_shifter/, width 4 of formal port i is not equal to width 32 of actual constant.
+WARNING:  For instance \[6].U /x_shifter/, width 4 of formal port i is not equal to width 32 of actual constant.
+WARNING:  For instance \[6].U /y_shifter/, width 4 of formal port i is not equal to width 32 of actual constant.
+WARNING:  For instance \[7].U /x_shifter/, width 4 of formal port i is not equal to width 32 of actual constant.
+WARNING:  For instance \[7].U /y_shifter/, width 4 of formal port i is not equal to width 32 of actual constant.
+WARNING:  For instance \[8].U /x_shifter/, width 4 of formal port i is not equal to width 32 of actual constant.
+WARNING:  For instance \[8].U /y_shifter/, width 4 of formal port i is not equal to width 32 of actual constant.
+WARNING:  For instance \[9].U /x_shifter/, width 4 of formal port i is not equal to width 32 of actual constant.
+WARNING:  For instance \[9].U /y_shifter/, width 4 of formal port i is not equal to width 32 of actual constant.
+WARNING:  For instance \[10].U /x_shifter/, width 4 of formal port i is not equal to width 32 of actual constant.
+WARNING:  For instance \[10].U /y_shifter/, width 4 of formal port i is not equal to width 32 of actual constant.
+WARNING:  For instance \[11].U /x_shifter/, width 4 of formal port i is not equal to width 32 of actual constant.
+WARNING:  For instance \[11].U /y_shifter/, width 4 of formal port i is not equal to width 32 of actual constant.
+WARNING:  For instance \[12].U /x_shifter/, width 4 of formal port i is not equal to width 32 of actual constant.
+WARNING:  For instance \[12].U /y_shifter/, width 4 of formal port i is not equal to width 32 of actual constant.
+WARNING:  For instance \[13].U /x_shifter/, width 4 of formal port i is not equal to width 32 of actual constant.
+WARNING:  For instance \[13].U /y_shifter/, width 4 of formal port i is not equal to width 32 of actual constant.
+WARNING:  For instance \[14].U /x_shifter/, width 4 of formal port i is not equal to width 32 of actual constant.
+WARNING:  For instance \[14].U /y_shifter/, width 4 of formal port i is not equal to width 32 of actual constant.
+Time resolution is 1 ps
+# onerror resume
+# wave add /
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+# isim force add /test1/theta_i 45 -radix dec
+# isim force add /test1/theta_i 45 -radix dec
+# isim force add /test1/theta_i 45 -radix dec
+# isim force add /test1/theta_i 45 -radix dec
+# isim force add /test1/theta_i 45 -radix dec
+# run all
+Stopped at time : 4740372 ns : File "/home/ise/ism_projects/xi share/not my codes/rot/test1.v" Line 67
+# exit 0

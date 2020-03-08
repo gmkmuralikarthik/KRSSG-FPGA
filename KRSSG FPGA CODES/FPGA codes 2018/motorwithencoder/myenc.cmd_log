@@ -1,0 +1,4 @@
+sch2hdl -intstyle ise -family spartan6 -verilog myenc_drc.vf -w {/home/ise/ism_projects/xi share/moter_with_encoder/myenc.sch} 
+sch2sym -intstyle ise -family spartan6 -refsym myenc {/home/ise/ism_projects/xi share/moter_with_encoder/myenc.sch} {/home/ise/ism_projects/xi share/motorwithencoder/myenc.sym} 
+sch2hdl -intstyle ise -family spartan6 -verilog myenc_drc.vf -w {/home/ise/ism_projects/xi share/moter_with_encoder/myenc.sch} 
+sch2sym -intstyle ise -family spartan6 -refsym myenc {/home/ise/ism_projects/xi share/moter_with_encoder/myenc.sch} {/home/ise/ism_projects/xi share/motorwithencoder/myenc.sym} 

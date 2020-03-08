@@ -1,0 +1,5 @@
+NET "CLK" LOC = P126;
+#TIMESPEC TS_CLK = PERIOD "CLK" 100 MHz HIGH 50%;	
+#HEADER P1
+NET "Rx"                  LOC = P15      | IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = FAST ;    # P17
+NET "TX"                  LOC = P14      | IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = FAST ;    # P18

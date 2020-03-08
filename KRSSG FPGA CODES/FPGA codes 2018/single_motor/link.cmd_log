@@ -1,0 +1,4 @@
+vhdtdtfi -lib work {/home/ise/ism_projects/xi share/my codes/single_motor/link.v} -lang verilog -prj single_motor -o link.spl -module link -template /opt/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 link.spl {/home/ise/ism_projects/xi share/my codes/single_motor/link.sym} 
+vhdtdtfi -lib work {/home/ise/ism_projects/xi share/my codes/single_motor/link.v} -lang verilog -prj single_motor -o link.spl -module link -template /opt/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 -w link.spl {/home/ise/ism_projects/xi share/my codes/single_motor/link.sym} 

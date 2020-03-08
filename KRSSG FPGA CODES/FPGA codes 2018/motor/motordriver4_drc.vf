@@ -1,0 +1,56 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : motordriver4_drc.vf
+// /___/   /\     Timestamp : 05/19/2018 01:33:57
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt\unwrapped\sch2hdl.exe -intstyle ise -family artix7 -verilog motordriver4_drc.vf -w C:/Users/C.RONALDO.7/motor/motordriver4.sch
+//Design Name: motordriver4
+//Device: artix7
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module motordriver4(clear1, 
+                    enable1, 
+                    hall, 
+                    inclock, 
+                    log, 
+                    a, 
+                    b, 
+                    c);
+
+    input clear1;
+    input enable1;
+    input [2:0] hall;
+    input inclock;
+    input [3:0] log;
+   output [1:0] a;
+   output [1:0] b;
+   output [1:0] c;
+   
+   wire XLXN_2;
+   wire XLXN_4;
+   
+   pwm  XLXI_1 (.cl(clear1), 
+               .clk(XLXN_4), 
+               .en1(enable1), 
+               .lo(log[3:0]), 
+               .out1(XLXN_2));
+   finlogicgate  XLXI_2 (.h(hall[2:0]), 
+                        .pwm(XLXN_2), 
+                        .a(a[1:0]), 
+                        .b(b[1:0]), 
+                        .c(c[1:0]));
+   clock  XLXI_3 (.inc(inclock), 
+                 .outc(XLXN_4));
+endmodule

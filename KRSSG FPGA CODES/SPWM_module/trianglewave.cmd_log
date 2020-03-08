@@ -1,0 +1,6 @@
+vhdtdtfi -lib work {/home/ise/ism_projects/xi share/KRSSG FPGA CODES/FPGA codes 2019/SPWM_module/trianglewave.v} -lang verilog -prj SPWM_module -o trianglewave.spl -module trianglewave -template /opt/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 -w trianglewave.spl {/home/ise/ism_projects/xi share/KRSSG FPGA CODES/FPGA codes 2019/SPWM_module/trianglewave.sym} 
+vhdtdtfi -lib work {/home/ise/ism_projects/xi share/KRSSG FPGA CODES/FPGA codes 2019/SPWM_module/trianglewave.v} -lang verilog -prj SPWM_module -o trianglewave.spl -module trianglewave -template /opt/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 -w trianglewave.spl {/home/ise/ism_projects/xi share/KRSSG FPGA CODES/FPGA codes 2019/SPWM_module/trianglewave.sym} 
+vhdtdtfi -lib work {/home/ise/ism_projects/xi share/KRSSG FPGA CODES/FPGA codes 2019/SPWM_module/trianglewave.v} -lang verilog -prj SPWM_module -o trianglewave.spl -module trianglewave -template /opt/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 -w trianglewave.spl {/home/ise/ism_projects/xi share/KRSSG FPGA CODES/FPGA codes 2019/SPWM_module/trianglewave.sym} 

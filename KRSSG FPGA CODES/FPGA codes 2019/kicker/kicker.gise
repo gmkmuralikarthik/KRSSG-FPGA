@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<generated_project xmlns="http://www.xilinx.com/XMLSchema" xmlns:xil_pn="http://www.xilinx.com/XMLSchema">
+
+  <!--                                                          -->
+
+  <!--             For tool use only. Do not edit.              -->
+
+  <!--                                                          -->
+
+  <!-- ProjectNavigator created generated project file.         -->
+
+  <!-- For use in tracking generated file and other information -->
+
+  <!-- allowing preservation of process status.                 -->
+
+  <!--                                                          -->
+
+  <!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved. -->
+
+  <version xmlns="http://www.xilinx.com/XMLSchema">11.1</version>
+
+  <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="kicker.xise"/>
+
+  <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="UART_Receiver.prj"/>
+    <file xil_pn:fileType="FILE_SPL" xil_pn:name="UART_Receiver.spl"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="UART_Receiver.stx"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="UART_Receiver.sym" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="UART_Receiver.xst"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="_ngo"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/bitgen.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/map.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/par.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/trce.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="kicker.prj"/>
+    <file xil_pn:fileType="FILE_SPL" xil_pn:name="kicker.spl"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="kicker.stx"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="kicker.sym" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="kicker.xst"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="kicker1.prj"/>
+    <file xil_pn:fileType="FILE_SPL" xil_pn:name="kicker1.spl"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="kicker1.stx"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="kicker1.sym" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="kicker1.xst"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="kicker2.prj"/>
+    <file xil_pn:fileType="FILE_SPL" xil_pn:name="kicker2.spl"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="kicker2.stx"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="kicker2.sym" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="kicker2.xst"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="kickertest.bgn" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:fileType="FILE_BIN" xil_pn:name="kickertest.bin"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BIT" xil_pn:name="kickertest.bit" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="kickertest.bld"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="kickertest.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_DRC" xil_pn:name="kickertest.drc" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:fileType="FILE_JHD" xil_pn:name="kickertest.jhd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="kickertest.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="kickertest.ncd" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="kickertest.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGD" xil_pn:name="kickertest.ngd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="kickertest.ngr"/>
+    <file xil_pn:fileType="FILE_PAD_MISC" xil_pn:name="kickertest.pad"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAR_REPORT" xil_pn:name="kickertest.par" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PCF" xil_pn:name="kickertest.pcf" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="kickertest.prj"/>
+    <file xil_pn:fileType="FILE_TRCE_MISC" xil_pn:name="kickertest.ptwx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="kickertest.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="kickertest.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_TXT_REPORT" xil_pn:name="kickertest.twr" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_XML_REPORT" xil_pn:name="kickertest.twx" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_UNROUTES" xil_pn:name="kickertest.unroutes" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="kickertest.ut" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_VERILOG" xil_pn:name="kickertest.vf"/>
+    <file xil_pn:fileType="FILE_XPI" xil_pn:name="kickertest.xpi"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="kickertest.xst"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="kickertest_envsettings.html"/>
+    <file xil_pn:fileType="FILE_NCD" xil_pn:name="kickertest_guide.ncd" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="kickertest_map.map" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="kickertest_map.mrp" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="kickertest_map.ncd" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGM" xil_pn:name="kickertest_map.ngm" xil_pn:subbranch="Map"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="kickertest_map.xrpt"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="kickertest_ngdbuild.xrpt"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_EXCEL_REPORT" xil_pn:name="kickertest_pad.csv" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_TXT_REPORT" xil_pn:name="kickertest_pad.txt" xil_pn:subbranch="Par"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="kickertest_par.xrpt"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="kickertest_summary.html"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="kickertest_summary.xml"/>
+    <file xil_pn:fileType="FILE_WEBTALK" xil_pn:name="kickertest_usage.xml"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="kickertest_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="webtalk.log"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xlnx_auto_0_xdb"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
+  </files>
+
+  <transforms xmlns="http://www.xilinx.com/XMLSchema">
+    <transform xil_pn:end_ts="1547137639" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1547137639">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1547146511" xil_pn:in_ck="639876584217733125" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="4521193281276359310" xil_pn:start_ts="1547146508">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="kickertest.vf"/>
+    </transform>
+    <transform xil_pn:end_ts="1547137642" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="4842930317863970782" xil_pn:start_ts="1547137642">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1547137642" xil_pn:name="TRAN_SubProjectAbstractToPreProxy" xil_pn:start_ts="1547137642">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1547137642" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="4056490203735760144" xil_pn:start_ts="1547137642">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1547137949" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="250970745955965653" xil_pn:start_ts="1547137949">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1547137949" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="-4817848179439032792" xil_pn:start_ts="1547137949">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1547239763" xil_pn:in_ck="5209126503564839552" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="-6382569281794156243" xil_pn:start_ts="1547239746">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
+      <outfile xil_pn:name="kickertest.jhd"/>
+      <outfile xil_pn:name="kickertest.lso"/>
+      <outfile xil_pn:name="kickertest.ngc"/>
+      <outfile xil_pn:name="kickertest.ngr"/>
+      <outfile xil_pn:name="kickertest.prj"/>
+      <outfile xil_pn:name="kickertest.stx"/>
+      <outfile xil_pn:name="kickertest.syr"/>
+      <outfile xil_pn:name="kickertest.xst"/>
+      <outfile xil_pn:name="kickertest_xst.xrpt"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+      <outfile xil_pn:name="xst"/>
+    </transform>
+    <transform xil_pn:end_ts="1547146532" xil_pn:in_ck="5078817571116" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="8767563576002233787" xil_pn:start_ts="1547146532">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1547239775" xil_pn:in_ck="5846245209897444203" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="-1312534672814556161" xil_pn:start_ts="1547239763">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <outfile xil_pn:name="_ngo"/>
+      <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+      <outfile xil_pn:name="kickertest.bld"/>
+      <outfile xil_pn:name="kickertest.ngd"/>
+      <outfile xil_pn:name="kickertest_ngdbuild.xrpt"/>
+    </transform>
+    <transform xil_pn:end_ts="1547239792" xil_pn:in_ck="5846246616306062444" xil_pn:name="TRANEXT_map_spartan6" xil_pn:prop_ck="6093601622908603872" xil_pn:start_ts="1547239775">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
+      <outfile xil_pn:name="kickertest.pcf"/>
+      <outfile xil_pn:name="kickertest_map.map"/>
+      <outfile xil_pn:name="kickertest_map.mrp"/>
+      <outfile xil_pn:name="kickertest_map.ncd"/>
+      <outfile xil_pn:name="kickertest_map.ngm"/>
+      <outfile xil_pn:name="kickertest_map.xrpt"/>
+      <outfile xil_pn:name="kickertest_summary.xml"/>
+      <outfile xil_pn:name="kickertest_usage.xml"/>
+    </transform>
+    <transform xil_pn:end_ts="1547239820" xil_pn:in_ck="-2416643076606718843" xil_pn:name="TRANEXT_par_spartan6" xil_pn:prop_ck="93661965788626211" xil_pn:start_ts="1547239792">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
+      <outfile xil_pn:name="kickertest.ncd"/>
+      <outfile xil_pn:name="kickertest.pad"/>
+      <outfile xil_pn:name="kickertest.par"/>
+      <outfile xil_pn:name="kickertest.ptwx"/>
+      <outfile xil_pn:name="kickertest.unroutes"/>
+      <outfile xil_pn:name="kickertest.xpi"/>
+      <outfile xil_pn:name="kickertest_pad.csv"/>
+      <outfile xil_pn:name="kickertest_pad.txt"/>
+      <outfile xil_pn:name="kickertest_par.xrpt"/>
+    </transform>
+    <transform xil_pn:end_ts="1547239834" xil_pn:in_ck="639876584217727676" xil_pn:name="TRANEXT_bitFile_spartan6" xil_pn:prop_ck="6587536580693756888" xil_pn:start_ts="1547239820">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <outfile xil_pn:name="_xmsgs/bitgen.xmsgs"/>
+      <outfile xil_pn:name="kickertest.bgn"/>
+      <outfile xil_pn:name="kickertest.bin"/>
+      <outfile xil_pn:name="kickertest.bit"/>
+      <outfile xil_pn:name="kickertest.drc"/>
+      <outfile xil_pn:name="kickertest.ut"/>
+      <outfile xil_pn:name="webtalk.log"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+    </transform>
+    <transform xil_pn:end_ts="1547239820" xil_pn:in_ck="5846060970368454632" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416185" xil_pn:start_ts="1547239808">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>
+      <outfile xil_pn:name="kickertest.twr"/>
+      <outfile xil_pn:name="kickertest.twx"/>
+    </transform>
+  </transforms>
+
+</generated_project>

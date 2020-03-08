@@ -1,0 +1,12 @@
+[Inputs]
+cla
+clb
+clk
+[Outputs]
+=outb[7:0]=
+=temp1[7:0]=
+=temp2[7:0]=
+[BiDir]
+[ATTRIBUTES]
+VeriModel encoder
+

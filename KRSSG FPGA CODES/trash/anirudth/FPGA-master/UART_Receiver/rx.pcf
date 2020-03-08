@@ -1,0 +1,17 @@
+//! **************************************************************************
+// Written by: Map P.20160913 on Fri Jan 11 21:46:59 2019
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "inc" LOCATE = SITE "P126" LEVEL 1;
+COMP "count<0>" LOCATE = SITE "P111" LEVEL 1;
+COMP "count<1>" LOCATE = SITE "P112" LEVEL 1;
+COMP "count<2>" LOCATE = SITE "P114" LEVEL 1;
+COMP "count<3>" LOCATE = SITE "P115" LEVEL 1;
+COMP "count<4>" LOCATE = SITE "P116" LEVEL 1;
+COMP "count<5>" LOCATE = SITE "P117" LEVEL 1;
+COMP "count<6>" LOCATE = SITE "P118" LEVEL 1;
+COMP "count<7>" LOCATE = SITE "P119" LEVEL 1;
+COMP "rxin" LOCATE = SITE "P35" LEVEL 1;
+SCHEMATIC END;
+

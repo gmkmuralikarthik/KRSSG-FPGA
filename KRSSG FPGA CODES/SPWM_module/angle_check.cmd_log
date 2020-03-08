@@ -1,0 +1,12 @@
+vhdtdtfi -lib work {/home/ise/ism_projects/xi share/KRSSG FPGA CODES/FPGA codes 2019/SPWM_module/angle_check.v} -lang verilog -prj SPWM_module -o angle_check.spl -module angle_check -template /opt/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 angle_check.spl {/home/ise/ism_projects/xi share/KRSSG FPGA CODES/FPGA codes 2019/SPWM_module/angle_check.sym} 
+vhdtdtfi -lib work {/home/ise/ism_projects/xi share/KRSSG FPGA CODES/FPGA codes 2019/SPWM_module/angle_check.v} -lang verilog -prj SPWM_module -o angle_check.spl -module angle_check -template /opt/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 -w angle_check.spl {/home/ise/ism_projects/xi share/KRSSG FPGA CODES/FPGA codes 2019/SPWM_module/angle_check.sym} 
+vhdtdtfi -lib work {/home/ise/ism_projects/xi share/KRSSG FPGA CODES/FPGA codes 2019/SPWM_module/angle_check.v} -lang verilog -prj SPWM_module -o angle_check.spl -module angle_check -template /opt/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 -w angle_check.spl {/home/ise/ism_projects/xi share/KRSSG FPGA CODES/FPGA codes 2019/SPWM_module/angle_check.sym} 
+vhdtdtfi -lib work {/home/ise/ism_projects/xi share/KRSSG FPGA CODES/FPGA codes 2019/SPWM_module/angle_check.v} -lang verilog -prj SPWM_module -o angle_check.spl -module angle_check -template /opt/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 -w angle_check.spl {/home/ise/ism_projects/xi share/KRSSG FPGA CODES/FPGA codes 2019/SPWM_module/angle_check.sym} 
+vhdtdtfi -lib work {/home/ise/ism_projects/xi share/KRSSG FPGA CODES/FPGA codes 2019/SPWM_module/angle_check.v} -lang verilog -prj SPWM_module -o angle_check.spl -module angle_check -template /opt/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 -w angle_check.spl {/home/ise/ism_projects/xi share/KRSSG FPGA CODES/FPGA codes 2019/SPWM_module/angle_check.sym} 
+vhdtdtfi -lib work {/home/ise/ism_projects/xi share/KRSSG FPGA CODES/FPGA codes 2019/SPWM_module/angle_check.v} -lang verilog -prj SPWM_module -o angle_check.spl -module angle_check -template /opt/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 -w angle_check.spl {/home/ise/ism_projects/xi share/KRSSG FPGA CODES/FPGA codes 2019/SPWM_module/angle_check.sym} 

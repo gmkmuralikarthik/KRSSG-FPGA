@@ -1,0 +1,9 @@
+Running: /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/fuse -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o /home/ise/ism_projects/xi share/not my codes/cordicalgo/cordic_tb_isim_beh.exe -prj /home/ise/ism_projects/xi share/not my codes/cordicalgo/cordic_tb_beh.prj work.cordic_tb work.glbl 
+ISim P.20160913 (signature 0xfbc00daa)
+Number of CPUs detected in this system: 1
+Turning on mult-threading, number of parallel sub-compilation jobs: 0 
+Determining compilation order of HDL files
+Analyzing Verilog file "/home/ise/ism_projects/xi share/not my codes/cordicalgo/../../cordic.v" into library work
+ERROR:HDLCompiler:53 - "/home/ise/ism_projects/xi share/not my codes/cordicalgo/../../cordic.v" Line 37: <angle> is not a port.
+ERROR:HDLCompiler:598 - "/home/ise/ism_projects/xi share/not my codes/cordicalgo/../../cordic.v" Line 36: Module <cordic> ignored due to previous errors.
+Verilog file /home/ise/ism_projects/xi share/not my codes/cordicalgo/../../cordic.v ignored due to errors

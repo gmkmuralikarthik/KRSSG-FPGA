@@ -1,0 +1,2 @@
+verilog work "../fourmotorwinter/dribbler.v"
+verilog work "test1.vf"

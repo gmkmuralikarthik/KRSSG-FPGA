@@ -1,0 +1,979 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.43 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.43 secs
+ 
+--> Reading design: ssl.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "ssl.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "ssl"
+Output Format                      : NGC
+Target Device                      : xc6slx9-3-tqg144
+
+---- Source Options
+Top Module Name                    : ssl
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "E:\KRSSG\FPGA\programs\revised\pwm7bit.v" into library work
+Parsing module <pwm7bit>.
+Analyzing Verilog file "E:\KRSSG\FPGA\programs\revised\Clock_Divider.v" into library work
+Parsing module <Clock_Divider>.
+Analyzing Verilog file "E:\KRSSG\FPGA\programs\revised\pid_trial.v" into library work
+Parsing module <pid>.
+WARNING:HDLCompiler:327 - "E:\KRSSG\FPGA\programs\revised\pid_trial.v" Line 37: Concatenation with unsized literal; will interpret as 32 bits
+WARNING:HDLCompiler:327 - "E:\KRSSG\FPGA\programs\revised\pid_trial.v" Line 42: Concatenation with unsized literal; will interpret as 32 bits
+WARNING:HDLCompiler:327 - "E:\KRSSG\FPGA\programs\revised\pid_trial.v" Line 48: Concatenation with unsized literal; will interpret as 32 bits
+WARNING:HDLCompiler:327 - "E:\KRSSG\FPGA\programs\revised\pid_trial.v" Line 53: Concatenation with unsized literal; will interpret as 32 bits
+Analyzing Verilog file "E:\KRSSG\FPGA\programs\revised\openloop7bit.vf" into library work
+Parsing module <M2_1B1_HXILINX_openloop7bit>.
+Parsing module <openloop7bit>.
+Analyzing Verilog file "E:\KRSSG\FPGA\programs\revised\encoder_timed.v" into library work
+Parsing module <decoder>.
+Analyzing Verilog file "E:\KRSSG\FPGA\programs\revised\speedforallmotors.v" into library work
+Parsing module <speed4motor>.
+Analyzing Verilog file "E:\KRSSG\FPGA\programs\revised\closed_loop.vf" into library work
+Parsing module <M2_1B1_HXILINX_closed_loop>.
+Parsing module <openloop7bit_MUSER_closed_loop>.
+Parsing module <closed_loop>.
+Analyzing Verilog file "E:\KRSSG\FPGA\programs\revised\ssl.vf" into library work
+Parsing module <M2_1B1_HXILINX_ssl>.
+Parsing module <openloop7bit_MUSER_ssl>.
+Parsing module <closed_loop_MUSER_ssl>.
+Parsing module <ssl>.
+Parsing VHDL file "E:\KRSSG\FPGA\programs\revised\transmitter.vhd" into library work
+Parsing entity <UART_TX>.
+Parsing architecture <RTL> of entity <uart_tx>.
+Parsing VHDL file "E:\KRSSG\FPGA\programs\revised\receiver.vhd" into library work
+Parsing entity <UART_RX>.
+Parsing architecture <rtl> of entity <uart_rx>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <ssl>.
+
+Elaborating module <closed_loop_MUSER_ssl>.
+
+Elaborating module <openloop7bit_MUSER_ssl>.
+
+Elaborating module <OR2B1>.
+
+Elaborating module <AND2B1>.
+
+Elaborating module <AND2>.
+
+Elaborating module <VCC>.
+
+Elaborating module <M2_1B1_HXILINX_ssl>.
+
+Elaborating module <pwm7bit>.
+WARNING:HDLCompiler:413 - "E:\KRSSG\FPGA\programs\revised\pwm7bit.v" Line 23: Result of 8-bit expression is truncated to fit in 7-bit target.
+WARNING:HDLCompiler:413 - "E:\KRSSG\FPGA\programs\revised\pwm7bit.v" Line 24: Result of 32-bit expression is truncated to fit in 1-bit target.
+
+Elaborating module <Clock_Divider>.
+WARNING:HDLCompiler:327 - "E:\KRSSG\FPGA\programs\revised\pid_trial.v" Line 37: Concatenation with unsized literal; will interpret as 32 bits
+WARNING:HDLCompiler:327 - "E:\KRSSG\FPGA\programs\revised\pid_trial.v" Line 42: Concatenation with unsized literal; will interpret as 32 bits
+WARNING:HDLCompiler:327 - "E:\KRSSG\FPGA\programs\revised\pid_trial.v" Line 48: Concatenation with unsized literal; will interpret as 32 bits
+WARNING:HDLCompiler:327 - "E:\KRSSG\FPGA\programs\revised\pid_trial.v" Line 53: Concatenation with unsized literal; will interpret as 32 bits
+
+Elaborating module <pid>.
+WARNING:HDLCompiler:872 - "E:\KRSSG\FPGA\programs\revised\pid_trial.v" Line 18: Using initial value of k1 since it is never assigned
+WARNING:HDLCompiler:872 - "E:\KRSSG\FPGA\programs\revised\pid_trial.v" Line 19: Using initial value of k2 since it is never assigned
+WARNING:HDLCompiler:872 - "E:\KRSSG\FPGA\programs\revised\pid_trial.v" Line 20: Using initial value of k3 since it is never assigned
+WARNING:HDLCompiler:413 - "E:\KRSSG\FPGA\programs\revised\pid_trial.v" Line 37: Result of 770-bit expression is truncated to fit in 25-bit target.
+WARNING:HDLCompiler:413 - "E:\KRSSG\FPGA\programs\revised\pid_trial.v" Line 48: Result of 770-bit expression is truncated to fit in 25-bit target.
+WARNING:HDLCompiler:413 - "E:\KRSSG\FPGA\programs\revised\pid_trial.v" Line 67: Result of 19-bit expression is truncated to fit in 18-bit target.
+WARNING:HDLCompiler:413 - "E:\KRSSG\FPGA\programs\revised\pid_trial.v" Line 73: Result of 32-bit expression is truncated to fit in 8-bit target.
+
+Elaborating module <decoder>.
+WARNING:HDLCompiler:413 - "E:\KRSSG\FPGA\programs\revised\encoder_timed.v" Line 33: Result of 19-bit expression is truncated to fit in 18-bit target.
+WARNING:HDLCompiler:413 - "E:\KRSSG\FPGA\programs\revised\encoder_timed.v" Line 51: Result of 9-bit expression is truncated to fit in 8-bit target.
+
+Elaborating module <speed4motor>.
+WARNING:HDLCompiler:413 - "E:\KRSSG\FPGA\programs\revised\speedforallmotors.v" Line 31: Result of 3-bit expression is truncated to fit in 2-bit target.
+Going to vhdl side to elaborate module UART_RX
+
+Elaborating entity <UART_RX> (architecture <rtl>) with generics from library <work>.
+INFO:HDLCompiler:679 - "E:\KRSSG\FPGA\programs\revised\receiver.vhd" Line 136. Case statement is complete. others clause is never selected
+Back to verilog to continue elaboration
+Going to vhdl side to elaborate module UART_TX
+
+Elaborating entity <UART_TX> (architecture <RTL>) with generics from library <work>.
+INFO:HDLCompiler:679 - "E:\KRSSG\FPGA\programs\revised\transmitter.vhd" Line 128. Case statement is complete. others clause is never selected
+Back to verilog to continue elaboration
+Going to vhdl side to elaborate module UART_TX
+
+Elaborating entity <UART_TX> (architecture <RTL>) with generics from library <work>.
+INFO:HDLCompiler:679 - "E:\KRSSG\FPGA\programs\revised\transmitter.vhd" Line 128. Case statement is complete. others clause is never selected
+WARNING:HDLCompiler:758 - "E:\KRSSG\FPGA\programs\revised\transmitter.vhd" Line 20: Replacing existing netlist UART_TX(RTL)
+Back to verilog to continue elaboration
+Going to vhdl side to elaborate module UART_TX
+
+Elaborating entity <UART_TX> (architecture <RTL>) with generics from library <work>.
+INFO:HDLCompiler:679 - "E:\KRSSG\FPGA\programs\revised\transmitter.vhd" Line 128. Case statement is complete. others clause is never selected
+Back to verilog to continue elaboration
+Going to vhdl side to elaborate module UART_TX
+
+Elaborating entity <UART_TX> (architecture <RTL>) with generics from library <work>.
+INFO:HDLCompiler:679 - "E:\KRSSG\FPGA\programs\revised\transmitter.vhd" Line 128. Case statement is complete. others clause is never selected
+Back to verilog to continue elaboration
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <ssl>.
+    Related source file is "E:\KRSSG\FPGA\programs\revised\ssl.vf".
+INFO:Xst:3210 - "E:\KRSSG\FPGA\programs\revised\ssl.vf" line 414: Output port <o_TX_Active> of the instance <XLXI_48> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\KRSSG\FPGA\programs\revised\ssl.vf" line 414: Output port <o_TX_Done> of the instance <XLXI_48> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\KRSSG\FPGA\programs\revised\ssl.vf" line 420: Output port <o_TX_Active> of the instance <XLXI_49> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\KRSSG\FPGA\programs\revised\ssl.vf" line 420: Output port <o_TX_Done> of the instance <XLXI_49> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\KRSSG\FPGA\programs\revised\ssl.vf" line 426: Output port <o_TX_Active> of the instance <XLXI_50> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\KRSSG\FPGA\programs\revised\ssl.vf" line 426: Output port <o_TX_Done> of the instance <XLXI_50> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\KRSSG\FPGA\programs\revised\ssl.vf" line 432: Output port <o_TX_Active> of the instance <XLXI_51> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "E:\KRSSG\FPGA\programs\revised\ssl.vf" line 432: Output port <o_TX_Done> of the instance <XLXI_51> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <ssl> synthesized.
+
+Synthesizing Unit <closed_loop_MUSER_ssl>.
+    Related source file is "E:\KRSSG\FPGA\programs\revised\ssl.vf".
+    Summary:
+	no macro.
+Unit <closed_loop_MUSER_ssl> synthesized.
+
+Synthesizing Unit <openloop7bit_MUSER_ssl>.
+    Related source file is "E:\KRSSG\FPGA\programs\revised\ssl.vf".
+    Set property "HU_SET = XLXI_70_0" for instance <XLXI_70>.
+    Set property "HU_SET = XLXI_71_1" for instance <XLXI_71>.
+    Set property "HU_SET = XLXI_72_2" for instance <XLXI_72>.
+    Summary:
+	no macro.
+Unit <openloop7bit_MUSER_ssl> synthesized.
+
+Synthesizing Unit <M2_1B1_HXILINX_ssl>.
+    Related source file is "E:\KRSSG\FPGA\programs\revised\ssl.vf".
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <M2_1B1_HXILINX_ssl> synthesized.
+
+Synthesizing Unit <pwm7bit>.
+    Related source file is "E:\KRSSG\FPGA\programs\revised\pwm7bit.v".
+    Found 1-bit register for signal <pwm_out_r>.
+    Found 7-bit register for signal <count>.
+    Found 7-bit adder for signal <count[6]_GND_9_o_add_1_OUT> created at line 23.
+    Found 8-bit comparator greater for signal <GND_9_o_pwm_in[7]_LessThan_3_o> created at line 24
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred   8 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+Unit <pwm7bit> synthesized.
+
+Synthesizing Unit <Clock_Divider>.
+    Related source file is "E:\KRSSG\FPGA\programs\revised\Clock_Divider.v".
+    Found 1-bit register for signal <clk_out_r>.
+    Found 8-bit register for signal <count>.
+    Found 8-bit adder for signal <count[7]_GND_10_o_add_1_OUT> created at line 21.
+    Found 8-bit comparator greater for signal <GND_10_o_count[7]_LessThan_3_o> created at line 22
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred   9 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+Unit <Clock_Divider> synthesized.
+
+Synthesizing Unit <pid>.
+    Related source file is "E:\KRSSG\FPGA\programs\revised\pid_trial.v".
+        N = 8
+    Found 18-bit register for signal <ticker>.
+    Found 8-bit register for signal <error>.
+    Found 32-bit register for signal <pwm_old>.
+    Found 64-bit register for signal <n0037[63:0]>.
+    Found 32-bit register for signal <pwm_mid>.
+    Found 8-bit register for signal <pwm>.
+    Found 8-bit register for signal <actual[7:0]>.
+    Found 8-bit register for signal <target[7:0]>.
+    Found 32-bit subtractor for signal <n0075> created at line 85.
+    Found 18-bit adder for signal <ticker[17]_GND_11_o_add_5_OUT> created at line 67.
+    Found 32-bit adder for signal <pwm_old[31]_GND_11_o_add_14_OUT> created at line 85.
+    Found 32-bit adder for signal <pwm_old[31]_e_prev[2][30]_add_16_OUT> created at line 85.
+    Found 8-bit subtractor for signal <target[31]_actual[31]_sub_13_OUT<7:0>> created at line 73.
+    Found 7x8-bit multiplier for signal <GND_11_o_error[7]_MuLt_13_OUT> created at line 85.
+    Found 32-bit comparator greater for signal <pwm_mid[31]_GND_11_o_LessThan_18_o> created at line 88
+    WARNING:Xst:2404 -  FFs/Latches <actual<31:8>> (without init value) have a constant value of 0 in block <pid>.
+    WARNING:Xst:2404 -  FFs/Latches <target<31:8>> (without init value) have a constant value of 0 in block <pid>.
+    Summary:
+	inferred   1 Multiplier(s).
+	inferred   5 Adder/Subtractor(s).
+	inferred 178 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+Unit <pid> synthesized.
+
+Synthesizing Unit <decoder>.
+    Related source file is "E:\KRSSG\FPGA\programs\revised\encoder_timed.v".
+    Found 3-bit register for signal <quadB_delayed>.
+    Found 18-bit register for signal <ticker>.
+    Found 8-bit register for signal <total>.
+    Found 8-bit register for signal <count>.
+    Found 3-bit register for signal <quadA_delayed>.
+    Found 18-bit adder for signal <ticker[17]_GND_13_o_add_6_OUT> created at line 33.
+    Found 8-bit adder for signal <count[7]_GND_13_o_add_18_OUT> created at line 51.
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred  40 D-type flip-flop(s).
+Unit <decoder> synthesized.
+
+Synthesizing Unit <speed4motor>.
+    Related source file is "E:\KRSSG\FPGA\programs\revised\speedforallmotors.v".
+    Found 8-bit register for signal <motor2>.
+    Found 8-bit register for signal <motor3>.
+    Found 8-bit register for signal <motor4>.
+    Found 2-bit register for signal <count>.
+    Found 8-bit register for signal <motor1>.
+    Found 2-bit adder for signal <count[1]_GND_14_o_add_1_OUT> created at line 31.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  34 D-type flip-flop(s).
+Unit <speed4motor> synthesized.
+
+Synthesizing Unit <UART_RX>.
+    Related source file is "E:\KRSSG\FPGA\programs\revised\receiver.vhd".
+        g_CLKS_PER_BIT = 868
+    Found 1-bit register for signal <r_RX_Data>.
+    Found 1-bit register for signal <r_RX_DV>.
+    Found 10-bit register for signal <r_Clk_Count>.
+    Found 3-bit register for signal <r_Bit_Index>.
+    Found 3-bit register for signal <r_SM_Main>.
+    Found 8-bit register for signal <r_RX_Byte>.
+    Found 1-bit register for signal <r_RX_Data_R>.
+    Found finite state machine <FSM_0> for signal <r_SM_Main>.
+    -----------------------------------------------------------------------
+    | States             | 5                                              |
+    | Transitions        | 11                                             |
+    | Inputs             | 4                                              |
+    | Outputs            | 4                                              |
+    | Clock              | i_Clk (rising_edge)                            |
+    | Power Up State     | s_idle                                         |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 3-bit adder for signal <r_Bit_Index[2]_GND_18_o_add_11_OUT> created at line 108.
+    Found 10-bit adder for signal <r_Clk_Count[9]_GND_18_o_add_19_OUT> created at line 121.
+    Found 3-bit comparator greater for signal <r_Bit_Index[2]_PWR_19_o_LessThan_11_o> created at line 107
+    Found 10-bit comparator greater for signal <r_Clk_Count[9]_PWR_19_o_LessThan_19_o> created at line 120
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred  24 D-type flip-flop(s).
+	inferred   2 Comparator(s).
+	inferred  14 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <UART_RX> synthesized.
+
+Synthesizing Unit <UART_TX>.
+    Related source file is "E:\KRSSG\FPGA\programs\revised\transmitter.vhd".
+        g_CLKS_PER_BIT = 868
+    Found 1-bit register for signal <o_TX_Serial>.
+    Found 1-bit register for signal <r_TX_Done>.
+    Found 10-bit register for signal <r_Clk_Count>.
+    Found 3-bit register for signal <r_Bit_Index>.
+    Found 8-bit register for signal <r_TX_Data>.
+    Found 3-bit register for signal <r_SM_Main>.
+    Found 1-bit register for signal <o_TX_Active>.
+    Found finite state machine <FSM_1> for signal <r_SM_Main>.
+    -----------------------------------------------------------------------
+    | States             | 5                                              |
+    | Transitions        | 10                                             |
+    | Inputs             | 3                                              |
+    | Outputs            | 6                                              |
+    | Clock              | i_Clk (rising_edge)                            |
+    | Power Up State     | s_idle                                         |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 3-bit adder for signal <r_Bit_Index[2]_GND_22_o_add_10_OUT> created at line 97.
+    Found 10-bit adder for signal <r_Clk_Count[9]_GND_22_o_add_17_OUT> created at line 112.
+    Found 1-bit 8-to-1 multiplexer for signal <r_Bit_Index[2]_r_TX_Data[7]_Mux_6_o> created at line 87.
+    Found 3-bit comparator greater for signal <r_Bit_Index[2]_PWR_24_o_LessThan_10_o> created at line 96
+    Found 10-bit comparator greater for signal <r_Clk_Count[9]_PWR_24_o_LessThan_17_o> created at line 111
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred  24 D-type flip-flop(s).
+	inferred   2 Comparator(s).
+	inferred   8 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <UART_TX> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Multipliers                                          : 4
+ 8x7-bit multiplier                                    : 4
+# Adders/Subtractors                                   : 47
+ 10-bit adder                                          : 5
+ 18-bit adder                                          : 8
+ 2-bit adder                                           : 1
+ 3-bit adder                                           : 5
+ 32-bit adder                                          : 8
+ 32-bit subtractor                                     : 4
+ 7-bit adder                                           : 4
+ 8-bit adder                                           : 8
+ 8-bit subtractor                                      : 4
+# Registers                                            : 103
+ 1-bit register                                        : 23
+ 10-bit register                                       : 5
+ 18-bit register                                       : 8
+ 2-bit register                                        : 1
+ 3-bit register                                        : 13
+ 32-bit register                                       : 8
+ 64-bit register                                       : 4
+ 7-bit register                                        : 4
+ 8-bit register                                        : 37
+# Comparators                                          : 22
+ 10-bit comparator greater                             : 5
+ 3-bit comparator greater                              : 5
+ 32-bit comparator greater                             : 4
+ 8-bit comparator greater                              : 8
+# Multiplexers                                         : 58
+ 1-bit 2-to-1 multiplexer                              : 28
+ 1-bit 8-to-1 multiplexer                              : 4
+ 10-bit 2-to-1 multiplexer                             : 16
+ 3-bit 2-to-1 multiplexer                              : 10
+# FSMs                                                 : 5
+# Xors                                                 : 4
+ 1-bit xor4                                            : 4
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+INFO:Xst:2261 - The FF/Latch <e_prev_2_39> in Unit <XLXI_21> is equivalent to the following 24 FFs/Latches, which will be removed : <e_prev_2_40> <e_prev_2_41> <e_prev_2_42> <e_prev_2_43> <e_prev_2_44> <e_prev_2_45> <e_prev_2_46> <e_prev_2_47> <e_prev_2_48> <e_prev_2_49> <e_prev_2_50> <e_prev_2_51> <e_prev_2_52> <e_prev_2_53> <e_prev_2_54> <e_prev_2_55> <e_prev_2_56> <e_prev_2_57> <e_prev_2_58> <e_prev_2_59> <e_prev_2_60> <e_prev_2_61> <e_prev_2_62> <e_prev_2_63> 
+INFO:Xst:2261 - The FF/Latch <e_prev_2_7> in Unit <XLXI_21> is equivalent to the following 23 FFs/Latches, which will be removed : <e_prev_2_8> <e_prev_2_9> <e_prev_2_10> <e_prev_2_11> <e_prev_2_12> <e_prev_2_13> <e_prev_2_14> <e_prev_2_15> <e_prev_2_16> <e_prev_2_17> <e_prev_2_18> <e_prev_2_19> <e_prev_2_20> <e_prev_2_21> <e_prev_2_22> <e_prev_2_23> <e_prev_2_24> <e_prev_2_25> <e_prev_2_26> <e_prev_2_27> <e_prev_2_28> <e_prev_2_29> <e_prev_2_30> 
+INFO:Xst:2261 - The FF/Latch <e_prev_2_39> in Unit <XLXI_21> is equivalent to the following 24 FFs/Latches, which will be removed : <e_prev_2_40> <e_prev_2_41> <e_prev_2_42> <e_prev_2_43> <e_prev_2_44> <e_prev_2_45> <e_prev_2_46> <e_prev_2_47> <e_prev_2_48> <e_prev_2_49> <e_prev_2_50> <e_prev_2_51> <e_prev_2_52> <e_prev_2_53> <e_prev_2_54> <e_prev_2_55> <e_prev_2_56> <e_prev_2_57> <e_prev_2_58> <e_prev_2_59> <e_prev_2_60> <e_prev_2_61> <e_prev_2_62> <e_prev_2_63> 
+INFO:Xst:2261 - The FF/Latch <e_prev_2_7> in Unit <XLXI_21> is equivalent to the following 23 FFs/Latches, which will be removed : <e_prev_2_8> <e_prev_2_9> <e_prev_2_10> <e_prev_2_11> <e_prev_2_12> <e_prev_2_13> <e_prev_2_14> <e_prev_2_15> <e_prev_2_16> <e_prev_2_17> <e_prev_2_18> <e_prev_2_19> <e_prev_2_20> <e_prev_2_21> <e_prev_2_22> <e_prev_2_23> <e_prev_2_24> <e_prev_2_25> <e_prev_2_26> <e_prev_2_27> <e_prev_2_28> <e_prev_2_29> <e_prev_2_30> 
+INFO:Xst:2261 - The FF/Latch <e_prev_2_39> in Unit <XLXI_21> is equivalent to the following 24 FFs/Latches, which will be removed : <e_prev_2_40> <e_prev_2_41> <e_prev_2_42> <e_prev_2_43> <e_prev_2_44> <e_prev_2_45> <e_prev_2_46> <e_prev_2_47> <e_prev_2_48> <e_prev_2_49> <e_prev_2_50> <e_prev_2_51> <e_prev_2_52> <e_prev_2_53> <e_prev_2_54> <e_prev_2_55> <e_prev_2_56> <e_prev_2_57> <e_prev_2_58> <e_prev_2_59> <e_prev_2_60> <e_prev_2_61> <e_prev_2_62> <e_prev_2_63> 
+INFO:Xst:2261 - The FF/Latch <e_prev_2_7> in Unit <XLXI_21> is equivalent to the following 23 FFs/Latches, which will be removed : <e_prev_2_8> <e_prev_2_9> <e_prev_2_10> <e_prev_2_11> <e_prev_2_12> <e_prev_2_13> <e_prev_2_14> <e_prev_2_15> <e_prev_2_16> <e_prev_2_17> <e_prev_2_18> <e_prev_2_19> <e_prev_2_20> <e_prev_2_21> <e_prev_2_22> <e_prev_2_23> <e_prev_2_24> <e_prev_2_25> <e_prev_2_26> <e_prev_2_27> <e_prev_2_28> <e_prev_2_29> <e_prev_2_30> 
+INFO:Xst:2261 - The FF/Latch <e_prev_2_39> in Unit <XLXI_21> is equivalent to the following 24 FFs/Latches, which will be removed : <e_prev_2_40> <e_prev_2_41> <e_prev_2_42> <e_prev_2_43> <e_prev_2_44> <e_prev_2_45> <e_prev_2_46> <e_prev_2_47> <e_prev_2_48> <e_prev_2_49> <e_prev_2_50> <e_prev_2_51> <e_prev_2_52> <e_prev_2_53> <e_prev_2_54> <e_prev_2_55> <e_prev_2_56> <e_prev_2_57> <e_prev_2_58> <e_prev_2_59> <e_prev_2_60> <e_prev_2_61> <e_prev_2_62> <e_prev_2_63> 
+INFO:Xst:2261 - The FF/Latch <e_prev_2_7> in Unit <XLXI_21> is equivalent to the following 23 FFs/Latches, which will be removed : <e_prev_2_8> <e_prev_2_9> <e_prev_2_10> <e_prev_2_11> <e_prev_2_12> <e_prev_2_13> <e_prev_2_14> <e_prev_2_15> <e_prev_2_16> <e_prev_2_17> <e_prev_2_18> <e_prev_2_19> <e_prev_2_20> <e_prev_2_21> <e_prev_2_22> <e_prev_2_23> <e_prev_2_24> <e_prev_2_25> <e_prev_2_26> <e_prev_2_27> <e_prev_2_28> <e_prev_2_29> <e_prev_2_30> 
+WARNING:Xst:2677 - Node <e_prev_2_31> of sequential type is unconnected in block <XLXI_21>.
+WARNING:Xst:2677 - Node <e_prev_2_31> of sequential type is unconnected in block <XLXI_21>.
+WARNING:Xst:2677 - Node <e_prev_2_31> of sequential type is unconnected in block <XLXI_21>.
+WARNING:Xst:2677 - Node <e_prev_2_31> of sequential type is unconnected in block <XLXI_21>.
+
+Synthesizing (advanced) Unit <Clock_Divider>.
+The following registers are absorbed into counter <count>: 1 register on signal <count>.
+Unit <Clock_Divider> synthesized (advanced).
+
+Synthesizing (advanced) Unit <decoder>.
+The following registers are absorbed into counter <ticker>: 1 register on signal <ticker>.
+The following registers are absorbed into counter <count>: 1 register on signal <count>.
+Unit <decoder> synthesized (advanced).
+
+Synthesizing (advanced) Unit <pid>.
+The following registers are absorbed into counter <ticker>: 1 register on signal <ticker>.
+	The following adders/subtractors are grouped into adder tree <Madd_pwm_old[31]_e_prev[2][30]_add_16_OUT1> :
+ 	<Madd_pwm_old[31]_GND_11_o_add_14_OUT> in block <pid>, 	<Msub_n0075> in block <pid>, 	<Madd_pwm_old[31]_e_prev[2][30]_add_16_OUT> in block <pid>.
+	Multiplier <Mmult_GND_11_o_error[7]_MuLt_13_OUT> in block <pid> and adder/subtractor <ADDER_FOR_MULTADD_Madd> in block <pid> are combined into a MAC<Maddsub_GND_11_o_error[7]_MuLt_13_OUT>.
+	The following registers are also absorbed by the MAC: <pwm_old> in block <pid>.
+Unit <pid> synthesized (advanced).
+
+Synthesizing (advanced) Unit <pwm7bit>.
+The following registers are absorbed into counter <count>: 1 register on signal <count>.
+Unit <pwm7bit> synthesized (advanced).
+
+Synthesizing (advanced) Unit <speed4motor>.
+The following registers are absorbed into counter <count>: 1 register on signal <count>.
+Unit <speed4motor> synthesized (advanced).
+WARNING:Xst:2677 - Node <e_prev_2_31> of sequential type is unconnected in block <pid>.
+WARNING:Xst:2677 - Node <e_prev_2_63> of sequential type is unconnected in block <pid>.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# MACs                                                 : 4
+ 8x7-to-32-bit MAC                                     : 4
+# Adders/Subtractors                                   : 14
+ 10-bit adder                                          : 5
+ 3-bit adder                                           : 5
+ 8-bit subtractor                                      : 4
+# Adder Trees                                          : 4
+ 32-bit / 3-inputs adder tree                          : 4
+# Counters                                             : 21
+ 18-bit up counter                                     : 8
+ 2-bit up counter                                      : 1
+ 7-bit up counter                                      : 4
+ 8-bit up counter                                      : 8
+# Registers                                            : 720
+ Flip-Flops                                            : 720
+# Comparators                                          : 22
+ 10-bit comparator greater                             : 5
+ 3-bit comparator greater                              : 5
+ 32-bit comparator greater                             : 4
+ 8-bit comparator greater                              : 8
+# Multiplexers                                         : 46
+ 1-bit 2-to-1 multiplexer                              : 16
+ 1-bit 8-to-1 multiplexer                              : 4
+ 10-bit 2-to-1 multiplexer                             : 16
+ 3-bit 2-to-1 multiplexer                              : 10
+# FSMs                                                 : 5
+# Xors                                                 : 4
+ 1-bit xor4                                            : 4
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+INFO:Xst:2261 - The FF/Latch <e_prev_2_39> in Unit <pid> is equivalent to the following 23 FFs/Latches, which will be removed : <e_prev_2_40> <e_prev_2_41> <e_prev_2_42> <e_prev_2_43> <e_prev_2_44> <e_prev_2_45> <e_prev_2_46> <e_prev_2_47> <e_prev_2_48> <e_prev_2_49> <e_prev_2_50> <e_prev_2_51> <e_prev_2_52> <e_prev_2_53> <e_prev_2_54> <e_prev_2_55> <e_prev_2_56> <e_prev_2_57> <e_prev_2_58> <e_prev_2_59> <e_prev_2_60> <e_prev_2_61> <e_prev_2_62> 
+INFO:Xst:2261 - The FF/Latch <e_prev_2_7> in Unit <pid> is equivalent to the following 23 FFs/Latches, which will be removed : <e_prev_2_8> <e_prev_2_9> <e_prev_2_10> <e_prev_2_11> <e_prev_2_12> <e_prev_2_13> <e_prev_2_14> <e_prev_2_15> <e_prev_2_16> <e_prev_2_17> <e_prev_2_18> <e_prev_2_19> <e_prev_2_20> <e_prev_2_21> <e_prev_2_22> <e_prev_2_23> <e_prev_2_24> <e_prev_2_25> <e_prev_2_26> <e_prev_2_27> <e_prev_2_28> <e_prev_2_29> <e_prev_2_30> 
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <XLXI_16/FSM_0> on signal <r_SM_Main[1:3]> with user encoding.
+----------------------------
+ State          | Encoding
+----------------------------
+ s_idle         | 000
+ s_rx_start_bit | 001
+ s_rx_data_bits | 010
+ s_rx_stop_bit  | 011
+ s_cleanup      | 100
+----------------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <XLXI_48/FSM_1> on signal <r_SM_Main[1:3]> with user encoding.
+Optimizing FSM <XLXI_49/FSM_1> on signal <r_SM_Main[1:3]> with user encoding.
+Optimizing FSM <XLXI_50/FSM_1> on signal <r_SM_Main[1:3]> with user encoding.
+Optimizing FSM <XLXI_51/FSM_1> on signal <r_SM_Main[1:3]> with user encoding.
+----------------------------
+ State          | Encoding
+----------------------------
+ s_idle         | 000
+ s_tx_start_bit | 001
+ s_tx_data_bits | 010
+ s_tx_stop_bit  | 011
+ s_cleanup      | 100
+----------------------------
+
+Optimizing unit <ssl> ...
+
+Optimizing unit <pid> ...
+
+Optimizing unit <openloop7bit_MUSER_ssl> ...
+
+Optimizing unit <M2_1B1_HXILINX_ssl> ...
+
+Optimizing unit <decoder> ...
+
+Optimizing unit <speed4motor> ...
+
+Optimizing unit <UART_RX> ...
+
+Optimizing unit <UART_TX> ...
+WARNING:Xst:2677 - Node <XLXI_51/o_TX_Active> of sequential type is unconnected in block <ssl>.
+WARNING:Xst:2677 - Node <XLXI_51/r_TX_Done> of sequential type is unconnected in block <ssl>.
+WARNING:Xst:2677 - Node <XLXI_50/o_TX_Active> of sequential type is unconnected in block <ssl>.
+WARNING:Xst:2677 - Node <XLXI_50/r_TX_Done> of sequential type is unconnected in block <ssl>.
+WARNING:Xst:2677 - Node <XLXI_49/o_TX_Active> of sequential type is unconnected in block <ssl>.
+WARNING:Xst:2677 - Node <XLXI_49/r_TX_Done> of sequential type is unconnected in block <ssl>.
+WARNING:Xst:2677 - Node <XLXI_48/o_TX_Active> of sequential type is unconnected in block <ssl>.
+WARNING:Xst:2677 - Node <XLXI_48/r_TX_Done> of sequential type is unconnected in block <ssl>.
+WARNING:Xst:1710 - FF/Latch <XLXI_6/XLXI_22/ticker_17> (without init value) has a constant value of 0 in block <ssl>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <XLXI_5/XLXI_22/ticker_17> (without init value) has a constant value of 0 in block <ssl>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <XLXI_4/XLXI_22/ticker_17> (without init value) has a constant value of 0 in block <ssl>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <XLXI_3/XLXI_22/ticker_17> (without init value) has a constant value of 0 in block <ssl>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <XLXI_6/XLXI_17/XLXI_86/count_6> has a constant value of 0 in block <ssl>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <XLXI_6/XLXI_17/XLXI_86/count_7> has a constant value of 0 in block <ssl>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <XLXI_5/XLXI_17/XLXI_86/count_6> has a constant value of 0 in block <ssl>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <XLXI_5/XLXI_17/XLXI_86/count_7> has a constant value of 0 in block <ssl>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <XLXI_4/XLXI_17/XLXI_86/count_6> has a constant value of 0 in block <ssl>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <XLXI_4/XLXI_17/XLXI_86/count_7> has a constant value of 0 in block <ssl>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <XLXI_3/XLXI_17/XLXI_86/count_6> has a constant value of 0 in block <ssl>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <XLXI_3/XLXI_17/XLXI_86/count_7> has a constant value of 0 in block <ssl>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <XLXI_6/XLXI_21/pwm_7> (without init value) has a constant value of 0 in block <ssl>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <XLXI_6/XLXI_21/ticker_17> (without init value) has a constant value of 0 in block <ssl>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <XLXI_5/XLXI_21/pwm_7> (without init value) has a constant value of 0 in block <ssl>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <XLXI_5/XLXI_21/ticker_17> (without init value) has a constant value of 0 in block <ssl>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <XLXI_4/XLXI_21/pwm_7> (without init value) has a constant value of 0 in block <ssl>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <XLXI_4/XLXI_21/ticker_17> (without init value) has a constant value of 0 in block <ssl>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <XLXI_3/XLXI_21/pwm_7> (without init value) has a constant value of 0 in block <ssl>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <XLXI_3/XLXI_21/ticker_17> (without init value) has a constant value of 0 in block <ssl>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <XLXI_3/XLXI_21/ticker_10> in Unit <ssl> is equivalent to the following 7 FFs/Latches, which will be removed : <XLXI_4/XLXI_21/ticker_10> <XLXI_5/XLXI_21/ticker_10> <XLXI_6/XLXI_21/ticker_10> <XLXI_3/XLXI_22/ticker_10> <XLXI_4/XLXI_22/ticker_10> <XLXI_5/XLXI_22/ticker_10> <XLXI_6/XLXI_22/ticker_10> 
+INFO:Xst:2261 - The FF/Latch <XLXI_3/XLXI_21/ticker_11> in Unit <ssl> is equivalent to the following 7 FFs/Latches, which will be removed : <XLXI_4/XLXI_21/ticker_11> <XLXI_5/XLXI_21/ticker_11> <XLXI_6/XLXI_21/ticker_11> <XLXI_3/XLXI_22/ticker_11> <XLXI_4/XLXI_22/ticker_11> <XLXI_5/XLXI_22/ticker_11> <XLXI_6/XLXI_22/ticker_11> 
+INFO:Xst:2261 - The FF/Latch <XLXI_3/XLXI_21/ticker_12> in Unit <ssl> is equivalent to the following 7 FFs/Latches, which will be removed : <XLXI_4/XLXI_21/ticker_12> <XLXI_5/XLXI_21/ticker_12> <XLXI_6/XLXI_21/ticker_12> <XLXI_3/XLXI_22/ticker_12> <XLXI_4/XLXI_22/ticker_12> <XLXI_5/XLXI_22/ticker_12> <XLXI_6/XLXI_22/ticker_12> 
+INFO:Xst:2261 - The FF/Latch <XLXI_3/XLXI_21/ticker_13> in Unit <ssl> is equivalent to the following 7 FFs/Latches, which will be removed : <XLXI_4/XLXI_21/ticker_13> <XLXI_5/XLXI_21/ticker_13> <XLXI_6/XLXI_21/ticker_13> <XLXI_3/XLXI_22/ticker_13> <XLXI_4/XLXI_22/ticker_13> <XLXI_5/XLXI_22/ticker_13> <XLXI_6/XLXI_22/ticker_13> 
+INFO:Xst:2261 - The FF/Latch <XLXI_3/XLXI_21/ticker_14> in Unit <ssl> is equivalent to the following 7 FFs/Latches, which will be removed : <XLXI_4/XLXI_21/ticker_14> <XLXI_5/XLXI_21/ticker_14> <XLXI_6/XLXI_21/ticker_14> <XLXI_3/XLXI_22/ticker_14> <XLXI_4/XLXI_22/ticker_14> <XLXI_5/XLXI_22/ticker_14> <XLXI_6/XLXI_22/ticker_14> 
+INFO:Xst:2261 - The FF/Latch <XLXI_3/XLXI_21/ticker_15> in Unit <ssl> is equivalent to the following 7 FFs/Latches, which will be removed : <XLXI_4/XLXI_21/ticker_15> <XLXI_5/XLXI_21/ticker_15> <XLXI_6/XLXI_21/ticker_15> <XLXI_3/XLXI_22/ticker_15> <XLXI_4/XLXI_22/ticker_15> <XLXI_5/XLXI_22/ticker_15> <XLXI_6/XLXI_22/ticker_15> 
+INFO:Xst:2261 - The FF/Latch <XLXI_3/XLXI_21/ticker_16> in Unit <ssl> is equivalent to the following 7 FFs/Latches, which will be removed : <XLXI_4/XLXI_21/ticker_16> <XLXI_5/XLXI_21/ticker_16> <XLXI_6/XLXI_21/ticker_16> <XLXI_3/XLXI_22/ticker_16> <XLXI_4/XLXI_22/ticker_16> <XLXI_5/XLXI_22/ticker_16> <XLXI_6/XLXI_22/ticker_16> 
+INFO:Xst:2261 - The FF/Latch <XLXI_3/XLXI_17/XLXI_86/count_0> in Unit <ssl> is equivalent to the following 3 FFs/Latches, which will be removed : <XLXI_4/XLXI_17/XLXI_86/count_0> <XLXI_5/XLXI_17/XLXI_86/count_0> <XLXI_6/XLXI_17/XLXI_86/count_0> 
+INFO:Xst:2261 - The FF/Latch <XLXI_3/XLXI_21/ticker_0> in Unit <ssl> is equivalent to the following 7 FFs/Latches, which will be removed : <XLXI_4/XLXI_21/ticker_0> <XLXI_5/XLXI_21/ticker_0> <XLXI_6/XLXI_21/ticker_0> <XLXI_3/XLXI_22/ticker_0> <XLXI_4/XLXI_22/ticker_0> <XLXI_5/XLXI_22/ticker_0> <XLXI_6/XLXI_22/ticker_0> 
+INFO:Xst:2261 - The FF/Latch <XLXI_3/XLXI_17/XLXI_86/count_1> in Unit <ssl> is equivalent to the following 3 FFs/Latches, which will be removed : <XLXI_4/XLXI_17/XLXI_86/count_1> <XLXI_5/XLXI_17/XLXI_86/count_1> <XLXI_6/XLXI_17/XLXI_86/count_1> 
+INFO:Xst:2261 - The FF/Latch <XLXI_3/XLXI_21/ticker_1> in Unit <ssl> is equivalent to the following 7 FFs/Latches, which will be removed : <XLXI_4/XLXI_21/ticker_1> <XLXI_5/XLXI_21/ticker_1> <XLXI_6/XLXI_21/ticker_1> <XLXI_3/XLXI_22/ticker_1> <XLXI_4/XLXI_22/ticker_1> <XLXI_5/XLXI_22/ticker_1> <XLXI_6/XLXI_22/ticker_1> 
+INFO:Xst:2261 - The FF/Latch <XLXI_3/XLXI_17/XLXI_86/count_2> in Unit <ssl> is equivalent to the following 3 FFs/Latches, which will be removed : <XLXI_4/XLXI_17/XLXI_86/count_2> <XLXI_5/XLXI_17/XLXI_86/count_2> <XLXI_6/XLXI_17/XLXI_86/count_2> 
+INFO:Xst:2261 - The FF/Latch <XLXI_3/XLXI_21/ticker_2> in Unit <ssl> is equivalent to the following 7 FFs/Latches, which will be removed : <XLXI_4/XLXI_21/ticker_2> <XLXI_5/XLXI_21/ticker_2> <XLXI_6/XLXI_21/ticker_2> <XLXI_3/XLXI_22/ticker_2> <XLXI_4/XLXI_22/ticker_2> <XLXI_5/XLXI_22/ticker_2> <XLXI_6/XLXI_22/ticker_2> 
+INFO:Xst:2261 - The FF/Latch <XLXI_3/XLXI_17/XLXI_86/count_3> in Unit <ssl> is equivalent to the following 3 FFs/Latches, which will be removed : <XLXI_4/XLXI_17/XLXI_86/count_3> <XLXI_5/XLXI_17/XLXI_86/count_3> <XLXI_6/XLXI_17/XLXI_86/count_3> 
+INFO:Xst:2261 - The FF/Latch <XLXI_3/XLXI_21/ticker_3> in Unit <ssl> is equivalent to the following 7 FFs/Latches, which will be removed : <XLXI_4/XLXI_21/ticker_3> <XLXI_5/XLXI_21/ticker_3> <XLXI_6/XLXI_21/ticker_3> <XLXI_3/XLXI_22/ticker_3> <XLXI_4/XLXI_22/ticker_3> <XLXI_5/XLXI_22/ticker_3> <XLXI_6/XLXI_22/ticker_3> 
+INFO:Xst:2261 - The FF/Latch <XLXI_3/XLXI_17/XLXI_86/count_4> in Unit <ssl> is equivalent to the following 3 FFs/Latches, which will be removed : <XLXI_4/XLXI_17/XLXI_86/count_4> <XLXI_5/XLXI_17/XLXI_86/count_4> <XLXI_6/XLXI_17/XLXI_86/count_4> 
+INFO:Xst:2261 - The FF/Latch <XLXI_3/XLXI_21/ticker_4> in Unit <ssl> is equivalent to the following 7 FFs/Latches, which will be removed : <XLXI_4/XLXI_21/ticker_4> <XLXI_5/XLXI_21/ticker_4> <XLXI_6/XLXI_21/ticker_4> <XLXI_3/XLXI_22/ticker_4> <XLXI_4/XLXI_22/ticker_4> <XLXI_5/XLXI_22/ticker_4> <XLXI_6/XLXI_22/ticker_4> 
+INFO:Xst:2261 - The FF/Latch <XLXI_3/XLXI_17/XLXI_86/count_5> in Unit <ssl> is equivalent to the following 3 FFs/Latches, which will be removed : <XLXI_4/XLXI_17/XLXI_86/count_5> <XLXI_5/XLXI_17/XLXI_86/count_5> <XLXI_6/XLXI_17/XLXI_86/count_5> 
+INFO:Xst:2261 - The FF/Latch <XLXI_3/XLXI_21/ticker_5> in Unit <ssl> is equivalent to the following 7 FFs/Latches, which will be removed : <XLXI_4/XLXI_21/ticker_5> <XLXI_5/XLXI_21/ticker_5> <XLXI_6/XLXI_21/ticker_5> <XLXI_3/XLXI_22/ticker_5> <XLXI_4/XLXI_22/ticker_5> <XLXI_5/XLXI_22/ticker_5> <XLXI_6/XLXI_22/ticker_5> 
+INFO:Xst:2261 - The FF/Latch <XLXI_3/XLXI_21/ticker_6> in Unit <ssl> is equivalent to the following 7 FFs/Latches, which will be removed : <XLXI_4/XLXI_21/ticker_6> <XLXI_5/XLXI_21/ticker_6> <XLXI_6/XLXI_21/ticker_6> <XLXI_3/XLXI_22/ticker_6> <XLXI_4/XLXI_22/ticker_6> <XLXI_5/XLXI_22/ticker_6> <XLXI_6/XLXI_22/ticker_6> 
+INFO:Xst:2261 - The FF/Latch <XLXI_3/XLXI_21/ticker_7> in Unit <ssl> is equivalent to the following 7 FFs/Latches, which will be removed : <XLXI_4/XLXI_21/ticker_7> <XLXI_5/XLXI_21/ticker_7> <XLXI_6/XLXI_21/ticker_7> <XLXI_3/XLXI_22/ticker_7> <XLXI_4/XLXI_22/ticker_7> <XLXI_5/XLXI_22/ticker_7> <XLXI_6/XLXI_22/ticker_7> 
+INFO:Xst:2261 - The FF/Latch <XLXI_3/XLXI_17/XLXI_86/clk_out_r> in Unit <ssl> is equivalent to the following 3 FFs/Latches, which will be removed : <XLXI_4/XLXI_17/XLXI_86/clk_out_r> <XLXI_5/XLXI_17/XLXI_86/clk_out_r> <XLXI_6/XLXI_17/XLXI_86/clk_out_r> 
+INFO:Xst:2261 - The FF/Latch <XLXI_3/XLXI_21/ticker_8> in Unit <ssl> is equivalent to the following 7 FFs/Latches, which will be removed : <XLXI_4/XLXI_21/ticker_8> <XLXI_5/XLXI_21/ticker_8> <XLXI_6/XLXI_21/ticker_8> <XLXI_3/XLXI_22/ticker_8> <XLXI_4/XLXI_22/ticker_8> <XLXI_5/XLXI_22/ticker_8> <XLXI_6/XLXI_22/ticker_8> 
+INFO:Xst:2261 - The FF/Latch <XLXI_3/XLXI_21/ticker_9> in Unit <ssl> is equivalent to the following 7 FFs/Latches, which will be removed : <XLXI_4/XLXI_21/ticker_9> <XLXI_5/XLXI_21/ticker_9> <XLXI_6/XLXI_21/ticker_9> <XLXI_3/XLXI_22/ticker_9> <XLXI_4/XLXI_22/ticker_9> <XLXI_5/XLXI_22/ticker_9> <XLXI_6/XLXI_22/ticker_9> 
+INFO:Xst:2261 - The FF/Latch <XLXI_16/r_SM_Main_FSM_FFd1> in Unit <ssl> is equivalent to the following FF/Latch, which will be removed : <XLXI_16/r_RX_DV> 
+INFO:Xst:2261 - The FF/Latch <XLXI_51/r_Clk_Count_0> in Unit <ssl> is equivalent to the following 3 FFs/Latches, which will be removed : <XLXI_50/r_Clk_Count_0> <XLXI_49/r_Clk_Count_0> <XLXI_48/r_Clk_Count_0> 
+INFO:Xst:2261 - The FF/Latch <XLXI_51/r_Clk_Count_1> in Unit <ssl> is equivalent to the following 3 FFs/Latches, which will be removed : <XLXI_50/r_Clk_Count_1> <XLXI_49/r_Clk_Count_1> <XLXI_48/r_Clk_Count_1> 
+INFO:Xst:2261 - The FF/Latch <XLXI_51/r_Clk_Count_2> in Unit <ssl> is equivalent to the following 3 FFs/Latches, which will be removed : <XLXI_50/r_Clk_Count_2> <XLXI_49/r_Clk_Count_2> <XLXI_48/r_Clk_Count_2> 
+INFO:Xst:2261 - The FF/Latch <XLXI_51/r_Clk_Count_3> in Unit <ssl> is equivalent to the following 3 FFs/Latches, which will be removed : <XLXI_50/r_Clk_Count_3> <XLXI_49/r_Clk_Count_3> <XLXI_48/r_Clk_Count_3> 
+INFO:Xst:2261 - The FF/Latch <XLXI_51/r_Clk_Count_4> in Unit <ssl> is equivalent to the following 3 FFs/Latches, which will be removed : <XLXI_50/r_Clk_Count_4> <XLXI_49/r_Clk_Count_4> <XLXI_48/r_Clk_Count_4> 
+INFO:Xst:2261 - The FF/Latch <XLXI_51/r_Clk_Count_5> in Unit <ssl> is equivalent to the following 3 FFs/Latches, which will be removed : <XLXI_50/r_Clk_Count_5> <XLXI_49/r_Clk_Count_5> <XLXI_48/r_Clk_Count_5> 
+INFO:Xst:2261 - The FF/Latch <XLXI_51/r_Clk_Count_6> in Unit <ssl> is equivalent to the following 3 FFs/Latches, which will be removed : <XLXI_50/r_Clk_Count_6> <XLXI_49/r_Clk_Count_6> <XLXI_48/r_Clk_Count_6> 
+INFO:Xst:2261 - The FF/Latch <XLXI_51/r_Clk_Count_7> in Unit <ssl> is equivalent to the following 3 FFs/Latches, which will be removed : <XLXI_50/r_Clk_Count_7> <XLXI_49/r_Clk_Count_7> <XLXI_48/r_Clk_Count_7> 
+INFO:Xst:2261 - The FF/Latch <XLXI_51/r_Clk_Count_8> in Unit <ssl> is equivalent to the following 3 FFs/Latches, which will be removed : <XLXI_50/r_Clk_Count_8> <XLXI_49/r_Clk_Count_8> <XLXI_48/r_Clk_Count_8> 
+INFO:Xst:2261 - The FF/Latch <XLXI_51/r_Clk_Count_9> in Unit <ssl> is equivalent to the following 3 FFs/Latches, which will be removed : <XLXI_50/r_Clk_Count_9> <XLXI_49/r_Clk_Count_9> <XLXI_48/r_Clk_Count_9> 
+INFO:Xst:2261 - The FF/Latch <XLXI_51/r_SM_Main_FSM_FFd1> in Unit <ssl> is equivalent to the following 3 FFs/Latches, which will be removed : <XLXI_50/r_SM_Main_FSM_FFd1> <XLXI_49/r_SM_Main_FSM_FFd1> <XLXI_48/r_SM_Main_FSM_FFd1> 
+INFO:Xst:2261 - The FF/Latch <XLXI_51/r_SM_Main_FSM_FFd2> in Unit <ssl> is equivalent to the following 3 FFs/Latches, which will be removed : <XLXI_50/r_SM_Main_FSM_FFd2> <XLXI_49/r_SM_Main_FSM_FFd2> <XLXI_48/r_SM_Main_FSM_FFd2> 
+INFO:Xst:2261 - The FF/Latch <XLXI_51/r_SM_Main_FSM_FFd3> in Unit <ssl> is equivalent to the following 3 FFs/Latches, which will be removed : <XLXI_50/r_SM_Main_FSM_FFd3> <XLXI_49/r_SM_Main_FSM_FFd3> <XLXI_48/r_SM_Main_FSM_FFd3> 
+INFO:Xst:2261 - The FF/Latch <XLXI_51/r_Bit_Index_0> in Unit <ssl> is equivalent to the following 3 FFs/Latches, which will be removed : <XLXI_50/r_Bit_Index_0> <XLXI_49/r_Bit_Index_0> <XLXI_48/r_Bit_Index_0> 
+INFO:Xst:2261 - The FF/Latch <XLXI_51/r_Bit_Index_1> in Unit <ssl> is equivalent to the following 3 FFs/Latches, which will be removed : <XLXI_50/r_Bit_Index_1> <XLXI_49/r_Bit_Index_1> <XLXI_48/r_Bit_Index_1> 
+INFO:Xst:2261 - The FF/Latch <XLXI_51/r_Bit_Index_2> in Unit <ssl> is equivalent to the following 3 FFs/Latches, which will be removed : <XLXI_50/r_Bit_Index_2> <XLXI_49/r_Bit_Index_2> <XLXI_48/r_Bit_Index_2> 
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block ssl, actual ratio is 14.
+
+Final Macro Processing ...
+
+Processing Unit <ssl> :
+	Found 2-bit shift register for signal <XLXI_3/XLXI_22/quadA_delayed_1>.
+	Found 2-bit shift register for signal <XLXI_3/XLXI_22/quadB_delayed_1>.
+	Found 2-bit shift register for signal <XLXI_4/XLXI_22/quadA_delayed_1>.
+	Found 2-bit shift register for signal <XLXI_4/XLXI_22/quadB_delayed_1>.
+	Found 2-bit shift register for signal <XLXI_5/XLXI_22/quadA_delayed_1>.
+	Found 2-bit shift register for signal <XLXI_5/XLXI_22/quadB_delayed_1>.
+	Found 2-bit shift register for signal <XLXI_6/XLXI_22/quadA_delayed_1>.
+	Found 2-bit shift register for signal <XLXI_6/XLXI_22/quadB_delayed_1>.
+	Found 2-bit shift register for signal <XLXI_16/r_RX_Data>.
+Unit <ssl> processed.
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 554
+ Flip-Flops                                            : 554
+# Shift Registers                                      : 9
+ 2-bit shift register                                  : 9
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : ssl.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 1041
+#      AND2                        : 12
+#      AND2B1                      : 12
+#      GND                         : 1
+#      INV                         : 17
+#      LUT1                        : 49
+#      LUT2                        : 55
+#      LUT3                        : 173
+#      LUT4                        : 164
+#      LUT5                        : 51
+#      LUT6                        : 42
+#      MUXCY                       : 221
+#      MUXF7                       : 4
+#      OR2B1                       : 24
+#      VCC                         : 1
+#      XORCY                       : 215
+# FlipFlops/Latches                : 563
+#      FD                          : 115
+#      FDE                         : 237
+#      FDR                         : 17
+#      FDRE                        : 194
+# Shift Registers                  : 9
+#      SRLC16E                     : 9
+# Clock Buffers                    : 2
+#      BUFG                        : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 54
+#      IBUF                        : 26
+#      OBUF                        : 28
+# DSPs                             : 4
+#      DSP48A1                     : 4
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx9tqg144-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             563  out of  11440     4%  
+ Number of Slice LUTs:                  560  out of   5720     9%  
+    Number used as Logic:               551  out of   5720     9%  
+    Number used as Memory:                9  out of   1440     0%  
+       Number used as SRL:                9
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    776
+   Number with an unused Flip Flop:     213  out of    776    27%  
+   Number with an unused LUT:           216  out of    776    27%  
+   Number of fully used LUT-FF pairs:   347  out of    776    44%  
+   Number of unique control sets:        28
+
+IO Utilization: 
+ Number of IOs:                          55
+ Number of bonded IOBs:                  55  out of    102    53%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                2  out of     16    12%  
+ Number of DSP48A1s:                      4  out of     16    25%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+CLK                                | BUFGP                  | 544   |
+XLXI_3/XLXI_17/XLXI_86/clk_out_r   | BUFG                   | 32    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 8.425ns (Maximum Frequency: 118.696MHz)
+   Minimum input arrival time before clock: 5.227ns
+   Maximum output required time after clock: 4.909ns
+   Maximum combinational path delay: 7.854ns
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'CLK'
+  Clock period: 8.425ns (frequency: 118.696MHz)
+  Total number of paths / destination ports: 132759 / 1198
+-------------------------------------------------------------------------
+Delay:               8.425ns (Levels of Logic = 32)
+  Source:            XLXI_3/XLXI_21/error_7 (FF)
+  Destination:       XLXI_3/XLXI_21/pwm_mid_31 (FF)
+  Source Clock:      CLK rising
+  Destination Clock: CLK rising
+
+  Data Path: XLXI_3/XLXI_21/error_7 to XLXI_3/XLXI_21/pwm_mid_31
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q              12   0.447   0.908  XLXI_3/XLXI_21/error_7 (XLXI_3/XLXI_21/error_7)
+     DSP48A1:B7->P2        2   4.394   0.721  XLXI_3/XLXI_21/Maddsub_GND_11_o_error[7]_MuLt_13_OUT (XLXI_3/XLXI_21/ADDER_FOR_MULTADD_Madd_2)
+     LUT2:I0->O            1   0.203   0.580  XLXI_3/XLXI_21/ADDERTREE_INTERNAL_Madd11 (XLXI_3/XLXI_21/ADDERTREE_INTERNAL_Madd11)
+     LUT4:I3->O            1   0.205   0.000  XLXI_3/XLXI_21/ADDERTREE_INTERNAL_Madd1_lut<0>3 (XLXI_3/XLXI_21/ADDERTREE_INTERNAL_Madd1_lut<0>3)
+     MUXCY:S->O            1   0.172   0.000  XLXI_3/XLXI_21/ADDERTREE_INTERNAL_Madd1_cy<0>_2 (XLXI_3/XLXI_21/ADDERTREE_INTERNAL_Madd1_cy<0>3)
+     MUXCY:CI->O           1   0.019   0.000  XLXI_3/XLXI_21/ADDERTREE_INTERNAL_Madd1_cy<0>_3 (XLXI_3/XLXI_21/ADDERTREE_INTERNAL_Madd1_cy<0>4)
+     MUXCY:CI->O           1   0.019   0.000  XLXI_3/XLXI_21/ADDERTREE_INTERNAL_Madd1_cy<0>_4 (XLXI_3/XLXI_21/ADDERTREE_INTERNAL_Madd1_cy<0>5)
+     MUXCY:CI->O           1   0.019   0.000  XLXI_3/XLXI_21/ADDERTREE_INTERNAL_Madd1_cy<0>_5 (XLXI_3/XLXI_21/ADDERTREE_INTERNAL_Madd1_cy<0>6)
+     MUXCY:CI->O           1   0.019   0.000  XLXI_3/XLXI_21/ADDERTREE_INTERNAL_Madd1_cy<0>_6 (XLXI_3/XLXI_21/ADDERTREE_INTERNAL_Madd1_cy<0>7)
+     MUXCY:CI->O           1   0.019   0.000  XLXI_3/XLXI_21/ADDERTREE_INTERNAL_Madd1_cy<0>_7 (XLXI_3/XLXI_21/ADDERTREE_INTERNAL_Madd1_cy<0>8)
+     MUXCY:CI->O           1   0.019   0.000  XLXI_3/XLXI_21/ADDERTREE_INTERNAL_Madd1_cy<0>_8 (XLXI_3/XLXI_21/ADDERTREE_INTERNAL_Madd1_cy<0>9)
+     MUXCY:CI->O           1   0.019   0.000  XLXI_3/XLXI_21/ADDERTREE_INTERNAL_Madd1_cy<0>_9 (XLXI_3/XLXI_21/ADDERTREE_INTERNAL_Madd1_cy<0>10)
+     MUXCY:CI->O           1   0.019   0.000  XLXI_3/XLXI_21/ADDERTREE_INTERNAL_Madd1_cy<0>_10 (XLXI_3/XLXI_21/ADDERTREE_INTERNAL_Madd1_cy<0>11)
+     MUXCY:CI->O           1   0.019   0.000  XLXI_3/XLXI_21/ADDERTREE_INTERNAL_Madd1_cy<0>_11 (XLXI_3/XLXI_21/ADDERTREE_INTERNAL_Madd1_cy<0>12)
+     MUXCY:CI->O           1   0.019   0.000  XLXI_3/XLXI_21/ADDERTREE_INTERNAL_Madd1_cy<0>_12 (XLXI_3/XLXI_21/ADDERTREE_INTERNAL_Madd1_cy<0>13)
+     MUXCY:CI->O           1   0.019   0.000  XLXI_3/XLXI_21/ADDERTREE_INTERNAL_Madd1_cy<0>_13 (XLXI_3/XLXI_21/ADDERTREE_INTERNAL_Madd1_cy<0>14)
+     MUXCY:CI->O           1   0.019   0.000  XLXI_3/XLXI_21/ADDERTREE_INTERNAL_Madd1_cy<0>_14 (XLXI_3/XLXI_21/ADDERTREE_INTERNAL_Madd1_cy<0>15)
+     MUXCY:CI->O           1   0.019   0.000  XLXI_3/XLXI_21/ADDERTREE_INTERNAL_Madd1_cy<0>_15 (XLXI_3/XLXI_21/ADDERTREE_INTERNAL_Madd1_cy<0>16)
+     MUXCY:CI->O           1   0.019   0.000  XLXI_3/XLXI_21/ADDERTREE_INTERNAL_Madd1_cy<0>_16 (XLXI_3/XLXI_21/ADDERTREE_INTERNAL_Madd1_cy<0>17)
+     MUXCY:CI->O           1   0.019   0.000  XLXI_3/XLXI_21/ADDERTREE_INTERNAL_Madd1_cy<0>_17 (XLXI_3/XLXI_21/ADDERTREE_INTERNAL_Madd1_cy<0>18)
+     MUXCY:CI->O           1   0.019   0.000  XLXI_3/XLXI_21/ADDERTREE_INTERNAL_Madd1_cy<0>_18 (XLXI_3/XLXI_21/ADDERTREE_INTERNAL_Madd1_cy<0>19)
+     MUXCY:CI->O           1   0.019   0.000  XLXI_3/XLXI_21/ADDERTREE_INTERNAL_Madd1_cy<0>_19 (XLXI_3/XLXI_21/ADDERTREE_INTERNAL_Madd1_cy<0>20)
+     MUXCY:CI->O           1   0.019   0.000  XLXI_3/XLXI_21/ADDERTREE_INTERNAL_Madd1_cy<0>_20 (XLXI_3/XLXI_21/ADDERTREE_INTERNAL_Madd1_cy<0>21)
+     MUXCY:CI->O           1   0.019   0.000  XLXI_3/XLXI_21/ADDERTREE_INTERNAL_Madd1_cy<0>_21 (XLXI_3/XLXI_21/ADDERTREE_INTERNAL_Madd1_cy<0>22)
+     MUXCY:CI->O           1   0.019   0.000  XLXI_3/XLXI_21/ADDERTREE_INTERNAL_Madd1_cy<0>_22 (XLXI_3/XLXI_21/ADDERTREE_INTERNAL_Madd1_cy<0>23)
+     MUXCY:CI->O           1   0.019   0.000  XLXI_3/XLXI_21/ADDERTREE_INTERNAL_Madd1_cy<0>_23 (XLXI_3/XLXI_21/ADDERTREE_INTERNAL_Madd1_cy<0>24)
+     MUXCY:CI->O           1   0.019   0.000  XLXI_3/XLXI_21/ADDERTREE_INTERNAL_Madd1_cy<0>_24 (XLXI_3/XLXI_21/ADDERTREE_INTERNAL_Madd1_cy<0>25)
+     MUXCY:CI->O           1   0.019   0.000  XLXI_3/XLXI_21/ADDERTREE_INTERNAL_Madd1_cy<0>_25 (XLXI_3/XLXI_21/ADDERTREE_INTERNAL_Madd1_cy<0>26)
+     MUXCY:CI->O           1   0.019   0.000  XLXI_3/XLXI_21/ADDERTREE_INTERNAL_Madd1_cy<0>_26 (XLXI_3/XLXI_21/ADDERTREE_INTERNAL_Madd1_cy<0>27)
+     MUXCY:CI->O           1   0.019   0.000  XLXI_3/XLXI_21/ADDERTREE_INTERNAL_Madd1_cy<0>_27 (XLXI_3/XLXI_21/ADDERTREE_INTERNAL_Madd1_cy<0>28)
+     MUXCY:CI->O           1   0.019   0.000  XLXI_3/XLXI_21/ADDERTREE_INTERNAL_Madd1_cy<0>_28 (XLXI_3/XLXI_21/ADDERTREE_INTERNAL_Madd1_cy<0>29)
+     MUXCY:CI->O           0   0.019   0.000  XLXI_3/XLXI_21/ADDERTREE_INTERNAL_Madd1_cy<0>_29 (XLXI_3/XLXI_21/ADDERTREE_INTERNAL_Madd1_cy<0>30)
+     XORCY:CI->O           1   0.180   0.000  XLXI_3/XLXI_21/ADDERTREE_INTERNAL_Madd1_xor<0>_30 (XLXI_3/XLXI_21/ADDERTREE_INTERNAL_Madd_311)
+     FDE:D                     0.102          XLXI_3/XLXI_21/pwm_mid_31
+    ----------------------------------------
+    Total                      8.425ns (6.216ns logic, 2.209ns route)
+                                       (73.8% logic, 26.2% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'XLXI_3/XLXI_17/XLXI_86/clk_out_r'
+  Clock period: 4.399ns (frequency: 227.309MHz)
+  Total number of paths / destination ports: 140 / 32
+-------------------------------------------------------------------------
+Delay:               4.399ns (Levels of Logic = 4)
+  Source:            XLXI_3/XLXI_17/XLXI_85/count_2 (FF)
+  Destination:       XLXI_3/XLXI_17/XLXI_85/pwm_out_r (FF)
+  Source Clock:      XLXI_3/XLXI_17/XLXI_86/clk_out_r rising
+  Destination Clock: XLXI_3/XLXI_17/XLXI_86/clk_out_r rising
+
+  Data Path: XLXI_3/XLXI_17/XLXI_85/count_2 to XLXI_3/XLXI_17/XLXI_85/pwm_out_r
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              6   0.447   1.089  XLXI_3/XLXI_17/XLXI_85/count_2 (XLXI_3/XLXI_17/XLXI_85/count_2)
+     LUT6:I1->O            1   0.203   0.684  XLXI_3/XLXI_17/XLXI_85/GND_9_o_pwm_in[7]_LessThan_3_o3 (XLXI_3/XLXI_17/XLXI_85/GND_9_o_pwm_in[7]_LessThan_3_o1)
+     LUT3:I1->O            1   0.203   0.580  XLXI_3/XLXI_17/XLXI_85/GND_9_o_pwm_in[7]_LessThan_3_o11 (XLXI_3/XLXI_17/XLXI_85/GND_9_o_pwm_in[7]_LessThan_3_o11)
+     LUT5:I4->O            1   0.205   0.684  XLXI_3/XLXI_17/XLXI_85/GND_9_o_pwm_in[7]_LessThan_3_o12 (XLXI_3/XLXI_17/XLXI_85/GND_9_o_pwm_in[7]_LessThan_3_o2)
+     LUT3:I1->O            1   0.203   0.000  XLXI_3/XLXI_17/XLXI_85/GND_9_o_pwm_in[7]_LessThan_3_o21 (XLXI_3/XLXI_17/XLXI_85/pwm_out_r_glue_set)
+     FD:D                      0.102          XLXI_3/XLXI_17/XLXI_85/pwm_out_r
+    ----------------------------------------
+    Total                      4.399ns (1.363ns logic, 3.036ns route)
+                                       (31.0% logic, 69.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'CLK'
+  Total number of paths / destination ports: 404 / 404
+-------------------------------------------------------------------------
+Offset:              5.227ns (Levels of Logic = 2)
+  Source:            reset (PAD)
+  Destination:       XLXI_3/XLXI_21/pwm_6 (FF)
+  Destination Clock: CLK rising
+
+  Data Path: reset to XLXI_3/XLXI_21/pwm_6
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            37   1.222   1.467  reset_IBUF (reset_IBUF)
+     LUT2:I0->O          156   0.203   2.013  XLXI_3/XLXI_21/_n0097_inv1 (XLXI_3/XLXI_21/_n0097_inv)
+     FDE:CE                    0.322          XLXI_3/XLXI_21/pwm_mid_0
+    ----------------------------------------
+    Total                      5.227ns (1.747ns logic, 3.480ns route)
+                                       (33.4% logic, 66.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'XLXI_3/XLXI_17/XLXI_86/clk_out_r'
+  Total number of paths / destination ports: 24 / 24
+-------------------------------------------------------------------------
+Offset:              4.909ns (Levels of Logic = 2)
+  Source:            XLXI_6/XLXI_17/XLXI_85/pwm_out_r (FF)
+  Destination:       An1 (PAD)
+  Source Clock:      XLXI_3/XLXI_17/XLXI_86/clk_out_r rising
+
+  Data Path: XLXI_6/XLXI_17/XLXI_85/pwm_out_r to An1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               6   0.447   1.109  XLXI_6/XLXI_17/XLXI_85/pwm_out_r (XLXI_6/XLXI_17/XLXI_85/pwm_out_r)
+     AND2:I0->O            1   0.203   0.579  XLXI_6/XLXI_17/XLXI_7 (An1_OBUF)
+     OBUF:I->O                 2.571          An1_OBUF (An1)
+    ----------------------------------------
+    Total                      4.909ns (3.221ns logic, 1.688ns route)
+                                       (65.6% logic, 34.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'CLK'
+  Total number of paths / destination ports: 4 / 4
+-------------------------------------------------------------------------
+Offset:              3.597ns (Levels of Logic = 1)
+  Source:            XLXI_51/o_TX_Serial (FF)
+  Destination:       speed1 (PAD)
+  Source Clock:      CLK rising
+
+  Data Path: XLXI_51/o_TX_Serial to speed1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              1   0.447   0.579  XLXI_51/o_TX_Serial (XLXI_51/o_TX_Serial)
+     OBUF:I->O                 2.571          speed1_OBUF (speed1)
+    ----------------------------------------
+    Total                      3.597ns (3.018ns logic, 0.579ns route)
+                                       (83.9% logic, 16.1% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 144 / 24
+-------------------------------------------------------------------------
+Delay:               7.854ns (Levels of Logic = 6)
+  Source:            DIR1 (PAD)
+  Destination:       An1 (PAD)
+
+  Data Path: DIR1 to An1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             3   1.222   0.879  DIR1_IBUF (DIR1_IBUF)
+     begin scope: 'XLXI_6/XLXI_17/XLXI_72:S0'
+     LUT3:I0->O            4   0.205   1.048  Mmux_O11 (O)
+     end scope: 'XLXI_6/XLXI_17/XLXI_72:O'
+     OR2B1:I0->O           1   0.203   0.924  XLXI_6/XLXI_17/XLXI_3 (XLXI_6/XLXI_17/XLXN_9)
+     OR2B1:I1->O           1   0.223   0.579  XLXI_6/XLXI_17/XLXI_84 (Cp1_OBUF)
+     OBUF:I->O                 2.571          Cp1_OBUF (Cp1)
+    ----------------------------------------
+    Total                      7.854ns (4.424ns logic, 3.430ns route)
+                                       (56.3% logic, 43.7% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock CLK
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+CLK            |    8.425|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock XLXI_3/XLXI_17/XLXI_86/clk_out_r
+--------------------------------+---------+---------+---------+---------+
+                                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                    |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+--------------------------------+---------+---------+---------+---------+
+CLK                             |    4.254|         |         |         |
+XLXI_3/XLXI_17/XLXI_86/clk_out_r|    4.399|         |         |         |
+--------------------------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 10.00 secs
+Total CPU time to Xst completion: 9.89 secs
+ 
+--> 
+
+Total memory usage is 4541532 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   57 (   0 filtered)
+Number of infos    :   59 (   0 filtered)
+

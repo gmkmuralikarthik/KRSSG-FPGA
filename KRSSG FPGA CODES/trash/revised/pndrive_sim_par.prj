@@ -1,0 +1,2 @@
+verilog work "netgen/par/pn_drive_timesim.v"
+verilog work "pndrive_sim.v"

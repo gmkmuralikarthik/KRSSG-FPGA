@@ -1,0 +1,7 @@
+verilog work "../moter_with_encoder/encdf.v"
+verilog work "../moter_with_encoder/encclo.v"
+verilog work "../pro/pwm.v"
+verilog work "../pro/gate.v"
+verilog work "../pro/clock.v"
+verilog work "myenc.vf"
+verilog work "test_motor_encoder.vf"

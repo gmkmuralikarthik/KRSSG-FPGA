@@ -1,0 +1,8 @@
+verilog work "trianglewave.v"
+verilog work "scompare.v"
+verilog work "cordic.v"
+verilog work "TAN_DOC.v"
+verilog work "spwmmodule.vf"
+verilog work "Encoder.v"
+verilog work "angle_check.v"
+verilog work "Control_block.vf"

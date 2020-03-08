@@ -1,0 +1,2 @@
+vhdl work "../revised/receiver.vhd"
+verilog work "rx.vf"

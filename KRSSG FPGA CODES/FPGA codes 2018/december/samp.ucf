@@ -1,0 +1,19 @@
+  
+NET "rxbyte[0]" 			  LOC = P119	| IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = FAST | PULLUP;
+NET "rxbyte[1]" 			  LOC = P118	| IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = FAST | PULLUP;
+NET "rxbyte[2]" 			  LOC = P117	| IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = FAST | PULLUP;
+NET "rxbyte[3]" 			  LOC = P116	| IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = FAST | PULLUP;
+NET "rxbyte[4]" 			  LOC = P115	| IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = FAST | PULLUP;
+NET "rxbyte[5]" 			  LOC = P114	| IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = FAST | PULLUP;
+NET "rxbyte[6]" 			  LOC = P112	| IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = FAST | PULLUP;
+NET "rxbyte[7]" 			  LOC = P111	| IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = FAST | PULLUP;
+
+###################################################################################################################################################
+#                                                   HEADER P1                                                                                     #
+###################################################################################################################################################
+NET "rx"                   LOC = P35      | IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = FAST ;    # IO_L1P_3           	        Sch = GPIO-P18 
+
+
+
+NET "Clk" LOC = P126;
+#TIMESPEC TS_CLK = PERIOD "CLK" 100 MHz HIGH 50%;

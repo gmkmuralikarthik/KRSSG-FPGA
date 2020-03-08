@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=/home/ise/ism_projects/xi share/not my codes/anirudth/FPGA-master/UART_Receiver/rx.ncd
+OUTFILE=/home/ise/ism_projects/xi share/not my codes/anirudth/FPGA-master/UART_Receiver/rx.bit
+FAMILY=Spartan6
+PART=xc6slx9-2tqg144
+WORKINGDIR=/home/ise/ism_projects/xi share/not my codes/anirudth/FPGA-master/UART_Receiver
+LICENSE=ISE
+USER_INFO=8416_11442_1478797146_620

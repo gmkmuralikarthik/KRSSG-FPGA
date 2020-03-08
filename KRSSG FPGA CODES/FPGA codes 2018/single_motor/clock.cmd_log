@@ -1,0 +1,2 @@
+vhdtdtfi -lib work {/home/ise/ism_projects/xi share/my codes/single_motor/clock.v} -lang verilog -prj single_motor -o clock.spl -module clock -template /opt/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 clock.spl {/home/ise/ism_projects/xi share/my codes/single_motor/clock.sym} 

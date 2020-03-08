@@ -1,0 +1,2 @@
+vhdtdtfi -lib work {/home/ise/ism_projects/xi share/not my codes/fpga module/pid.v} -lang verilog -prj single_motor -o pid.spl -module pid -template /opt/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 -w pid.spl {/home/ise/ism_projects/xi share/my codes/single_motor/pid.sym} 

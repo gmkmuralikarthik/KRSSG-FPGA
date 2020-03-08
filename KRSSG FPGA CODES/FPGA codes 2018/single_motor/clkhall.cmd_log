@@ -1,0 +1,2 @@
+vhdtdtfi -lib work {/home/ise/ism_projects/xi share/my codes/single_motor/clkhall.v} -lang verilog -prj single_motor -o clkhall.spl -module clkhall -template /opt/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 clkhall.spl {/home/ise/ism_projects/xi share/my codes/single_motor/clkhall.sym} 

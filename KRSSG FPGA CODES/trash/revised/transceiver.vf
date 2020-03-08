@@ -1,0 +1,45 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : transceiver.vf
+// /___/   /\     Timestamp : 08/05/2018 15:46:07
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog E:/KRSSG/FPGA/programs/revised/transceiver.vf -w E:/KRSSG/FPGA/programs/revised/transceiver.sch
+//Design Name: transceiver
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module transceiver(CLK, 
+                   Rx, 
+                   TX);
+
+    input CLK;
+    input Rx;
+   output TX;
+   
+   wire [7:0] XLXN_5;
+   wire XLXN_15;
+   
+   UART_RX  XLXI_1 (.i_Clk(CLK), 
+                   .i_RX_Serial(Rx), 
+                   .o_RX_Byte(XLXN_5[7:0]), 
+                   .o_RX_DV());
+   UART_TX  XLXI_2 (.i_Clk(CLK), 
+                   .i_TX_Byte(XLXN_5[7:0]), 
+                   .i_TX_DV(XLXN_15), 
+                   .o_TX_Active(), 
+                   .o_TX_Done(), 
+                   .o_TX_Serial(TX));
+   VCC  XLXI_10 (.P(XLXN_15));
+endmodule

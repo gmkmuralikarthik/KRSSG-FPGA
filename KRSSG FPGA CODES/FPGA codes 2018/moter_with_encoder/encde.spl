@@ -1,0 +1,10 @@
+[Inputs]
+counta
+clk
+[Outputs]
+rese
+=outcounta[7:0]=
+[BiDir]
+[ATTRIBUTES]
+VeriModel encde
+

@@ -1,0 +1,41 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : kickertest.vf
+// /___/   /\     Timestamp : 01/10/2019 18:55:10
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog "/home/ise/ism_projects/xi share/not my codes/kicker/kickertest.vf" -w "/home/ise/ism_projects/xi share/not my codes/kicker/kickertest.sch"
+//Design Name: kickertest
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module kickertest(d, 
+                  f, 
+                  inc, 
+                  c, 
+                  t);
+
+    input d;
+    input f;
+    input inc;
+   output c;
+   output t;
+   
+   
+   kicker2  XLXI_4 (.clk(inc), 
+                   .done(d), 
+                   .kick(f), 
+                   .Charge(c), 
+                   .Trigger(t));
+endmodule

@@ -1,0 +1,1 @@
+sch2sym -intstyle ise -family aspartan6 -refsym pwmclk {/home/ise/ism_projects/xi share/pro/pwmclk.sch} {/home/ise/ism_projects/xi share/moter_with_encoder/pwmclk.sym} 

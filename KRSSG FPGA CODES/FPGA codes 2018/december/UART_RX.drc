@@ -1,0 +1,8 @@
+Release 14.7 Drc P.20160913 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Sun Nov  4 00:01:32 2018
+
+drc -z UART_RX.ncd UART_RX.pcf
+
+DRC detected 0 errors and 0 warnings.

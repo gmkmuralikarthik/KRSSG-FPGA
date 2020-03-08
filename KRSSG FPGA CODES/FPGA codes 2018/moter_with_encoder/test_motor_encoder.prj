@@ -1,0 +1,5 @@
+verilog work "../pro/pwm.v"
+verilog work "../pro/gate.v"
+verilog work "../pro/clock.v"
+verilog work "re.v"
+verilog work "test_motor_encoder.vf"

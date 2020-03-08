@@ -1,0 +1,28 @@
+Command line:
+   pndrive_sim_isim_par.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  27161
+
+Sun Aug 05 16:30:35 2018
+
+
+ Elaboration Time: 0.140625 sec
+
+ Current Memory Usage: 5347.03 Meg
+
+ Total Signals          : 977
+ Total Nets             : 701
+ Total Signal Drivers   : 687
+ Total Blocks           : 166
+ Total Primitive Blocks : 117
+ Total Processes        : 824
+ Total Traceable Variables  : 429
+ Total Scalar Nets and Variables : 12213
+
+ Total Simulation Time: 6.48438 sec
+
+ Current Memory Usage: 5661.61 Meg
+
+Sun Aug 05 16:31:26 2018
+

@@ -1,0 +1,19 @@
+[Inputs]
+pwm_en
+clk
+H1
+H2
+H3
+=pwm_in[7:0]=
+[Outputs]
+pwm_out
+AP
+AN
+BP
+BN
+CP
+CN
+[BiDir]
+[ATTRIBUTES]
+VeriModel pn_drive
+

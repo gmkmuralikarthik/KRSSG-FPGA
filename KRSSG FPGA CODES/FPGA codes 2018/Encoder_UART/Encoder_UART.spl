@@ -1,0 +1,12 @@
+[Inputs]
+RST
+CLK
+E
+[Outputs]
+TX
+En
+=Count[7:0]=
+[BiDir]
+[ATTRIBUTES]
+VeriModel Encoder_UART
+

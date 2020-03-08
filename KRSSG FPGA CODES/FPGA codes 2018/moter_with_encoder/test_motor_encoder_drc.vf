@@ -1,0 +1,66 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : test_motor_encoder_drc.vf
+// /___/   /\     Timestamp : 08/18/2018 02:44:13
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/sch2hdl -intstyle ise -family spartan6 -verilog test_motor_encoder_drc.vf -w "/home/ise/ism_projects/xi share/moter_with_encoder/test_motor_encoder.sch"
+//Design Name: test_motor_encoder
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module test_motor_encoder(cla, 
+                          clb, 
+                          clear, 
+                          clk, 
+                          enable, 
+                          hall, 
+                          log, 
+                          a, 
+                          b, 
+                          c, 
+                          ob);
+
+    input cla;
+    input clb;
+    input clear;
+    input clk;
+    input enable;
+    input [2:0] hall;
+    input [3:0] log;
+   output [1:0] a;
+   output [1:0] b;
+   output [1:0] c;
+   output [7:0] ob;
+   
+   wire XLXN_3;
+   wire XLXN_11;
+   
+   clock  XLXI_3 (.inc(clk), 
+                 .outc(XLXN_11));
+   pwm  XLXI_4 (.cl(clear), 
+               .clk(XLXN_11), 
+               .en1(enable), 
+               .lo(log[3:0]), 
+               .out1(XLXN_3));
+   gate1  XLXI_5 (.h(hall[2:0]), 
+                 .pwm(XLXN_3), 
+                 .a(a[1:0]), 
+                 .b(b[1:0]), 
+                 .c(c[1:0]));
+   re  XLXI_9 (.clk(XLXN_11), 
+              .quadA(cla), 
+              .quadB(clb), 
+              .count(ob[7:0]));
+endmodule

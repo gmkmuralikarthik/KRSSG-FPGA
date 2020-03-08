@@ -1,0 +1,2 @@
+vhdtdtfi -lib work E:/KRSSG/FPGA/programs/revised/speedforallmotors.v -lang verilog -prj revised -o speed4motor.spl -module speed4motor -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 speed4motor.spl E:/KRSSG/FPGA/programs/revised/speed4motor.sym 

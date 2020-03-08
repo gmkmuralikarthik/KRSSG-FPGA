@@ -1,0 +1,442 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : ssl.vf
+// /___/   /\     Timestamp : 08/19/2018 00:46:32
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog E:/KRSSG/FPGA/programs/revised/ssl.vf -w E:/KRSSG/FPGA/programs/revised/ssl.sch
+//Design Name: ssl
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale  100 ps / 10 ps
+
+module M2_1B1_HXILINX_ssl (O, D0, D1, S0);
+    
+
+   output O;
+
+   input  D0;
+   input  D1;
+   input  S0;
+
+   reg O;
+
+   always @ ( D0 or D1 or S0)
+   begin
+      case(S0)
+      1'b0 : O <= !D0;
+      1'b1 : O <=  D1;
+      endcase
+   end
+    
+endmodule
+`timescale 1ns / 1ps
+
+module openloop7bit_MUSER_ssl(CLK, 
+                              DIR, 
+                              H1, 
+                              H2, 
+                              H3, 
+                              PWM, 
+                              A, 
+                              AA, 
+                              B, 
+                              BB, 
+                              C, 
+                              CC);
+
+    input CLK;
+    input DIR;
+    input H1;
+    input H2;
+    input H3;
+    input [7:0] PWM;
+   output A;
+   output AA;
+   output B;
+   output BB;
+   output C;
+   output CC;
+   
+   wire H_1;
+   wire H_2;
+   wire H_3;
+   wire XLXN_7;
+   wire XLXN_8;
+   wire XLXN_9;
+   wire XLXN_10;
+   wire XLXN_11;
+   wire XLXN_12;
+   wire XLXN_13;
+   wire XLXN_15;
+   wire XLXN_29;
+   wire XLXN_31;
+   
+   OR2B1  XLXI_1 (.I0(H_1), 
+                 .I1(H_2), 
+                 .O(XLXN_7));
+   AND2B1  XLXI_2 (.I0(H_1), 
+                  .I1(H_2), 
+                  .O(XLXN_10));
+   OR2B1  XLXI_3 (.I0(H_3), 
+                 .I1(H_1), 
+                 .O(XLXN_9));
+   OR2B1  XLXI_4 (.I0(H_2), 
+                 .I1(H_3), 
+                 .O(XLXN_8));
+   AND2B1  XLXI_5 (.I0(H_2), 
+                  .I1(H_3), 
+                  .O(XLXN_11));
+   AND2B1  XLXI_6 (.I0(H_3), 
+                  .I1(H_1), 
+                  .O(XLXN_12));
+   AND2  XLXI_7 (.I0(XLXN_13), 
+                .I1(XLXN_10), 
+                .O(AA));
+   AND2  XLXI_9 (.I0(XLXN_13), 
+                .I1(XLXN_12), 
+                .O(CC));
+   AND2  XLXI_14 (.I0(XLXN_13), 
+                 .I1(XLXN_11), 
+                 .O(BB));
+   VCC  XLXI_27 (.P(XLXN_15));
+   (* HU_SET = "XLXI_70_0" *) 
+   M2_1B1_HXILINX_ssl  XLXI_70 (.D0(H1), 
+                               .D1(H1), 
+                               .S0(DIR), 
+                               .O(H_1));
+   (* HU_SET = "XLXI_71_1" *) 
+   M2_1B1_HXILINX_ssl  XLXI_71 (.D0(H2), 
+                               .D1(H2), 
+                               .S0(DIR), 
+                               .O(H_2));
+   (* HU_SET = "XLXI_72_2" *) 
+   M2_1B1_HXILINX_ssl  XLXI_72 (.D0(H3), 
+                               .D1(H3), 
+                               .S0(DIR), 
+                               .O(H_3));
+   OR2B1  XLXI_81 (.I0(XLXN_13), 
+                  .I1(XLXN_7), 
+                  .O(A));
+   OR2B1  XLXI_82 (.I0(XLXN_13), 
+                  .I1(XLXN_8), 
+                  .O(B));
+   OR2B1  XLXI_84 (.I0(XLXN_13), 
+                  .I1(XLXN_9), 
+                  .O(C));
+   pwm7bit  XLXI_85 (.clk(XLXN_29), 
+                    .en(XLXN_15), 
+                    .pwm_in(PWM[7:0]), 
+                    .pwm_out(XLXN_13));
+   Clock_Divider  XLXI_86 (.clk(CLK), 
+                          .en(XLXN_31), 
+                          .clk_out(XLXN_29));
+   VCC  XLXI_87 (.P(XLXN_31));
+endmodule
+`timescale 1ns / 1ps
+
+module closed_loop_MUSER_ssl(CLK, 
+                             DIR, 
+                             E1, 
+                             E2, 
+                             H1, 
+                             H2, 
+                             H3, 
+                             pwm_in, 
+                             reset, 
+                             A, 
+                             AA, 
+                             B, 
+                             BB, 
+                             C, 
+                             CC, 
+                             speed);
+
+    input CLK;
+    input DIR;
+    input E1;
+    input E2;
+    input H1;
+    input H2;
+    input H3;
+    input [7:0] pwm_in;
+    input reset;
+   output A;
+   output AA;
+   output B;
+   output BB;
+   output C;
+   output CC;
+   output [7:0] speed;
+   
+   wire [7:0] XLXN_143;
+   wire [7:0] speed_DUMMY;
+   
+   assign speed[7:0] = speed_DUMMY[7:0];
+   openloop7bit_MUSER_ssl  XLXI_17 (.CLK(CLK), 
+                                   .DIR(DIR), 
+                                   .H1(H1), 
+                                   .H2(H2), 
+                                   .H3(H3), 
+                                   .PWM(XLXN_143[7:0]), 
+                                   .A(A), 
+                                   .AA(AA), 
+                                   .B(B), 
+                                   .BB(BB), 
+                                   .C(C), 
+                                   .CC(CC));
+   pid  XLXI_21 (.clk(CLK), 
+                .enc(speed_DUMMY[7:0]), 
+                .rst_n(reset), 
+                .set_val(pwm_in[7:0]), 
+                .pwm(XLXN_143[7:0]));
+   decoder  XLXI_22 (.clk(CLK), 
+                    .quadA(E1), 
+                    .quadB(E2), 
+                    .reset(reset), 
+                    .total(speed_DUMMY[7:0]));
+endmodule
+`timescale 1ns / 1ps
+
+module ssl(CLK, 
+           DIR1, 
+           DIR2, 
+           DIR3, 
+           DIR4, 
+           E1_1, 
+           E1_2, 
+           E1_3, 
+           E1_4, 
+           E2_1, 
+           E2_2, 
+           E2_3, 
+           E2_4, 
+           H1_1, 
+           H1_2, 
+           H1_3, 
+           H1_4, 
+           H2_1, 
+           H2_2, 
+           H2_3, 
+           H2_4, 
+           H3_1, 
+           H3_2, 
+           H3_3, 
+           H3_4, 
+           reset, 
+           Rx, 
+           An1, 
+           An2, 
+           An3, 
+           An4, 
+           Ap1, 
+           Ap2, 
+           Ap3, 
+           Ap4, 
+           Bn1, 
+           Bn2, 
+           Bn3, 
+           Bn4, 
+           Bp1, 
+           Bp2, 
+           Bp3, 
+           Bp4, 
+           Cn1, 
+           Cn2, 
+           Cn3, 
+           Cn4, 
+           Cp1, 
+           Cp2, 
+           Cp3, 
+           Cp4, 
+           speed1, 
+           speed2, 
+           speed3, 
+           speed4);
+
+    input CLK;
+    input DIR1;
+    input DIR2;
+    input DIR3;
+    input DIR4;
+    input E1_1;
+    input E1_2;
+    input E1_3;
+    input E1_4;
+    input E2_1;
+    input E2_2;
+    input E2_3;
+    input E2_4;
+    input H1_1;
+    input H1_2;
+    input H1_3;
+    input H1_4;
+    input H2_1;
+    input H2_2;
+    input H2_3;
+    input H2_4;
+    input H3_1;
+    input H3_2;
+    input H3_3;
+    input H3_4;
+    input reset;
+    input Rx;
+   output An1;
+   output An2;
+   output An3;
+   output An4;
+   output Ap1;
+   output Ap2;
+   output Ap3;
+   output Ap4;
+   output Bn1;
+   output Bn2;
+   output Bn3;
+   output Bn4;
+   output Bp1;
+   output Bp2;
+   output Bp3;
+   output Bp4;
+   output Cn1;
+   output Cn2;
+   output Cn3;
+   output Cn4;
+   output Cp1;
+   output Cp2;
+   output Cp3;
+   output Cp4;
+   output speed1;
+   output speed2;
+   output speed3;
+   output speed4;
+   
+   wire XLXN_1;
+   wire [7:0] XLXN_2;
+   wire [7:0] XLXN_7;
+   wire [7:0] XLXN_9;
+   wire [7:0] XLXN_11;
+   wire [7:0] XLXN_13;
+   wire [7:0] XLXN_506;
+   wire [7:0] XLXN_526;
+   wire [7:0] XLXN_527;
+   wire [7:0] XLXN_528;
+   wire XLXN_529;
+   wire XLXN_530;
+   wire XLXN_531;
+   wire XLXN_532;
+   
+   closed_loop_MUSER_ssl  XLXI_3 (.CLK(CLK), 
+                                 .DIR(DIR4), 
+                                 .E1(E1_4), 
+                                 .E2(E2_4), 
+                                 .H1(H1_4), 
+                                 .H2(H2_4), 
+                                 .H3(H3_4), 
+                                 .pwm_in(XLXN_7[7:0]), 
+                                 .reset(reset), 
+                                 .A(Ap4), 
+                                 .AA(An4), 
+                                 .B(Bp4), 
+                                 .BB(Bn4), 
+                                 .C(Cp4), 
+                                 .CC(Cn4), 
+                                 .speed(XLXN_506[7:0]));
+   closed_loop_MUSER_ssl  XLXI_4 (.CLK(CLK), 
+                                 .DIR(DIR3), 
+                                 .E1(E1_3), 
+                                 .E2(E2_3), 
+                                 .H1(H1_3), 
+                                 .H2(H2_3), 
+                                 .H3(H3_3), 
+                                 .pwm_in(XLXN_9[7:0]), 
+                                 .reset(reset), 
+                                 .A(Ap3), 
+                                 .AA(An3), 
+                                 .B(Bp3), 
+                                 .BB(Bn3), 
+                                 .C(Cp3), 
+                                 .CC(Cn3), 
+                                 .speed(XLXN_526[7:0]));
+   closed_loop_MUSER_ssl  XLXI_5 (.CLK(CLK), 
+                                 .DIR(DIR2), 
+                                 .E1(E1_2), 
+                                 .E2(E2_2), 
+                                 .H1(H1_2), 
+                                 .H2(H2_2), 
+                                 .H3(H3_2), 
+                                 .pwm_in(XLXN_11[7:0]), 
+                                 .reset(reset), 
+                                 .A(Ap2), 
+                                 .AA(An2), 
+                                 .B(Bp2), 
+                                 .BB(Bn2), 
+                                 .C(Cp2), 
+                                 .CC(Cn2), 
+                                 .speed(XLXN_527[7:0]));
+   closed_loop_MUSER_ssl  XLXI_6 (.CLK(CLK), 
+                                 .DIR(DIR1), 
+                                 .E1(E1_1), 
+                                 .E2(E2_1), 
+                                 .H1(H1_1), 
+                                 .H2(H2_1), 
+                                 .H3(H3_1), 
+                                 .pwm_in(XLXN_13[7:0]), 
+                                 .reset(reset), 
+                                 .A(Ap1), 
+                                 .AA(An1), 
+                                 .B(Bp1), 
+                                 .BB(Bn1), 
+                                 .C(Cp1), 
+                                 .CC(Cn1), 
+                                 .speed(XLXN_528[7:0]));
+   speed4motor  XLXI_15 (.clk(CLK), 
+                        .received(XLXN_1), 
+                        .rst_n(reset), 
+                        .serial(XLXN_2[7:0]), 
+                        .motor1(XLXN_13[7:0]), 
+                        .motor2(XLXN_11[7:0]), 
+                        .motor3(XLXN_9[7:0]), 
+                        .motor4(XLXN_7[7:0]));
+   UART_RX  XLXI_16 (.i_Clk(CLK), 
+                    .i_RX_Serial(Rx), 
+                    .o_RX_Byte(XLXN_2[7:0]), 
+                    .o_RX_DV(XLXN_1));
+   UART_TX  XLXI_48 (.i_Clk(CLK), 
+                    .i_TX_Byte(XLXN_506[7:0]), 
+                    .i_TX_DV(XLXN_529), 
+                    .o_TX_Active(), 
+                    .o_TX_Done(), 
+                    .o_TX_Serial(speed4));
+   UART_TX  XLXI_49 (.i_Clk(CLK), 
+                    .i_TX_Byte(XLXN_526[7:0]), 
+                    .i_TX_DV(XLXN_530), 
+                    .o_TX_Active(), 
+                    .o_TX_Done(), 
+                    .o_TX_Serial(speed3));
+   UART_TX  XLXI_50 (.i_Clk(CLK), 
+                    .i_TX_Byte(XLXN_527[7:0]), 
+                    .i_TX_DV(XLXN_531), 
+                    .o_TX_Active(), 
+                    .o_TX_Done(), 
+                    .o_TX_Serial(speed2));
+   UART_TX  XLXI_51 (.i_Clk(CLK), 
+                    .i_TX_Byte(XLXN_528[7:0]), 
+                    .i_TX_DV(XLXN_532), 
+                    .o_TX_Active(), 
+                    .o_TX_Done(), 
+                    .o_TX_Serial(speed1));
+   VCC  XLXI_56 (.P(XLXN_529));
+   VCC  XLXI_57 (.P(XLXN_530));
+   VCC  XLXI_58 (.P(XLXN_531));
+   VCC  XLXI_59 (.P(XLXN_532));
+endmodule

@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "/home/ise/ism_projects/xi share/not my codes/sinw/cordic.xst" -ofn "/home/ise/ism_projects/xi share/not my codes/sinw/cordic.syr" 

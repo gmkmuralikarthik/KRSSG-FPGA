@@ -1,0 +1,2 @@
+vhdtdtfi -lib work {/home/ise/ism_projects/xi share/pro/gate.v} -lang verilog -prj moter_with_encoder -o gate1.spl -module gate1 -template /opt/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family aspartan6 gate1.spl {/home/ise/ism_projects/xi share/moter_with_encoder/gate1.sym} 

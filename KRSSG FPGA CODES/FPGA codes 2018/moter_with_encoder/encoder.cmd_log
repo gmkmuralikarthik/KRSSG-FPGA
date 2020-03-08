@@ -1,0 +1,2 @@
+vhdtdtfi -lib work {/home/ise/ism_projects/xi share/encoder4/encoder.v} -lang verilog -prj moter_with_encoder -o encoder.spl -module encoder -template /opt/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family aspartan6 encoder.spl {/home/ise/ism_projects/xi share/moter_with_encoder/encoder.sym} 

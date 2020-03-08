@@ -1,0 +1,2 @@
+vhdtdtfi -lib work C:/Users/C.RONALDO.7/motor/clock.v -lang verilog -prj motor -o clock.spl -module clock -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family artix7 clock.spl C:/Users/C.RONALDO.7/motor/clock.sym 

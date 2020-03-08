@@ -1,0 +1,5 @@
+verilog work "encdf.v"
+verilog work "encclo.v"
+verilog work "myenc.vf"
+verilog work "testmyenc1.v"
+verilog work "/opt/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"

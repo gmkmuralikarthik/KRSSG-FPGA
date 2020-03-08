@@ -1,0 +1,38 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : test1.vf
+// /___/   /\     Timestamp : 01/15/2019 03:49:44
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog "/home/ise/ism_projects/xi share/not my codes/dribblertest/test1.vf" -w "/home/ise/ism_projects/xi share/not my codes/dribblertest/test1.sch"
+//Design Name: test1
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module test1(hall3, 
+             a3, 
+             b3, 
+             c3);
+
+    input [2:0] hall3;
+   output [1:0] a3;
+   output [1:0] b3;
+   output [1:0] c3;
+   
+   
+   dribblermotor  XLXI_1 (.h(hall3[2:0]), 
+                         .a(a3[1:0]), 
+                         .b(b3[1:0]), 
+                         .c(c3[1:0]));
+endmodule

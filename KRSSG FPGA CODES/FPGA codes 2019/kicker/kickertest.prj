@@ -1,0 +1,2 @@
+verilog work "../fourmotorwinter/kicker.v"
+verilog work "kickertest.vf"

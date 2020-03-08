@@ -1,0 +1,4 @@
+vhdtdtfi -lib work {/home/ise/ism_projects/xi share/KRSSG FPGA CODES/FPGA codes 2019/SPWM_module/scompare.v} -lang verilog -prj SPWM_module -o scompare.spl -module scompare -template /opt/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 -w scompare.spl {/home/ise/ism_projects/xi share/KRSSG FPGA CODES/FPGA codes 2019/SPWM_module/scompare.sym} 
+vhdtdtfi -lib work {/home/ise/ism_projects/xi share/KRSSG FPGA CODES/FPGA codes 2019/SPWM_module/scompare.v} -lang verilog -prj SPWM_module -o scompare.spl -module scompare -template /opt/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 -w scompare.spl {/home/ise/ism_projects/xi share/KRSSG FPGA CODES/FPGA codes 2019/SPWM_module/scompare.sym} 

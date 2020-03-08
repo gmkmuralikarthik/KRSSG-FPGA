@@ -1,0 +1,5 @@
+MODULE openloop7bit
+	SUBMODULE pwm7bit
+		INSTANCE XLXI_85
+	SUBMODULE Clock_Divider
+		INSTANCE XLXI_86

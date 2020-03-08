@@ -1,0 +1,1779 @@
+Release 14.7 - xst P.20160913 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.03 secs
+ 
+--> 
+Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.03 secs
+ 
+--> 
+Reading design: Control_block.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "Control_block.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "Control_block"
+Output Format                      : NGC
+Target Device                      : xc6slx9-3-tqg144
+
+---- Source Options
+Top Module Name                    : Control_block
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "/home/ise/ism_projects/xi share/KRSSG FPGA CODES/FPGA codes 2019/SPWM_module/trianglewave.v" into library work
+Parsing module <trianglewave>.
+Analyzing Verilog file "/home/ise/ism_projects/xi share/KRSSG FPGA CODES/FPGA codes 2019/SPWM_module/scompare.v" into library work
+Parsing module <scompare>.
+Analyzing Verilog file "/home/ise/ism_projects/xi share/KRSSG FPGA CODES/FPGA codes 2019/SPWM_module/cordic.v" into library work
+Parsing module <cordic>.
+Analyzing Verilog file "/home/ise/ism_projects/xi share/KRSSG FPGA CODES/FPGA codes 2019/SPWM_module/TAN_DOC.v" into library work
+Parsing module <TAN_DOC>.
+Analyzing Verilog file "/home/ise/ism_projects/xi share/KRSSG FPGA CODES/FPGA codes 2019/SPWM_module/spwmmodule.vf" into library work
+Parsing module <FTP_HXILINX_spwmmodule>.
+Parsing module <spwmmodule>.
+Analyzing Verilog file "/home/ise/ism_projects/xi share/KRSSG FPGA CODES/FPGA codes 2019/SPWM_module/Encoder.v" into library work
+Parsing module <Encoder>.
+Analyzing Verilog file "/home/ise/ism_projects/xi share/KRSSG FPGA CODES/FPGA codes 2019/SPWM_module/angle_check.v" into library work
+Parsing module <angle_check>.
+WARNING:HDLCompiler:370 - "/home/ise/ism_projects/xi share/KRSSG FPGA CODES/FPGA codes 2019/SPWM_module/angle_check.v" Line 5: Empty port in module declaration
+Analyzing Verilog file "/home/ise/ism_projects/xi share/KRSSG FPGA CODES/FPGA codes 2019/SPWM_module/Control_block.vf" into library work
+Parsing module <FTP_HXILINX_Control_block>.
+Parsing module <spwmmodule_MUSER_Control_block>.
+Parsing module <Control_block>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <Control_block>.
+
+Elaborating module <spwmmodule_MUSER_Control_block>.
+
+Elaborating module <scompare>.
+WARNING:HDLCompiler:413 - "/home/ise/ism_projects/xi share/KRSSG FPGA CODES/FPGA codes 2019/SPWM_module/scompare.v" Line 42: Result of 32-bit expression is truncated to fit in 1-bit target.
+
+Elaborating module <trianglewave>.
+WARNING:HDLCompiler:413 - "/home/ise/ism_projects/xi share/KRSSG FPGA CODES/FPGA codes 2019/SPWM_module/trianglewave.v" Line 30: Result of 11-bit expression is truncated to fit in 10-bit target.
+
+Elaborating module <FTP_HXILINX_Control_block>.
+
+Elaborating module <VCC>.
+
+Elaborating module <cordic>.
+WARNING:HDLCompiler:413 - "/home/ise/ism_projects/xi share/KRSSG FPGA CODES/FPGA codes 2019/SPWM_module/cordic.v" Line 17: Result of 14-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "/home/ise/ism_projects/xi share/KRSSG FPGA CODES/FPGA codes 2019/SPWM_module/cordic.v" Line 124: Result of 11-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:552 - "/home/ise/ism_projects/xi share/KRSSG FPGA CODES/FPGA codes 2019/SPWM_module/Control_block.vf" Line 69: Input port PRE is not connected on this instance
+
+Elaborating module <NOR2>.
+
+Elaborating module <angle_check>.
+WARNING:HDLCompiler:413 - "/home/ise/ism_projects/xi share/KRSSG FPGA CODES/FPGA codes 2019/SPWM_module/angle_check.v" Line 28: Result of 11-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:91 - "/home/ise/ism_projects/xi share/KRSSG FPGA CODES/FPGA codes 2019/SPWM_module/angle_check.v" Line 29: Signal <angle_in> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:413 - "/home/ise/ism_projects/xi share/KRSSG FPGA CODES/FPGA codes 2019/SPWM_module/angle_check.v" Line 34: Result of 11-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "/home/ise/ism_projects/xi share/KRSSG FPGA CODES/FPGA codes 2019/SPWM_module/angle_check.v" Line 35: Result of 11-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:91 - "/home/ise/ism_projects/xi share/KRSSG FPGA CODES/FPGA codes 2019/SPWM_module/angle_check.v" Line 36: Signal <angle_in> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:413 - "/home/ise/ism_projects/xi share/KRSSG FPGA CODES/FPGA codes 2019/SPWM_module/angle_check.v" Line 41: Result of 11-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:91 - "/home/ise/ism_projects/xi share/KRSSG FPGA CODES/FPGA codes 2019/SPWM_module/angle_check.v" Line 43: Signal <angle_in> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:413 - "/home/ise/ism_projects/xi share/KRSSG FPGA CODES/FPGA codes 2019/SPWM_module/angle_check.v" Line 47: Result of 11-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "/home/ise/ism_projects/xi share/KRSSG FPGA CODES/FPGA codes 2019/SPWM_module/angle_check.v" Line 48: Result of 11-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:91 - "/home/ise/ism_projects/xi share/KRSSG FPGA CODES/FPGA codes 2019/SPWM_module/angle_check.v" Line 50: Signal <angle_in> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:413 - "/home/ise/ism_projects/xi share/KRSSG FPGA CODES/FPGA codes 2019/SPWM_module/angle_check.v" Line 54: Result of 11-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:91 - "/home/ise/ism_projects/xi share/KRSSG FPGA CODES/FPGA codes 2019/SPWM_module/angle_check.v" Line 57: Signal <angle_in> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:413 - "/home/ise/ism_projects/xi share/KRSSG FPGA CODES/FPGA codes 2019/SPWM_module/angle_check.v" Line 61: Result of 11-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "/home/ise/ism_projects/xi share/KRSSG FPGA CODES/FPGA codes 2019/SPWM_module/angle_check.v" Line 63: Result of 11-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:91 - "/home/ise/ism_projects/xi share/KRSSG FPGA CODES/FPGA codes 2019/SPWM_module/angle_check.v" Line 64: Signal <angle_in> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:413 - "/home/ise/ism_projects/xi share/KRSSG FPGA CODES/FPGA codes 2019/SPWM_module/angle_check.v" Line 68: Result of 32-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "/home/ise/ism_projects/xi share/KRSSG FPGA CODES/FPGA codes 2019/SPWM_module/angle_check.v" Line 69: Result of 21-bit expression is truncated to fit in 20-bit target.
+WARNING:HDLCompiler:413 - "/home/ise/ism_projects/xi share/KRSSG FPGA CODES/FPGA codes 2019/SPWM_module/angle_check.v" Line 70: Result of 21-bit expression is truncated to fit in 20-bit target.
+WARNING:HDLCompiler:413 - "/home/ise/ism_projects/xi share/KRSSG FPGA CODES/FPGA codes 2019/SPWM_module/angle_check.v" Line 71: Result of 21-bit expression is truncated to fit in 20-bit target.
+
+Elaborating module <Encoder>.
+WARNING:HDLCompiler:413 - "/home/ise/ism_projects/xi share/KRSSG FPGA CODES/FPGA codes 2019/SPWM_module/Encoder.v" Line 26: Result of 11-bit expression is truncated to fit in 10-bit target.
+
+Elaborating module <TAN_DOC>.
+WARNING:HDLCompiler:634 - "/home/ise/ism_projects/xi share/KRSSG FPGA CODES/FPGA codes 2019/SPWM_module/Control_block.vf" Line 104: Net <XLXN_71[5]> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/ise/ism_projects/xi share/KRSSG FPGA CODES/FPGA codes 2019/SPWM_module/Control_block.vf" Line 106: Net <XLXN_74[5]> does not have a driver.
+WARNING:HDLCompiler:634 - "/home/ise/ism_projects/xi share/KRSSG FPGA CODES/FPGA codes 2019/SPWM_module/Control_block.vf" Line 108: Net <XLXN_76[5]> does not have a driver.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <Control_block>.
+    Related source file is "/home/ise/ism_projects/xi share/KRSSG FPGA CODES/FPGA codes 2019/SPWM_module/Control_block.vf".
+WARNING:Xst:2898 - Port 'p1', unconnected in block instance 'XLXI_7', is tied to GND.
+WARNING:Xst:653 - Signal <XLXN_71> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <XLXN_74> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <XLXN_76> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+    Summary:
+	no macro.
+Unit <Control_block> synthesized.
+
+Synthesizing Unit <spwmmodule_MUSER_Control_block>.
+    Related source file is "/home/ise/ism_projects/xi share/KRSSG FPGA CODES/FPGA codes 2019/SPWM_module/Control_block.vf".
+    Set property "HU_SET = XLXI_6_1" for instance <XLXI_6>.
+WARNING:Xst:2898 - Port 'PRE', unconnected in block instance 'XLXI_6', is tied to GND.
+    Summary:
+	no macro.
+Unit <spwmmodule_MUSER_Control_block> synthesized.
+
+Synthesizing Unit <scompare>.
+    Related source file is "/home/ise/ism_projects/xi share/KRSSG FPGA CODES/FPGA codes 2019/SPWM_module/scompare.v".
+WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 10-bit comparator greater for signal <swave[9]_twave[9]_LessThan_1_o> created at line 42
+    Summary:
+	inferred   1 Comparator(s).
+Unit <scompare> synthesized.
+
+Synthesizing Unit <trianglewave>.
+    Related source file is "/home/ise/ism_projects/xi share/KRSSG FPGA CODES/FPGA codes 2019/SPWM_module/trianglewave.v".
+    Found 10-bit register for signal <temp>.
+    Found 11-bit adder for signal <n0005> created at line 30.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  10 D-type flip-flop(s).
+Unit <trianglewave> synthesized.
+
+Synthesizing Unit <FTP_HXILINX_Control_block>.
+    Related source file is "/home/ise/ism_projects/xi share/KRSSG FPGA CODES/FPGA codes 2019/SPWM_module/Control_block.vf".
+        INIT = 1'b1
+    Found 1-bit register for signal <Q>.
+    Summary:
+	inferred   1 D-type flip-flop(s).
+Unit <FTP_HXILINX_Control_block> synthesized.
+
+Synthesizing Unit <cordic>.
+    Related source file is "/home/ise/ism_projects/xi share/KRSSG FPGA CODES/FPGA codes 2019/SPWM_module/cordic.v".
+        width = 10
+WARNING:Xst:647 - Input <A> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 1-bit register for signal <x<0><9>>.
+    Found 1-bit register for signal <x<0><8>>.
+    Found 1-bit register for signal <x<0><7>>.
+    Found 1-bit register for signal <x<0><6>>.
+    Found 1-bit register for signal <x<0><5>>.
+    Found 1-bit register for signal <x<0><4>>.
+    Found 1-bit register for signal <x<0><3>>.
+    Found 1-bit register for signal <x<0><2>>.
+    Found 1-bit register for signal <x<0><1>>.
+    Found 1-bit register for signal <x<0><0>>.
+    Found 1-bit register for signal <y<0><10>>.
+    Found 1-bit register for signal <y<0><9>>.
+    Found 1-bit register for signal <y<0><8>>.
+    Found 1-bit register for signal <y<0><7>>.
+    Found 1-bit register for signal <y<0><6>>.
+    Found 1-bit register for signal <y<0><5>>.
+    Found 1-bit register for signal <y<0><4>>.
+    Found 1-bit register for signal <y<0><3>>.
+    Found 1-bit register for signal <y<0><2>>.
+    Found 1-bit register for signal <y<0><1>>.
+    Found 1-bit register for signal <y<0><0>>.
+    Found 1-bit register for signal <z<0><19>>.
+    Found 1-bit register for signal <z<0><18>>.
+    Found 1-bit register for signal <z<0><17>>.
+    Found 1-bit register for signal <z<0><16>>.
+    Found 1-bit register for signal <z<0><15>>.
+    Found 1-bit register for signal <z<0><14>>.
+    Found 1-bit register for signal <z<0><13>>.
+    Found 1-bit register for signal <z<0><12>>.
+    Found 1-bit register for signal <z<0><11>>.
+    Found 1-bit register for signal <z<0><10>>.
+    Found 1-bit register for signal <z<0><9>>.
+    Found 1-bit register for signal <z<0><8>>.
+    Found 1-bit register for signal <z<0><7>>.
+    Found 1-bit register for signal <z<0><6>>.
+    Found 1-bit register for signal <z<0><5>>.
+    Found 1-bit register for signal <z<0><4>>.
+    Found 1-bit register for signal <z<0><3>>.
+    Found 1-bit register for signal <z<0><2>>.
+    Found 1-bit register for signal <z<0><1>>.
+    Found 1-bit register for signal <z<0><0>>.
+    Found 1-bit register for signal <x<1><10>>.
+    Found 1-bit register for signal <x<1><9>>.
+    Found 1-bit register for signal <x<1><8>>.
+    Found 1-bit register for signal <x<1><7>>.
+    Found 1-bit register for signal <x<1><6>>.
+    Found 1-bit register for signal <x<1><5>>.
+    Found 1-bit register for signal <x<1><4>>.
+    Found 1-bit register for signal <x<1><3>>.
+    Found 1-bit register for signal <x<1><2>>.
+    Found 1-bit register for signal <x<1><1>>.
+    Found 1-bit register for signal <x<1><0>>.
+    Found 1-bit register for signal <y<1><10>>.
+    Found 1-bit register for signal <y<1><9>>.
+    Found 1-bit register for signal <y<1><8>>.
+    Found 1-bit register for signal <y<1><7>>.
+    Found 1-bit register for signal <y<1><6>>.
+    Found 1-bit register for signal <y<1><5>>.
+    Found 1-bit register for signal <y<1><4>>.
+    Found 1-bit register for signal <y<1><3>>.
+    Found 1-bit register for signal <y<1><2>>.
+    Found 1-bit register for signal <y<1><1>>.
+    Found 1-bit register for signal <y<1><0>>.
+    Found 1-bit register for signal <z<1><19>>.
+    Found 1-bit register for signal <z<1><18>>.
+    Found 1-bit register for signal <z<1><17>>.
+    Found 1-bit register for signal <z<1><16>>.
+    Found 1-bit register for signal <z<1><15>>.
+    Found 1-bit register for signal <z<1><14>>.
+    Found 1-bit register for signal <z<1><13>>.
+    Found 1-bit register for signal <z<1><12>>.
+    Found 1-bit register for signal <z<1><11>>.
+    Found 1-bit register for signal <z<1><10>>.
+    Found 1-bit register for signal <z<1><9>>.
+    Found 1-bit register for signal <z<1><8>>.
+    Found 1-bit register for signal <z<1><7>>.
+    Found 1-bit register for signal <z<1><6>>.
+    Found 1-bit register for signal <z<1><5>>.
+    Found 1-bit register for signal <z<1><4>>.
+    Found 1-bit register for signal <z<1><3>>.
+    Found 1-bit register for signal <z<1><2>>.
+    Found 1-bit register for signal <z<1><1>>.
+    Found 1-bit register for signal <z<1><0>>.
+    Found 1-bit register for signal <x<2><10>>.
+    Found 1-bit register for signal <x<2><9>>.
+    Found 1-bit register for signal <x<2><8>>.
+    Found 1-bit register for signal <x<2><7>>.
+    Found 1-bit register for signal <x<2><6>>.
+    Found 1-bit register for signal <x<2><5>>.
+    Found 1-bit register for signal <x<2><4>>.
+    Found 1-bit register for signal <x<2><3>>.
+    Found 1-bit register for signal <x<2><2>>.
+    Found 1-bit register for signal <x<2><1>>.
+    Found 1-bit register for signal <x<2><0>>.
+    Found 1-bit register for signal <y<2><10>>.
+    Found 1-bit register for signal <y<2><9>>.
+    Found 1-bit register for signal <y<2><8>>.
+    Found 1-bit register for signal <y<2><7>>.
+    Found 1-bit register for signal <y<2><6>>.
+    Found 1-bit register for signal <y<2><5>>.
+    Found 1-bit register for signal <y<2><4>>.
+    Found 1-bit register for signal <y<2><3>>.
+    Found 1-bit register for signal <y<2><2>>.
+    Found 1-bit register for signal <y<2><1>>.
+    Found 1-bit register for signal <y<2><0>>.
+    Found 1-bit register for signal <z<2><19>>.
+    Found 1-bit register for signal <z<2><18>>.
+    Found 1-bit register for signal <z<2><17>>.
+    Found 1-bit register for signal <z<2><16>>.
+    Found 1-bit register for signal <z<2><15>>.
+    Found 1-bit register for signal <z<2><14>>.
+    Found 1-bit register for signal <z<2><13>>.
+    Found 1-bit register for signal <z<2><12>>.
+    Found 1-bit register for signal <z<2><11>>.
+    Found 1-bit register for signal <z<2><10>>.
+    Found 1-bit register for signal <z<2><9>>.
+    Found 1-bit register for signal <z<2><8>>.
+    Found 1-bit register for signal <z<2><7>>.
+    Found 1-bit register for signal <z<2><6>>.
+    Found 1-bit register for signal <z<2><5>>.
+    Found 1-bit register for signal <z<2><4>>.
+    Found 1-bit register for signal <z<2><3>>.
+    Found 1-bit register for signal <z<2><2>>.
+    Found 1-bit register for signal <z<2><1>>.
+    Found 1-bit register for signal <z<2><0>>.
+    Found 1-bit register for signal <x<3><10>>.
+    Found 1-bit register for signal <x<3><9>>.
+    Found 1-bit register for signal <x<3><8>>.
+    Found 1-bit register for signal <x<3><7>>.
+    Found 1-bit register for signal <x<3><6>>.
+    Found 1-bit register for signal <x<3><5>>.
+    Found 1-bit register for signal <x<3><4>>.
+    Found 1-bit register for signal <x<3><3>>.
+    Found 1-bit register for signal <x<3><2>>.
+    Found 1-bit register for signal <x<3><1>>.
+    Found 1-bit register for signal <x<3><0>>.
+    Found 1-bit register for signal <y<3><10>>.
+    Found 1-bit register for signal <y<3><9>>.
+    Found 1-bit register for signal <y<3><8>>.
+    Found 1-bit register for signal <y<3><7>>.
+    Found 1-bit register for signal <y<3><6>>.
+    Found 1-bit register for signal <y<3><5>>.
+    Found 1-bit register for signal <y<3><4>>.
+    Found 1-bit register for signal <y<3><3>>.
+    Found 1-bit register for signal <y<3><2>>.
+    Found 1-bit register for signal <y<3><1>>.
+    Found 1-bit register for signal <y<3><0>>.
+    Found 1-bit register for signal <z<3><19>>.
+    Found 1-bit register for signal <z<3><18>>.
+    Found 1-bit register for signal <z<3><17>>.
+    Found 1-bit register for signal <z<3><16>>.
+    Found 1-bit register for signal <z<3><15>>.
+    Found 1-bit register for signal <z<3><14>>.
+    Found 1-bit register for signal <z<3><13>>.
+    Found 1-bit register for signal <z<3><12>>.
+    Found 1-bit register for signal <z<3><11>>.
+    Found 1-bit register for signal <z<3><10>>.
+    Found 1-bit register for signal <z<3><9>>.
+    Found 1-bit register for signal <z<3><8>>.
+    Found 1-bit register for signal <z<3><7>>.
+    Found 1-bit register for signal <z<3><6>>.
+    Found 1-bit register for signal <z<3><5>>.
+    Found 1-bit register for signal <z<3><4>>.
+    Found 1-bit register for signal <z<3><3>>.
+    Found 1-bit register for signal <z<3><2>>.
+    Found 1-bit register for signal <z<3><1>>.
+    Found 1-bit register for signal <z<3><0>>.
+    Found 1-bit register for signal <x<4><10>>.
+    Found 1-bit register for signal <x<4><9>>.
+    Found 1-bit register for signal <x<4><8>>.
+    Found 1-bit register for signal <x<4><7>>.
+    Found 1-bit register for signal <x<4><6>>.
+    Found 1-bit register for signal <x<4><5>>.
+    Found 1-bit register for signal <x<4><4>>.
+    Found 1-bit register for signal <x<4><3>>.
+    Found 1-bit register for signal <x<4><2>>.
+    Found 1-bit register for signal <x<4><1>>.
+    Found 1-bit register for signal <x<4><0>>.
+    Found 1-bit register for signal <y<4><10>>.
+    Found 1-bit register for signal <y<4><9>>.
+    Found 1-bit register for signal <y<4><8>>.
+    Found 1-bit register for signal <y<4><7>>.
+    Found 1-bit register for signal <y<4><6>>.
+    Found 1-bit register for signal <y<4><5>>.
+    Found 1-bit register for signal <y<4><4>>.
+    Found 1-bit register for signal <y<4><3>>.
+    Found 1-bit register for signal <y<4><2>>.
+    Found 1-bit register for signal <y<4><1>>.
+    Found 1-bit register for signal <y<4><0>>.
+    Found 1-bit register for signal <z<4><19>>.
+    Found 1-bit register for signal <z<4><18>>.
+    Found 1-bit register for signal <z<4><17>>.
+    Found 1-bit register for signal <z<4><16>>.
+    Found 1-bit register for signal <z<4><15>>.
+    Found 1-bit register for signal <z<4><14>>.
+    Found 1-bit register for signal <z<4><13>>.
+    Found 1-bit register for signal <z<4><12>>.
+    Found 1-bit register for signal <z<4><11>>.
+    Found 1-bit register for signal <z<4><10>>.
+    Found 1-bit register for signal <z<4><9>>.
+    Found 1-bit register for signal <z<4><8>>.
+    Found 1-bit register for signal <z<4><7>>.
+    Found 1-bit register for signal <z<4><6>>.
+    Found 1-bit register for signal <z<4><5>>.
+    Found 1-bit register for signal <z<4><4>>.
+    Found 1-bit register for signal <z<4><3>>.
+    Found 1-bit register for signal <z<4><2>>.
+    Found 1-bit register for signal <z<4><1>>.
+    Found 1-bit register for signal <z<4><0>>.
+    Found 1-bit register for signal <x<5><10>>.
+    Found 1-bit register for signal <x<5><9>>.
+    Found 1-bit register for signal <x<5><8>>.
+    Found 1-bit register for signal <x<5><7>>.
+    Found 1-bit register for signal <x<5><6>>.
+    Found 1-bit register for signal <x<5><5>>.
+    Found 1-bit register for signal <x<5><4>>.
+    Found 1-bit register for signal <x<5><3>>.
+    Found 1-bit register for signal <x<5><2>>.
+    Found 1-bit register for signal <x<5><1>>.
+    Found 1-bit register for signal <x<5><0>>.
+    Found 1-bit register for signal <y<5><10>>.
+    Found 1-bit register for signal <y<5><9>>.
+    Found 1-bit register for signal <y<5><8>>.
+    Found 1-bit register for signal <y<5><7>>.
+    Found 1-bit register for signal <y<5><6>>.
+    Found 1-bit register for signal <y<5><5>>.
+    Found 1-bit register for signal <y<5><4>>.
+    Found 1-bit register for signal <y<5><3>>.
+    Found 1-bit register for signal <y<5><2>>.
+    Found 1-bit register for signal <y<5><1>>.
+    Found 1-bit register for signal <y<5><0>>.
+    Found 1-bit register for signal <z<5><19>>.
+    Found 1-bit register for signal <z<5><18>>.
+    Found 1-bit register for signal <z<5><17>>.
+    Found 1-bit register for signal <z<5><16>>.
+    Found 1-bit register for signal <z<5><15>>.
+    Found 1-bit register for signal <z<5><14>>.
+    Found 1-bit register for signal <z<5><13>>.
+    Found 1-bit register for signal <z<5><12>>.
+    Found 1-bit register for signal <z<5><11>>.
+    Found 1-bit register for signal <z<5><10>>.
+    Found 1-bit register for signal <z<5><9>>.
+    Found 1-bit register for signal <z<5><8>>.
+    Found 1-bit register for signal <z<5><7>>.
+    Found 1-bit register for signal <z<5><6>>.
+    Found 1-bit register for signal <z<5><5>>.
+    Found 1-bit register for signal <z<5><4>>.
+    Found 1-bit register for signal <z<5><3>>.
+    Found 1-bit register for signal <z<5><2>>.
+    Found 1-bit register for signal <z<5><1>>.
+    Found 1-bit register for signal <z<5><0>>.
+    Found 1-bit register for signal <x<6><10>>.
+    Found 1-bit register for signal <x<6><9>>.
+    Found 1-bit register for signal <x<6><8>>.
+    Found 1-bit register for signal <x<6><7>>.
+    Found 1-bit register for signal <x<6><6>>.
+    Found 1-bit register for signal <x<6><5>>.
+    Found 1-bit register for signal <x<6><4>>.
+    Found 1-bit register for signal <x<6><3>>.
+    Found 1-bit register for signal <x<6><2>>.
+    Found 1-bit register for signal <x<6><1>>.
+    Found 1-bit register for signal <x<6><0>>.
+    Found 1-bit register for signal <y<6><10>>.
+    Found 1-bit register for signal <y<6><9>>.
+    Found 1-bit register for signal <y<6><8>>.
+    Found 1-bit register for signal <y<6><7>>.
+    Found 1-bit register for signal <y<6><6>>.
+    Found 1-bit register for signal <y<6><5>>.
+    Found 1-bit register for signal <y<6><4>>.
+    Found 1-bit register for signal <y<6><3>>.
+    Found 1-bit register for signal <y<6><2>>.
+    Found 1-bit register for signal <y<6><1>>.
+    Found 1-bit register for signal <y<6><0>>.
+    Found 1-bit register for signal <z<6><19>>.
+    Found 1-bit register for signal <z<6><18>>.
+    Found 1-bit register for signal <z<6><17>>.
+    Found 1-bit register for signal <z<6><16>>.
+    Found 1-bit register for signal <z<6><15>>.
+    Found 1-bit register for signal <z<6><14>>.
+    Found 1-bit register for signal <z<6><13>>.
+    Found 1-bit register for signal <z<6><12>>.
+    Found 1-bit register for signal <z<6><11>>.
+    Found 1-bit register for signal <z<6><10>>.
+    Found 1-bit register for signal <z<6><9>>.
+    Found 1-bit register for signal <z<6><8>>.
+    Found 1-bit register for signal <z<6><7>>.
+    Found 1-bit register for signal <z<6><6>>.
+    Found 1-bit register for signal <z<6><5>>.
+    Found 1-bit register for signal <z<6><4>>.
+    Found 1-bit register for signal <z<6><3>>.
+    Found 1-bit register for signal <z<6><2>>.
+    Found 1-bit register for signal <z<6><1>>.
+    Found 1-bit register for signal <z<6><0>>.
+    Found 1-bit register for signal <x<7><10>>.
+    Found 1-bit register for signal <x<7><9>>.
+    Found 1-bit register for signal <x<7><8>>.
+    Found 1-bit register for signal <x<7><7>>.
+    Found 1-bit register for signal <x<7><6>>.
+    Found 1-bit register for signal <x<7><5>>.
+    Found 1-bit register for signal <x<7><4>>.
+    Found 1-bit register for signal <x<7><3>>.
+    Found 1-bit register for signal <x<7><2>>.
+    Found 1-bit register for signal <x<7><1>>.
+    Found 1-bit register for signal <x<7><0>>.
+    Found 1-bit register for signal <y<7><10>>.
+    Found 1-bit register for signal <y<7><9>>.
+    Found 1-bit register for signal <y<7><8>>.
+    Found 1-bit register for signal <y<7><7>>.
+    Found 1-bit register for signal <y<7><6>>.
+    Found 1-bit register for signal <y<7><5>>.
+    Found 1-bit register for signal <y<7><4>>.
+    Found 1-bit register for signal <y<7><3>>.
+    Found 1-bit register for signal <y<7><2>>.
+    Found 1-bit register for signal <y<7><1>>.
+    Found 1-bit register for signal <y<7><0>>.
+    Found 1-bit register for signal <z<7><19>>.
+    Found 1-bit register for signal <z<7><18>>.
+    Found 1-bit register for signal <z<7><17>>.
+    Found 1-bit register for signal <z<7><16>>.
+    Found 1-bit register for signal <z<7><15>>.
+    Found 1-bit register for signal <z<7><14>>.
+    Found 1-bit register for signal <z<7><13>>.
+    Found 1-bit register for signal <z<7><12>>.
+    Found 1-bit register for signal <z<7><11>>.
+    Found 1-bit register for signal <z<7><10>>.
+    Found 1-bit register for signal <z<7><9>>.
+    Found 1-bit register for signal <z<7><8>>.
+    Found 1-bit register for signal <z<7><7>>.
+    Found 1-bit register for signal <z<7><6>>.
+    Found 1-bit register for signal <z<7><5>>.
+    Found 1-bit register for signal <z<7><4>>.
+    Found 1-bit register for signal <z<7><3>>.
+    Found 1-bit register for signal <z<7><2>>.
+    Found 1-bit register for signal <z<7><1>>.
+    Found 1-bit register for signal <z<7><0>>.
+    Found 1-bit register for signal <x<8><10>>.
+    Found 1-bit register for signal <x<8><9>>.
+    Found 1-bit register for signal <x<8><8>>.
+    Found 1-bit register for signal <y<8><10>>.
+    Found 1-bit register for signal <y<8><9>>.
+    Found 1-bit register for signal <y<8><8>>.
+    Found 1-bit register for signal <y<8><7>>.
+    Found 1-bit register for signal <y<8><6>>.
+    Found 1-bit register for signal <y<8><5>>.
+    Found 1-bit register for signal <y<8><4>>.
+    Found 1-bit register for signal <y<8><3>>.
+    Found 1-bit register for signal <y<8><2>>.
+    Found 1-bit register for signal <y<8><1>>.
+    Found 1-bit register for signal <y<8><0>>.
+    Found 1-bit register for signal <z<8><19>>.
+    Found 1-bit register for signal <y<9><9>>.
+    Found 1-bit register for signal <y<9><8>>.
+    Found 1-bit register for signal <y<9><7>>.
+    Found 1-bit register for signal <y<9><6>>.
+    Found 1-bit register for signal <y<9><5>>.
+    Found 1-bit register for signal <y<9><4>>.
+    Found 1-bit register for signal <y<9><3>>.
+    Found 1-bit register for signal <y<9><2>>.
+    Found 1-bit register for signal <y<9><1>>.
+    Found 1-bit register for signal <y<9><0>>.
+    Found 1-bit register for signal <x<0><10>>.
+    Found 11-bit subtractor for signal <y_start[9]_unary_minus_5_OUT> created at line 82.
+    Found 11-bit subtractor for signal <x_start[9]_unary_minus_6_OUT> created at line 90.
+    Found 11-bit subtractor for signal <x[0][10]_xyz[0].y_shr[10]_sub_35_OUT> created at line 115.
+    Found 11-bit subtractor for signal <y[0][10]_xyz[0].x_shr[10]_sub_37_OUT> created at line 116.
+    Found 20-bit subtractor for signal <z[0][19]_atan_table[19]_sub_41_OUT> created at line 117.
+    Found 11-bit subtractor for signal <x[1][10]_xyz[1].y_shr[10]_sub_47_OUT> created at line 115.
+    Found 11-bit subtractor for signal <y[1][10]_xyz[1].x_shr[10]_sub_49_OUT> created at line 116.
+    Found 20-bit subtractor for signal <z[1][19]_atan_table[19]_sub_53_OUT> created at line 117.
+    Found 11-bit subtractor for signal <x[2][10]_xyz[2].y_shr[10]_sub_59_OUT> created at line 115.
+    Found 11-bit subtractor for signal <y[2][10]_xyz[2].x_shr[10]_sub_61_OUT> created at line 116.
+    Found 20-bit subtractor for signal <z[2][19]_atan_table[19]_sub_65_OUT> created at line 117.
+    Found 11-bit subtractor for signal <x[3][10]_xyz[3].y_shr[10]_sub_71_OUT> created at line 115.
+    Found 11-bit subtractor for signal <y[3][10]_xyz[3].x_shr[10]_sub_73_OUT> created at line 116.
+    Found 20-bit subtractor for signal <z[3][19]_atan_table[19]_sub_77_OUT> created at line 117.
+    Found 11-bit subtractor for signal <x[4][10]_xyz[4].y_shr[10]_sub_83_OUT> created at line 115.
+    Found 11-bit subtractor for signal <y[4][10]_xyz[4].x_shr[10]_sub_85_OUT> created at line 116.
+    Found 20-bit subtractor for signal <z[4][19]_atan_table[19]_sub_89_OUT> created at line 117.
+    Found 11-bit subtractor for signal <x[5][10]_xyz[5].y_shr[10]_sub_95_OUT> created at line 115.
+    Found 11-bit subtractor for signal <y[5][10]_xyz[5].x_shr[10]_sub_97_OUT> created at line 116.
+    Found 20-bit subtractor for signal <z[5][19]_atan_table[19]_sub_101_OUT> created at line 117.
+    Found 11-bit subtractor for signal <x[6][10]_xyz[6].y_shr[10]_sub_107_OUT> created at line 115.
+    Found 11-bit subtractor for signal <y[6][10]_xyz[6].x_shr[10]_sub_109_OUT> created at line 116.
+    Found 20-bit subtractor for signal <z[6][19]_atan_table[19]_sub_113_OUT> created at line 117.
+    Found 11-bit subtractor for signal <x[7][10]_xyz[7].y_shr[10]_sub_119_OUT> created at line 115.
+    Found 11-bit subtractor for signal <y[7][10]_xyz[7].x_shr[10]_sub_121_OUT> created at line 116.
+    Found 20-bit subtractor for signal <z[7][19]_atan_table[19]_sub_125_OUT> created at line 117.
+    Found 11-bit subtractor for signal <y[8][10]_xyz[8].x_shr[10]_sub_133_OUT> created at line 116.
+    Found 11-bit adder for signal <x[0][10]_xyz[0].y_shr[10]_add_33_OUT> created at line 115.
+    Found 20-bit adder for signal <z[0][19]_atan_table[19]_add_39_OUT> created at line 117.
+    Found 11-bit adder for signal <x[1][10]_xyz[1].y_shr[10]_add_45_OUT> created at line 115.
+    Found 11-bit adder for signal <y[1][10]_xyz[1].x_shr[10]_add_49_OUT> created at line 116.
+    Found 20-bit adder for signal <z[1][19]_atan_table[19]_add_51_OUT> created at line 117.
+    Found 11-bit adder for signal <x[2][10]_xyz[2].y_shr[10]_add_57_OUT> created at line 115.
+    Found 11-bit adder for signal <y[2][10]_xyz[2].x_shr[10]_add_61_OUT> created at line 116.
+    Found 20-bit adder for signal <z[2][19]_atan_table[19]_add_63_OUT> created at line 117.
+    Found 11-bit adder for signal <x[3][10]_xyz[3].y_shr[10]_add_69_OUT> created at line 115.
+    Found 11-bit adder for signal <y[3][10]_xyz[3].x_shr[10]_add_73_OUT> created at line 116.
+    Found 20-bit adder for signal <z[3][19]_atan_table[19]_add_75_OUT> created at line 117.
+    Found 11-bit adder for signal <x[4][10]_xyz[4].y_shr[10]_add_81_OUT> created at line 115.
+    Found 11-bit adder for signal <y[4][10]_xyz[4].x_shr[10]_add_85_OUT> created at line 116.
+    Found 20-bit adder for signal <z[4][19]_atan_table[19]_add_87_OUT> created at line 117.
+    Found 11-bit adder for signal <x[5][10]_xyz[5].y_shr[10]_add_93_OUT> created at line 115.
+    Found 11-bit adder for signal <y[5][10]_xyz[5].x_shr[10]_add_97_OUT> created at line 116.
+    Found 20-bit adder for signal <z[5][19]_atan_table[19]_add_99_OUT> created at line 117.
+    Found 11-bit adder for signal <x[6][10]_xyz[6].y_shr[10]_add_105_OUT> created at line 115.
+    Found 11-bit adder for signal <y[6][10]_xyz[6].x_shr[10]_add_109_OUT> created at line 116.
+    Found 20-bit adder for signal <z[6][19]_atan_table[19]_add_111_OUT> created at line 117.
+    Found 11-bit adder for signal <x[7][10]_xyz[7].y_shr[10]_add_117_OUT> created at line 115.
+    Found 11-bit adder for signal <y[7][10]_xyz[7].x_shr[10]_add_121_OUT> created at line 116.
+    Found 20-bit adder for signal <z[7][19]_atan_table[19]_add_123_OUT> created at line 117.
+    Found 11-bit adder for signal <y[8][10]_xyz[8].x_shr[10]_add_133_OUT> created at line 116.
+    Summary:
+	inferred  27 Adder/Subtractor(s).
+	inferred 361 D-type flip-flop(s).
+Unit <cordic> synthesized.
+
+Synthesizing Unit <angle_check>.
+    Related source file is "/home/ise/ism_projects/xi share/KRSSG FPGA CODES/FPGA codes 2019/SPWM_module/angle_check.v".
+    Found 10-bit adder for signal <sineangle_A<19:10>> created at line 69.
+    Found 10-bit adder for signal <sineangle_B<19:10>> created at line 70.
+    Found 10-bit adder for signal <sineangle_C<19:10>> created at line 71.
+    Found 7-bit subtractor for signal <correction<9:3>> created at line 21.
+WARNING:Xst:737 - Found 1-bit latch for signal <angle_correct<6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <angle_correct<5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <angle_correct<4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <angle_correct<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <angle_correct<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <angle_correct<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <angle_correct<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <angle_adjust_A<9>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <angle_adjust_A<8>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <angle_adjust_A<7>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <angle_adjust_A<6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <angle_adjust_A<4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <angle_adjust_A<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <angle_adjust_A<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <angle_adjust_A<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <angle_adjust_A<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <angle_adjust_B<9>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <angle_adjust_B<7>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <angle_adjust_B<6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <angle_adjust_B<5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <angle_adjust_B<4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <angle_adjust_B<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <angle_adjust_B<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <angle_adjust_B<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <angle_adjust_B<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <angle_adjust_C<7>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <angle_adjust_C<6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <angle_adjust_C<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <angle_adjust_C<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <angle_adjust_C<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <angle_adjust_C<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Summary:
+	inferred   4 Adder/Subtractor(s).
+	inferred  31 Latch(s).
+	inferred  68 Multiplexer(s).
+Unit <angle_check> synthesized.
+
+Synthesizing Unit <Encoder>.
+    Related source file is "/home/ise/ism_projects/xi share/KRSSG FPGA CODES/FPGA codes 2019/SPWM_module/Encoder.v".
+    Found 10-bit register for signal <ticks>.
+    Found 10-bit adder for signal <ticks[9]_GND_53_o_add_1_OUT> created at line 26.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  10 D-type flip-flop(s).
+Unit <Encoder> synthesized.
+
+Synthesizing Unit <TAN_DOC>.
+    Related source file is "/home/ise/ism_projects/xi share/KRSSG FPGA CODES/FPGA codes 2019/SPWM_module/TAN_DOC.v".
+WARNING:Xst:647 - Input <A<5:5>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <B<5:5>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <C<5:5>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Summary:
+	no macro.
+Unit <TAN_DOC> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 89
+ 10-bit adder                                          : 4
+ 11-bit adder                                          : 3
+ 11-bit addsub                                         : 51
+ 11-bit subtractor                                     : 6
+ 20-bit addsub                                         : 24
+ 7-bit subtractor                                      : 1
+# Registers                                            : 157
+ 1-bit register                                        : 81
+ 10-bit register                                       : 7
+ 11-bit register                                       : 45
+ 20-bit register                                       : 24
+# Latches                                              : 31
+ 1-bit latch                                           : 31
+# Comparators                                          : 3
+ 10-bit comparator greater                             : 3
+# Multiplexers                                         : 68
+ 1-bit 2-to-1 multiplexer                              : 68
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst:1710 - FF/Latch <z_9> (without init value) has a constant value of 0 in block <XLXI_8>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <z_8> (without init value) has a constant value of 0 in block <XLXI_8>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <z_7> (without init value) has a constant value of 0 in block <XLXI_8>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <z_6> (without init value) has a constant value of 0 in block <XLXI_8>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <z_5> (without init value) has a constant value of 0 in block <XLXI_8>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <z_4> (without init value) has a constant value of 0 in block <XLXI_8>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <z_3> (without init value) has a constant value of 0 in block <XLXI_8>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <z_2> (without init value) has a constant value of 0 in block <XLXI_8>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <z_1> (without init value) has a constant value of 0 in block <XLXI_8>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <z_0> (without init value) has a constant value of 0 in block <XLXI_8>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <z_9> (without init value) has a constant value of 0 in block <XLXI_8>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <z_8> (without init value) has a constant value of 0 in block <XLXI_8>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <z_7> (without init value) has a constant value of 0 in block <XLXI_8>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <z_6> (without init value) has a constant value of 0 in block <XLXI_8>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <z_5> (without init value) has a constant value of 0 in block <XLXI_8>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <z_4> (without init value) has a constant value of 0 in block <XLXI_8>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <z_3> (without init value) has a constant value of 0 in block <XLXI_8>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <z_2> (without init value) has a constant value of 0 in block <XLXI_8>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <z_1> (without init value) has a constant value of 0 in block <XLXI_8>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <z_0> (without init value) has a constant value of 0 in block <XLXI_8>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <z_9> (without init value) has a constant value of 0 in block <XLXI_8>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <z_8> (without init value) has a constant value of 0 in block <XLXI_8>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <z_7> (without init value) has a constant value of 0 in block <XLXI_8>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <z_6> (without init value) has a constant value of 0 in block <XLXI_8>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <z_5> (without init value) has a constant value of 0 in block <XLXI_8>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <z_4> (without init value) has a constant value of 0 in block <XLXI_8>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <z_3> (without init value) has a constant value of 0 in block <XLXI_8>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <z_2> (without init value) has a constant value of 0 in block <XLXI_8>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <z_1> (without init value) has a constant value of 0 in block <XLXI_8>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <z_0> (without init value) has a constant value of 0 in block <XLXI_8>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <angle_adjust_A_0> (without init value) has a constant value of 1 in block <XLXI_7>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <angle_adjust_B_0> (without init value) has a constant value of 0 in block <XLXI_7>. This FF/Latch will be trimmed during the optimization process.
+
+Synthesizing (advanced) Unit <Encoder>.
+The following registers are absorbed into counter <ticks>: 1 register on signal <ticks>.
+Unit <Encoder> synthesized (advanced).
+
+Synthesizing (advanced) Unit <trianglewave>.
+The following registers are absorbed into counter <temp>: 1 register on signal <temp>.
+Unit <trianglewave> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 85
+ 10-bit adder                                          : 3
+ 11-bit addsub                                         : 51
+ 11-bit subtractor                                     : 6
+ 20-bit addsub                                         : 24
+ 7-bit subtractor                                      : 1
+# Counters                                             : 4
+ 10-bit up counter                                     : 4
+# Registers                                            : 1086
+ Flip-Flops                                            : 1086
+# Comparators                                          : 3
+ 10-bit comparator greater                             : 3
+# Multiplexers                                         : 68
+ 1-bit 2-to-1 multiplexer                              : 68
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1710 - FF/Latch <angle_adjust_B_0> (without init value) has a constant value of 0 in block <angle_check>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <angle_adjust_A_0> (without init value) has a constant value of 1 in block <angle_check>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <x<0>_8> (without init value) has a constant value of 0 in block <cordic>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <x<0>_6> (without init value) has a constant value of 0 in block <cordic>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <x<0>_3> (without init value) has a constant value of 0 in block <cordic>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <x<0>_5> (without init value) has a constant value of 0 in block <cordic>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <x<0>_4> (without init value) has a constant value of 0 in block <cordic>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <x<0>_2> (without init value) has a constant value of 0 in block <cordic>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <x<0>_1> (without init value) has a constant value of 0 in block <cordic>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <y<0>_6> (without init value) has a constant value of 0 in block <cordic>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <x<0>_0> (without init value) has a constant value of 0 in block <cordic>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <y<0>_5> (without init value) has a constant value of 0 in block <cordic>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <y<0>_4> (without init value) has a constant value of 0 in block <cordic>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <y<0>_1> (without init value) has a constant value of 0 in block <cordic>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <y<0>_3> (without init value) has a constant value of 0 in block <cordic>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <y<0>_2> (without init value) has a constant value of 0 in block <cordic>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <y<0>_0> (without init value) has a constant value of 0 in block <cordic>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <y_107> of sequential type is unconnected in block <cordic>.
+INFO:Xst:2261 - The FF/Latch <y<0>_10> in Unit <cordic> is equivalent to the following FF/Latch, which will be removed : <y<0>_9> 
+INFO:Xst:2261 - The FF/Latch <x<0>_9> in Unit <cordic> is equivalent to the following 2 FFs/Latches, which will be removed : <x<0>_7> <x<0>_10> 
+WARNING:Xst:3002 - This design contains one or more registers/latches that are directly
+   incompatible with the Spartan6 architecture. The two primary causes of this is
+   either a register or latch described with both an asynchronous set and
+   asynchronous reset, or a register or latch described with an asynchronous
+   set or reset which however has an initialization value of the opposite 
+   polarity (i.e. asynchronous reset with an initialization value of 1).
+    While this circuit can be built, it creates a sub-optimal implementation
+   in terms of area, power and performance. For a more optimal implementation
+   Xilinx highly recommends one of the following:
+
+          1) Remove either the set or reset from all registers and latches
+             if not needed for required functionality
+          2) Modify the code in order to produce a synchronous set
+             and/or reset (both is preferred)
+          3) Ensure all registers have the same initialization value as the
+             described asynchronous set or reset polarity
+          4) Use the -async_to_sync option to transform the asynchronous
+             set/reset to synchronous operation
+             (timing simulation highly recommended when using this option)
+
+  Please refer to http://www.xilinx.com search string "Spartan6 asynchronous set/reset" for more details.
+
+  List of register instances with asynchronous set and reset:
+    angle_adjust_C_2 in unit <angle_check>
+    angle_adjust_C_6 in unit <angle_check>
+    angle_adjust_C_1 in unit <angle_check>
+    angle_adjust_B_4 in unit <angle_check>
+    angle_adjust_B_7 in unit <angle_check>
+    angle_adjust_B_1 in unit <angle_check>
+    angle_adjust_A_6 in unit <angle_check>
+    angle_adjust_A_1 in unit <angle_check>
+    angle_adjust_C_0 in unit <angle_check>
+    angle_adjust_C_3 in unit <angle_check>
+    angle_adjust_C_7 in unit <angle_check>
+    angle_adjust_B_5 in unit <angle_check>
+    angle_adjust_B_2 in unit <angle_check>
+    angle_adjust_B_3 in unit <angle_check>
+    angle_adjust_B_6 in unit <angle_check>
+    angle_adjust_A_2 in unit <angle_check>
+    angle_adjust_A_3 in unit <angle_check>
+    angle_adjust_B_9 in unit <angle_check>
+    angle_adjust_A_4 in unit <angle_check>
+    angle_adjust_A_7 in unit <angle_check>
+    angle_adjust_A_8 in unit <angle_check>
+    angle_adjust_A_9 in unit <angle_check>
+
+
+Optimizing unit <Control_block> ...
+
+Optimizing unit <angle_check> ...
+
+Optimizing unit <cordic> ...
+INFO:Xst:2261 - The FF/Latch <z_18> in Unit <cordic> is equivalent to the following FF/Latch, which will be removed : <z_19> 
+
+Optimizing unit <FTP_HXILINX_Control_block> ...
+WARNING:Xst:1710 - FF/Latch <XLXI_3/XLXI_8/z_0> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_3/XLXI_8/z_1> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_3/XLXI_8/z_2> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_3/XLXI_8/z_3> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_3/XLXI_8/z_4> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_3/XLXI_8/z_5> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_3/XLXI_8/z_6> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_3/XLXI_8/z_7> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_3/XLXI_8/z_8> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_3/XLXI_8/z_9> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_3/XLXI_8/z_10> (without init value) has a constant value of 1 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_2/XLXI_8/z_0> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_2/XLXI_8/z_1> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_2/XLXI_8/z_2> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_2/XLXI_8/z_3> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_2/XLXI_8/z_4> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_2/XLXI_8/z_5> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_2/XLXI_8/z_6> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_2/XLXI_8/z_7> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_2/XLXI_8/z_8> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_2/XLXI_8/z_9> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_1/XLXI_8/z_0> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_1/XLXI_8/z_1> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_1/XLXI_8/z_2> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_1/XLXI_8/z_3> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_1/XLXI_8/z_4> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_1/XLXI_8/z_5> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_1/XLXI_8/z_6> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_1/XLXI_8/z_7> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_1/XLXI_8/z_8> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_1/XLXI_8/z_9> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_1/XLXI_8/z_10> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <XLXI_9/ticks_7> of sequential type is unconnected in block <Control_block>.
+WARNING:Xst:2677 - Node <XLXI_9/ticks_8> of sequential type is unconnected in block <Control_block>.
+WARNING:Xst:2677 - Node <XLXI_9/ticks_9> of sequential type is unconnected in block <Control_block>.
+WARNING:Xst:1710 - FF/Latch <XLXI_3/XLXI_8/z_57> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_3/XLXI_8/z_67> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_3/XLXI_8/z_77> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_3/XLXI_8/z_87> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_3/XLXI_8/z_97> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_2/XLXI_8/z_01> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_2/XLXI_8/z_110> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_2/XLXI_8/z_21> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_2/XLXI_8/z_31> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_2/XLXI_8/z_41> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_2/XLXI_8/z_51> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_2/XLXI_8/z_61> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_2/XLXI_8/z_71> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_2/XLXI_8/z_81> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_2/XLXI_8/z_91> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_2/XLXI_8/x_0> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_2/XLXI_8/x_1> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_2/XLXI_8/x_2> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_2/XLXI_8/x_3> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_2/XLXI_8/x_4> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_3/XLXI_8/z_55> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_3/XLXI_8/z_65> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_3/XLXI_8/z_75> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_3/XLXI_8/z_85> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_3/XLXI_8/z_95> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_3/XLXI_8/z_06> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_3/XLXI_8/z_120> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_3/XLXI_8/z_26> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_3/XLXI_8/z_36> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_3/XLXI_8/z_46> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_3/XLXI_8/z_56> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_3/XLXI_8/z_66> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_3/XLXI_8/z_76> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_3/XLXI_8/z_86> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_3/XLXI_8/z_96> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_3/XLXI_8/z_07> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_3/XLXI_8/z_127> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_3/XLXI_8/z_27> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_3/XLXI_8/z_37> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_3/XLXI_8/z_47> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_2/XLXI_8/x_21> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_2/XLXI_8/x_31> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_2/XLXI_8/x_41> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_2/XLXI_8/x_51> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_2/XLXI_8/y_01> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_2/XLXI_8/y_11> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_2/XLXI_8/y_21> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_2/XLXI_8/y_31> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_2/XLXI_8/y_41> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_2/XLXI_8/y_51> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_2/XLXI_8/z_03> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_2/XLXI_8/z_114> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_2/XLXI_8/z_23> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_2/XLXI_8/z_33> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_2/XLXI_8/z_43> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_2/XLXI_8/z_53> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_2/XLXI_8/z_63> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_2/XLXI_8/z_73> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_2/XLXI_8/z_83> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_2/XLXI_8/z_93> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_2/XLXI_8/x_5> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_2/XLXI_8/x_6> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_2/XLXI_8/y_0> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_2/XLXI_8/y_1> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_2/XLXI_8/y_2> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_2/XLXI_8/y_3> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_2/XLXI_8/y_4> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_2/XLXI_8/y_5> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_2/XLXI_8/y_6> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_2/XLXI_8/z_02> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_2/XLXI_8/z_112> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_2/XLXI_8/z_22> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_2/XLXI_8/z_32> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_2/XLXI_8/z_42> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_2/XLXI_8/z_52> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_2/XLXI_8/z_62> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_2/XLXI_8/z_72> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_2/XLXI_8/z_82> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_2/XLXI_8/z_92> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_2/XLXI_8/x_01> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_2/XLXI_8/x_11> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_3/XLXI_8/y_3> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_3/XLXI_8/y_4> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_3/XLXI_8/y_5> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_3/XLXI_8/y_6> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_3/XLXI_8/z_02> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_3/XLXI_8/z_112> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_3/XLXI_8/z_22> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_3/XLXI_8/z_32> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_3/XLXI_8/z_42> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_3/XLXI_8/z_52> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_3/XLXI_8/z_62> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_3/XLXI_8/z_72> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_3/XLXI_8/z_82> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_3/XLXI_8/z_92> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_3/XLXI_8/x_01> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_3/XLXI_8/x_11> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_3/XLXI_8/x_21> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_3/XLXI_8/x_31> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_3/XLXI_8/x_41> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_3/XLXI_8/x_51> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_3/XLXI_8/z_01> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_3/XLXI_8/z_110> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_3/XLXI_8/z_21> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_3/XLXI_8/z_31> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_3/XLXI_8/z_41> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_3/XLXI_8/z_51> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_3/XLXI_8/z_61> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_3/XLXI_8/z_71> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_3/XLXI_8/z_81> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_3/XLXI_8/z_91> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_3/XLXI_8/x_0> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_3/XLXI_8/x_1> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_3/XLXI_8/x_2> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_3/XLXI_8/x_3> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_3/XLXI_8/x_4> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_3/XLXI_8/x_5> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_3/XLXI_8/x_6> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_3/XLXI_8/y_0> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_3/XLXI_8/y_1> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_3/XLXI_8/y_2> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_3/XLXI_8/y_12> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_3/XLXI_8/y_22> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_3/XLXI_8/y_32> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_3/XLXI_8/z_04> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_3/XLXI_8/z_116> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_3/XLXI_8/z_24> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_3/XLXI_8/z_34> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_3/XLXI_8/z_44> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_3/XLXI_8/z_54> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_3/XLXI_8/z_64> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_3/XLXI_8/z_74> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_3/XLXI_8/z_84> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_3/XLXI_8/z_94> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_3/XLXI_8/x_03> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_3/XLXI_8/y_03> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_3/XLXI_8/z_05> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_3/XLXI_8/z_118> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_3/XLXI_8/z_25> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_3/XLXI_8/z_35> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_3/XLXI_8/z_45> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_3/XLXI_8/y_01> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_3/XLXI_8/y_11> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_3/XLXI_8/y_21> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_3/XLXI_8/y_31> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_3/XLXI_8/y_41> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_3/XLXI_8/y_51> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_3/XLXI_8/z_03> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_3/XLXI_8/z_114> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_3/XLXI_8/z_23> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_3/XLXI_8/z_33> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_3/XLXI_8/z_43> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_3/XLXI_8/z_53> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_3/XLXI_8/z_63> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_3/XLXI_8/z_73> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_3/XLXI_8/z_83> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_3/XLXI_8/z_93> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_3/XLXI_8/x_02> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_3/XLXI_8/x_12> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_3/XLXI_8/x_22> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_3/XLXI_8/x_32> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_3/XLXI_8/y_02> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_1/XLXI_8/z_43> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_1/XLXI_8/z_53> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_1/XLXI_8/z_63> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_1/XLXI_8/z_73> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_1/XLXI_8/z_83> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_1/XLXI_8/z_93> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_1/XLXI_8/z_103> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_1/XLXI_8/x_02> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_1/XLXI_8/x_12> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_1/XLXI_8/x_22> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_1/XLXI_8/x_32> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_1/XLXI_8/y_02> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_1/XLXI_8/y_12> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_1/XLXI_8/y_22> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_1/XLXI_8/y_32> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_1/XLXI_8/z_04> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_1/XLXI_8/z_116> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_1/XLXI_8/z_24> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_1/XLXI_8/z_34> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_1/XLXI_8/z_44> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_1/XLXI_8/z_72> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_1/XLXI_8/z_82> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_1/XLXI_8/z_92> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_1/XLXI_8/z_102> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_1/XLXI_8/x_01> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_1/XLXI_8/x_11> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_1/XLXI_8/x_21> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_1/XLXI_8/x_31> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_1/XLXI_8/x_41> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_1/XLXI_8/x_51> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_1/XLXI_8/y_01> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_1/XLXI_8/y_11> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_1/XLXI_8/y_21> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_1/XLXI_8/y_31> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_1/XLXI_8/y_41> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_1/XLXI_8/y_51> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_1/XLXI_8/z_03> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_1/XLXI_8/z_114> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_1/XLXI_8/z_23> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_1/XLXI_8/z_33> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_1/XLXI_8/z_26> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_1/XLXI_8/z_36> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_1/XLXI_8/z_46> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_1/XLXI_8/z_56> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_1/XLXI_8/z_66> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_1/XLXI_8/z_76> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_1/XLXI_8/z_86> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_1/XLXI_8/z_96> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_1/XLXI_8/z_106> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_1/XLXI_8/z_07> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_1/XLXI_8/z_127> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_1/XLXI_8/z_27> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_1/XLXI_8/z_37> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_1/XLXI_8/z_47> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_1/XLXI_8/z_57> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_1/XLXI_8/z_67> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_1/XLXI_8/z_77> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_1/XLXI_8/z_87> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_1/XLXI_8/z_97> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_1/XLXI_8/z_107> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_1/XLXI_8/z_54> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_1/XLXI_8/z_64> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_1/XLXI_8/z_74> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_1/XLXI_8/z_84> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_1/XLXI_8/z_94> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_1/XLXI_8/z_104> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_1/XLXI_8/x_03> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_1/XLXI_8/y_03> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_1/XLXI_8/z_05> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_1/XLXI_8/z_118> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_1/XLXI_8/z_25> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_1/XLXI_8/z_35> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_1/XLXI_8/z_45> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_1/XLXI_8/z_55> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_1/XLXI_8/z_65> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_1/XLXI_8/z_75> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_1/XLXI_8/z_85> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_1/XLXI_8/z_95> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_1/XLXI_8/z_105> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_1/XLXI_8/z_06> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_1/XLXI_8/z_120> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_2/XLXI_8/z_118> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_2/XLXI_8/z_25> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_2/XLXI_8/z_35> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_2/XLXI_8/z_45> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_2/XLXI_8/z_55> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_2/XLXI_8/z_65> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_2/XLXI_8/z_75> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_2/XLXI_8/z_85> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_2/XLXI_8/z_95> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_2/XLXI_8/z_06> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_2/XLXI_8/z_120> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_2/XLXI_8/z_26> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_2/XLXI_8/z_36> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_2/XLXI_8/z_46> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_2/XLXI_8/z_56> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_2/XLXI_8/z_66> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_2/XLXI_8/z_76> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_2/XLXI_8/z_86> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_2/XLXI_8/z_96> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_2/XLXI_8/z_07> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_2/XLXI_8/x_02> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_2/XLXI_8/x_12> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_2/XLXI_8/x_22> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_2/XLXI_8/x_32> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_2/XLXI_8/y_02> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_2/XLXI_8/y_12> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_2/XLXI_8/y_22> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_2/XLXI_8/y_32> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_2/XLXI_8/z_04> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_2/XLXI_8/z_116> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_2/XLXI_8/z_24> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_2/XLXI_8/z_34> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_2/XLXI_8/z_44> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_2/XLXI_8/z_54> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_2/XLXI_8/z_64> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_2/XLXI_8/z_74> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_2/XLXI_8/z_84> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_2/XLXI_8/z_94> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_2/XLXI_8/x_03> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_2/XLXI_8/y_03> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_2/XLXI_8/z_05> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_1/XLXI_8/x_1> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_1/XLXI_8/x_2> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_1/XLXI_8/x_3> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_1/XLXI_8/x_4> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_1/XLXI_8/x_5> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_1/XLXI_8/x_6> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_1/XLXI_8/y_0> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_1/XLXI_8/y_1> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_1/XLXI_8/y_2> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_1/XLXI_8/y_3> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_1/XLXI_8/y_4> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_1/XLXI_8/y_5> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_1/XLXI_8/y_6> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_1/XLXI_8/z_02> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_1/XLXI_8/z_112> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_1/XLXI_8/z_22> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_1/XLXI_8/z_32> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_1/XLXI_8/z_42> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_1/XLXI_8/z_52> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_1/XLXI_8/z_62> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_2/XLXI_8/z_127> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_2/XLXI_8/z_27> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_2/XLXI_8/z_37> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_2/XLXI_8/z_47> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_2/XLXI_8/z_57> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_2/XLXI_8/z_67> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_2/XLXI_8/z_77> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_2/XLXI_8/z_87> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_2/XLXI_8/z_97> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_1/XLXI_8/z_01> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_1/XLXI_8/z_110> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_1/XLXI_8/z_21> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_1/XLXI_8/z_31> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_1/XLXI_8/z_41> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_1/XLXI_8/z_51> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_1/XLXI_8/z_61> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_1/XLXI_8/z_71> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_1/XLXI_8/z_81> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_1/XLXI_8/z_91> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_1/XLXI_8/z_101> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <XLXI_1/XLXI_8/x_0> (without init value) has a constant value of 0 in block <Control_block>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <XLXI_2/XLXI_8/z_193> in Unit <Control_block> is equivalent to the following 2 FFs/Latches, which will be removed : <XLXI_2/XLXI_8/z_183> <XLXI_2/XLXI_8/z_173> 
+INFO:Xst:2261 - The FF/Latch <XLXI_2/XLXI_8/z_194> in Unit <Control_block> is equivalent to the following 2 FFs/Latches, which will be removed : <XLXI_2/XLXI_8/z_184> <XLXI_2/XLXI_8/z_174> 
+INFO:Xst:2261 - The FF/Latch <XLXI_2/XLXI_8/z_195> in Unit <Control_block> is equivalent to the following 2 FFs/Latches, which will be removed : <XLXI_2/XLXI_8/z_185> <XLXI_2/XLXI_8/z_175> 
+INFO:Xst:2261 - The FF/Latch <XLXI_2/XLXI_8/z_196> in Unit <Control_block> is equivalent to the following 2 FFs/Latches, which will be removed : <XLXI_2/XLXI_8/z_186> <XLXI_2/XLXI_8/z_176> 
+INFO:Xst:2261 - The FF/Latch <XLXI_2/XLXI_8/z_197> in Unit <Control_block> is equivalent to the following 2 FFs/Latches, which will be removed : <XLXI_2/XLXI_8/z_187> <XLXI_2/XLXI_8/z_177> 
+INFO:Xst:2261 - The FF/Latch <XLXI_1/XLXI_8/y_13> in Unit <Control_block> is equivalent to the following FF/Latch, which will be removed : <XLXI_1/XLXI_8/x_13> 
+INFO:Xst:2261 - The FF/Latch <XLXI_1/XLXI_8/y_42> in Unit <Control_block> is equivalent to the following FF/Latch, which will be removed : <XLXI_1/XLXI_8/x_42> 
+INFO:Xst:2261 - The FF/Latch <XLXI_2/XLXI_8/y_7> in Unit <Control_block> is equivalent to the following FF/Latch, which will be removed : <XLXI_2/XLXI_8/x_7> 
+INFO:Xst:2261 - The FF/Latch <XLXI_1/XLXI_8/y_61> in Unit <Control_block> is equivalent to the following FF/Latch, which will be removed : <XLXI_1/XLXI_8/x_61> 
+INFO:Xst:2261 - The FF/Latch <XLXI_2/XLXI_8/y_13> in Unit <Control_block> is equivalent to the following FF/Latch, which will be removed : <XLXI_2/XLXI_8/x_13> 
+INFO:Xst:2261 - The FF/Latch <XLXI_2/XLXI_8/y_42> in Unit <Control_block> is equivalent to the following FF/Latch, which will be removed : <XLXI_2/XLXI_8/x_42> 
+INFO:Xst:2261 - The FF/Latch <XLXI_2/XLXI_8/y_61> in Unit <Control_block> is equivalent to the following FF/Latch, which will be removed : <XLXI_2/XLXI_8/x_61> 
+INFO:Xst:2261 - The FF/Latch <XLXI_3/XLXI_8/y_7> in Unit <Control_block> is equivalent to the following FF/Latch, which will be removed : <XLXI_3/XLXI_8/x_7> 
+INFO:Xst:2261 - The FF/Latch <XLXI_3/XLXI_8/z_191> in Unit <Control_block> is equivalent to the following 2 FFs/Latches, which will be removed : <XLXI_3/XLXI_8/z_181> <XLXI_3/XLXI_8/z_171> 
+INFO:Xst:2261 - The FF/Latch <XLXI_3/XLXI_8/z_192> in Unit <Control_block> is equivalent to the following 2 FFs/Latches, which will be removed : <XLXI_3/XLXI_8/z_182> <XLXI_3/XLXI_8/z_172> 
+INFO:Xst:2261 - The FF/Latch <XLXI_3/XLXI_8/z_193> in Unit <Control_block> is equivalent to the following 2 FFs/Latches, which will be removed : <XLXI_3/XLXI_8/z_183> <XLXI_3/XLXI_8/z_173> 
+INFO:Xst:2261 - The FF/Latch <XLXI_3/XLXI_8/z_194> in Unit <Control_block> is equivalent to the following 2 FFs/Latches, which will be removed : <XLXI_3/XLXI_8/z_184> <XLXI_3/XLXI_8/z_174> 
+INFO:Xst:2261 - The FF/Latch <XLXI_3/XLXI_8/z_195> in Unit <Control_block> is equivalent to the following 2 FFs/Latches, which will be removed : <XLXI_3/XLXI_8/z_185> <XLXI_3/XLXI_8/z_175> 
+INFO:Xst:2261 - The FF/Latch <XLXI_3/XLXI_8/z_196> in Unit <Control_block> is equivalent to the following 2 FFs/Latches, which will be removed : <XLXI_3/XLXI_8/z_186> <XLXI_3/XLXI_8/z_176> 
+INFO:Xst:2261 - The FF/Latch <XLXI_3/XLXI_8/z_197> in Unit <Control_block> is equivalent to the following 2 FFs/Latches, which will be removed : <XLXI_3/XLXI_8/z_187> <XLXI_3/XLXI_8/z_177> 
+INFO:Xst:2261 - The FF/Latch <XLXI_1/XLXI_8/y_7> in Unit <Control_block> is equivalent to the following FF/Latch, which will be removed : <XLXI_1/XLXI_8/x_7> 
+INFO:Xst:2261 - The FF/Latch <XLXI_3/XLXI_8/y_13> in Unit <Control_block> is equivalent to the following FF/Latch, which will be removed : <XLXI_3/XLXI_8/x_13> 
+INFO:Xst:2261 - The FF/Latch <XLXI_3/XLXI_8/y_42> in Unit <Control_block> is equivalent to the following FF/Latch, which will be removed : <XLXI_3/XLXI_8/x_42> 
+INFO:Xst:2261 - The FF/Latch <XLXI_3/XLXI_8/y_61> in Unit <Control_block> is equivalent to the following FF/Latch, which will be removed : <XLXI_3/XLXI_8/x_61> 
+INFO:Xst:2261 - The FF/Latch <XLXI_1/XLXI_8/z_191> in Unit <Control_block> is equivalent to the following 2 FFs/Latches, which will be removed : <XLXI_1/XLXI_8/z_181> <XLXI_1/XLXI_8/z_171> 
+INFO:Xst:2261 - The FF/Latch <XLXI_1/XLXI_8/z_192> in Unit <Control_block> is equivalent to the following 2 FFs/Latches, which will be removed : <XLXI_1/XLXI_8/z_182> <XLXI_1/XLXI_8/z_172> 
+INFO:Xst:2261 - The FF/Latch <XLXI_1/XLXI_8/z_193> in Unit <Control_block> is equivalent to the following 2 FFs/Latches, which will be removed : <XLXI_1/XLXI_8/z_183> <XLXI_1/XLXI_8/z_173> 
+INFO:Xst:2261 - The FF/Latch <XLXI_1/XLXI_8/z_194> in Unit <Control_block> is equivalent to the following 2 FFs/Latches, which will be removed : <XLXI_1/XLXI_8/z_184> <XLXI_1/XLXI_8/z_174> 
+INFO:Xst:2261 - The FF/Latch <XLXI_1/XLXI_8/z_195> in Unit <Control_block> is equivalent to the following 2 FFs/Latches, which will be removed : <XLXI_1/XLXI_8/z_185> <XLXI_1/XLXI_8/z_175> 
+INFO:Xst:2261 - The FF/Latch <XLXI_1/XLXI_8/z_196> in Unit <Control_block> is equivalent to the following 2 FFs/Latches, which will be removed : <XLXI_1/XLXI_8/z_186> <XLXI_1/XLXI_8/z_176> 
+INFO:Xst:2261 - The FF/Latch <XLXI_1/XLXI_8/z_197> in Unit <Control_block> is equivalent to the following 2 FFs/Latches, which will be removed : <XLXI_1/XLXI_8/z_187> <XLXI_1/XLXI_8/z_177> 
+INFO:Xst:2261 - The FF/Latch <XLXI_2/XLXI_8/z_191> in Unit <Control_block> is equivalent to the following 2 FFs/Latches, which will be removed : <XLXI_2/XLXI_8/z_181> <XLXI_2/XLXI_8/z_171> 
+INFO:Xst:2261 - The FF/Latch <XLXI_2/XLXI_8/z_192> in Unit <Control_block> is equivalent to the following 2 FFs/Latches, which will be removed : <XLXI_2/XLXI_8/z_182> <XLXI_2/XLXI_8/z_172> 
+
+Mapping all equations...
+Building and optimizing final netlist ...
+PACKER Warning: Lut XLXI_1/XLXI_8/z<5><19>_inv2 is driving XOR and other loads hence can not be packed with the XOR/Carry. This would result in an extra LUT for a feedthrough.
+PACKER Warning: Lut XLXI_1/XLXI_8/z<4><19>_inv2 is driving XOR and other loads hence can not be packed with the XOR/Carry. This would result in an extra LUT for a feedthrough.
+PACKER Warning: Lut XLXI_1/XLXI_8/z<6><19>_inv2 is driving XOR and other loads hence can not be packed with the XOR/Carry. This would result in an extra LUT for a feedthrough.
+PACKER Warning: Lut XLXI_2/XLXI_8/z<5><19>_inv2 is driving XOR and other loads hence can not be packed with the XOR/Carry. This would result in an extra LUT for a feedthrough.
+PACKER Warning: Lut XLXI_2/XLXI_8/z<4><19>_inv2 is driving XOR and other loads hence can not be packed with the XOR/Carry. This would result in an extra LUT for a feedthrough.
+PACKER Warning: Lut XLXI_2/XLXI_8/z<6><19>_inv2 is driving XOR and other loads hence can not be packed with the XOR/Carry. This would result in an extra LUT for a feedthrough.
+PACKER Warning: Lut XLXI_3/XLXI_8/z<5><19>_inv2 is driving XOR and other loads hence can not be packed with the XOR/Carry. This would result in an extra LUT for a feedthrough.
+PACKER Warning: Lut XLXI_3/XLXI_8/z<4><19>_inv2 is driving XOR and other loads hence can not be packed with the XOR/Carry. This would result in an extra LUT for a feedthrough.
+PACKER Warning: Lut XLXI_3/XLXI_8/z<6><19>_inv2 is driving XOR and other loads hence can not be packed with the XOR/Carry. This would result in an extra LUT for a feedthrough.
+Found area constraint ratio of 100 (+ 5) on block Control_block, actual ratio is 23.
+FlipFlop XLXI_1/XLXI_8/z_18 has been replicated 1 time(s)
+FlipFlop XLXI_1/XLXI_8/z_191 has been replicated 1 time(s)
+FlipFlop XLXI_1/XLXI_8/z_192 has been replicated 1 time(s)
+FlipFlop XLXI_1/XLXI_8/z_193 has been replicated 1 time(s)
+FlipFlop XLXI_2/XLXI_8/z_18 has been replicated 1 time(s)
+FlipFlop XLXI_2/XLXI_8/z_191 has been replicated 1 time(s)
+FlipFlop XLXI_2/XLXI_8/z_192 has been replicated 1 time(s)
+FlipFlop XLXI_2/XLXI_8/z_193 has been replicated 1 time(s)
+FlipFlop XLXI_3/XLXI_8/z_18 has been replicated 1 time(s)
+FlipFlop XLXI_3/XLXI_8/z_191 has been replicated 1 time(s)
+FlipFlop XLXI_3/XLXI_8/z_192 has been replicated 1 time(s)
+FlipFlop XLXI_3/XLXI_8/z_193 has been replicated 1 time(s)
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 664
+ Flip-Flops                                            : 664
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : Control_block.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 2767
+#      GND                         : 1
+#      INV                         : 309
+#      LUT1                        : 88
+#      LUT2                        : 231
+#      LUT3                        : 441
+#      LUT4                        : 24
+#      LUT5                        : 3
+#      MUXCY                       : 1029
+#      VCC                         : 1
+#      XORCY                       : 640
+# FlipFlops/Latches                : 693
+#      FD                          : 661
+#      FDE                         : 3
+#      LD                          : 29
+# Clock Buffers                    : 6
+#      BUFG                        : 4
+#      BUFGP                       : 2
+# IO Buffers                       : 6
+#      IBUF                        : 3
+#      OBUF                        : 3
+# Logical                          : 3
+#      NOR2                        : 3
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx9tqg144-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             693  out of  11440     6%  
+ Number of Slice LUTs:                 1096  out of   5720    19%  
+    Number used as Logic:              1096  out of   5720    19%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:   1165
+   Number with an unused Flip Flop:     472  out of   1165    40%  
+   Number with an unused LUT:            69  out of   1165     5%  
+   Number of fully used LUT-FF pairs:   624  out of   1165    53%  
+   Number of unique control sets:         8
+
+IO Utilization: 
+ Number of IOs:                           8
+ Number of bonded IOBs:                   8  out of    102     7%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                6  out of     16    37%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-------------------------------------------------------------+--------------------------------+-------+
+Clock Signal                                                 | Clock buffer(FF name)          | Load  |
+-------------------------------------------------------------+--------------------------------+-------+
+Q0                                                           | BUFGP                          | 7     |
+XLXI_2/XLXI_6/Q                                              | BUFG                           | 221   |
+XLXI_1/XLXI_6/Q                                              | BUFG                           | 213   |
+XLXI_3/XLXI_6/Q                                              | BUFG                           | 220   |
+XLXI_7/angle_adjust_A_1_G(XLXI_7/hall[2]_hall[2]_OR_157_o1:O)| BUFG(*)(XLXI_7/angle_correct_1)| 29    |
+clk                                                          | BUFGP                          | 3     |
+-------------------------------------------------------------+--------------------------------+-------+
+(*) This 1 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 3.351ns (Maximum Frequency: 298.407MHz)
+   Minimum input arrival time before clock: 2.826ns
+   Maximum output required time after clock: 7.301ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'Q0'
+  Clock period: 1.852ns (frequency: 539.884MHz)
+  Total number of paths / destination ports: 28 / 7
+-------------------------------------------------------------------------
+Delay:               1.852ns (Levels of Logic = 8)
+  Source:            XLXI_9/ticks_0 (FF)
+  Destination:       XLXI_9/ticks_6 (FF)
+  Source Clock:      Q0 rising
+  Destination Clock: Q0 rising
+
+  Data Path: XLXI_9/ticks_0 to XLXI_9/ticks_6
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               3   0.447   0.650  XLXI_9/ticks_0 (XLXI_9/ticks_0)
+     INV:I->O              1   0.206   0.000  XLXI_9/Mcount_ticks_lut<0>_INV_0 (XLXI_9/Mcount_ticks_lut<0>)
+     MUXCY:S->O            1   0.172   0.000  XLXI_9/Mcount_ticks_cy<0> (XLXI_9/Mcount_ticks_cy<0>)
+     MUXCY:CI->O           1   0.019   0.000  XLXI_9/Mcount_ticks_cy<1> (XLXI_9/Mcount_ticks_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  XLXI_9/Mcount_ticks_cy<2> (XLXI_9/Mcount_ticks_cy<2>)
+     MUXCY:CI->O           1   0.019   0.000  XLXI_9/Mcount_ticks_cy<3> (XLXI_9/Mcount_ticks_cy<3>)
+     MUXCY:CI->O           1   0.019   0.000  XLXI_9/Mcount_ticks_cy<4> (XLXI_9/Mcount_ticks_cy<4>)
+     MUXCY:CI->O           0   0.019   0.000  XLXI_9/Mcount_ticks_cy<5> (XLXI_9/Mcount_ticks_cy<5>)
+     XORCY:CI->O           1   0.180   0.000  XLXI_9/Mcount_ticks_xor<6> (Result<6>)
+     FD:D                      0.102          XLXI_9/ticks_6
+    ----------------------------------------
+    Total                      1.852ns (1.202ns logic, 0.650ns route)
+                                       (64.9% logic, 35.1% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'XLXI_2/XLXI_6/Q'
+  Clock period: 3.351ns (frequency: 298.407MHz)
+  Total number of paths / destination ports: 4462 / 207
+-------------------------------------------------------------------------
+Delay:               3.351ns (Levels of Logic = 21)
+  Source:            XLXI_2/XLXI_8/z_196 (FF)
+  Destination:       XLXI_2/XLXI_8/z_197 (FF)
+  Source Clock:      XLXI_2/XLXI_6/Q rising
+  Destination Clock: XLXI_2/XLXI_6/Q rising
+
+  Data Path: XLXI_2/XLXI_8/z_196 to XLXI_2/XLXI_8/z_197
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q              40   0.447   1.405  XLXI_2/XLXI_8/z_196 (XLXI_2/XLXI_8/z_196)
+     INV:I->O              3   0.206   0.650  XLXI_2/XLXI_8/z<6><19>_inv2_INV_0 (XLXI_2/XLXI_8/Maddsub_z[6][19]_z[6][19]_mux_113_OUT_lut<0>)
+     MUXCY:CI->O           1   0.019   0.000  XLXI_2/XLXI_8/Maddsub_z[6][19]_z[6][19]_mux_113_OUT_cy<0> (XLXI_2/XLXI_8/Maddsub_z[6][19]_z[6][19]_mux_113_OUT_cy<0>)
+     MUXCY:CI->O           1   0.019   0.000  XLXI_2/XLXI_8/Maddsub_z[6][19]_z[6][19]_mux_113_OUT_cy<1> (XLXI_2/XLXI_8/Maddsub_z[6][19]_z[6][19]_mux_113_OUT_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  XLXI_2/XLXI_8/Maddsub_z[6][19]_z[6][19]_mux_113_OUT_cy<2> (XLXI_2/XLXI_8/Maddsub_z[6][19]_z[6][19]_mux_113_OUT_cy<2>)
+     MUXCY:CI->O           1   0.019   0.000  XLXI_2/XLXI_8/Maddsub_z[6][19]_z[6][19]_mux_113_OUT_cy<3> (XLXI_2/XLXI_8/Maddsub_z[6][19]_z[6][19]_mux_113_OUT_cy<3>)
+     MUXCY:CI->O           1   0.019   0.000  XLXI_2/XLXI_8/Maddsub_z[6][19]_z[6][19]_mux_113_OUT_cy<4> (XLXI_2/XLXI_8/Maddsub_z[6][19]_z[6][19]_mux_113_OUT_cy<4>)
+     MUXCY:CI->O           1   0.019   0.000  XLXI_2/XLXI_8/Maddsub_z[6][19]_z[6][19]_mux_113_OUT_cy<5> (XLXI_2/XLXI_8/Maddsub_z[6][19]_z[6][19]_mux_113_OUT_cy<5>)
+     MUXCY:CI->O           1   0.019   0.000  XLXI_2/XLXI_8/Maddsub_z[6][19]_z[6][19]_mux_113_OUT_cy<6> (XLXI_2/XLXI_8/Maddsub_z[6][19]_z[6][19]_mux_113_OUT_cy<6>)
+     MUXCY:CI->O           1   0.019   0.000  XLXI_2/XLXI_8/Maddsub_z[6][19]_z[6][19]_mux_113_OUT_cy<7> (XLXI_2/XLXI_8/Maddsub_z[6][19]_z[6][19]_mux_113_OUT_cy<7>)
+     MUXCY:CI->O           1   0.019   0.000  XLXI_2/XLXI_8/Maddsub_z[6][19]_z[6][19]_mux_113_OUT_cy<8> (XLXI_2/XLXI_8/Maddsub_z[6][19]_z[6][19]_mux_113_OUT_cy<8>)
+     MUXCY:CI->O           1   0.019   0.000  XLXI_2/XLXI_8/Maddsub_z[6][19]_z[6][19]_mux_113_OUT_cy<9> (XLXI_2/XLXI_8/Maddsub_z[6][19]_z[6][19]_mux_113_OUT_cy<9>)
+     MUXCY:CI->O           1   0.019   0.000  XLXI_2/XLXI_8/Maddsub_z[6][19]_z[6][19]_mux_113_OUT_cy<10> (XLXI_2/XLXI_8/Maddsub_z[6][19]_z[6][19]_mux_113_OUT_cy<10>)
+     MUXCY:CI->O           1   0.019   0.000  XLXI_2/XLXI_8/Maddsub_z[6][19]_z[6][19]_mux_113_OUT_cy<11> (XLXI_2/XLXI_8/Maddsub_z[6][19]_z[6][19]_mux_113_OUT_cy<11>)
+     MUXCY:CI->O           1   0.019   0.000  XLXI_2/XLXI_8/Maddsub_z[6][19]_z[6][19]_mux_113_OUT_cy<12> (XLXI_2/XLXI_8/Maddsub_z[6][19]_z[6][19]_mux_113_OUT_cy<12>)
+     MUXCY:CI->O           1   0.019   0.000  XLXI_2/XLXI_8/Maddsub_z[6][19]_z[6][19]_mux_113_OUT_cy<13> (XLXI_2/XLXI_8/Maddsub_z[6][19]_z[6][19]_mux_113_OUT_cy<13>)
+     MUXCY:CI->O           1   0.019   0.000  XLXI_2/XLXI_8/Maddsub_z[6][19]_z[6][19]_mux_113_OUT_cy<14> (XLXI_2/XLXI_8/Maddsub_z[6][19]_z[6][19]_mux_113_OUT_cy<14>)
+     MUXCY:CI->O           1   0.019   0.000  XLXI_2/XLXI_8/Maddsub_z[6][19]_z[6][19]_mux_113_OUT_cy<15> (XLXI_2/XLXI_8/Maddsub_z[6][19]_z[6][19]_mux_113_OUT_cy<15>)
+     MUXCY:CI->O           1   0.019   0.000  XLXI_2/XLXI_8/Maddsub_z[6][19]_z[6][19]_mux_113_OUT_cy<16> (XLXI_2/XLXI_8/Maddsub_z[6][19]_z[6][19]_mux_113_OUT_cy<16>)
+     MUXCY:CI->O           1   0.019   0.000  XLXI_2/XLXI_8/Maddsub_z[6][19]_z[6][19]_mux_113_OUT_cy<17> (XLXI_2/XLXI_8/Maddsub_z[6][19]_z[6][19]_mux_113_OUT_cy<17>)
+     MUXCY:CI->O           0   0.019   0.000  XLXI_2/XLXI_8/Maddsub_z[6][19]_z[6][19]_mux_113_OUT_cy<18> (XLXI_2/XLXI_8/Maddsub_z[6][19]_z[6][19]_mux_113_OUT_cy<18>)
+     XORCY:CI->O           1   0.180   0.000  XLXI_2/XLXI_8/Maddsub_z[6][19]_z[6][19]_mux_113_OUT_xor<19> (XLXI_2/XLXI_8/z[6][19]_z[6][19]_mux_113_OUT<19>)
+     FD:D                      0.102          XLXI_2/XLXI_8/z_197
+    ----------------------------------------
+    Total                      3.351ns (1.296ns logic, 2.055ns route)
+                                       (38.7% logic, 61.3% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'XLXI_1/XLXI_6/Q'
+  Clock period: 3.351ns (frequency: 298.407MHz)
+  Total number of paths / destination ports: 4265 / 200
+-------------------------------------------------------------------------
+Delay:               3.351ns (Levels of Logic = 21)
+  Source:            XLXI_1/XLXI_8/z_196 (FF)
+  Destination:       XLXI_1/XLXI_8/z_197 (FF)
+  Source Clock:      XLXI_1/XLXI_6/Q rising
+  Destination Clock: XLXI_1/XLXI_6/Q rising
+
+  Data Path: XLXI_1/XLXI_8/z_196 to XLXI_1/XLXI_8/z_197
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q              40   0.447   1.405  XLXI_1/XLXI_8/z_196 (XLXI_1/XLXI_8/z_196)
+     INV:I->O              3   0.206   0.650  XLXI_1/XLXI_8/z<6><19>_inv2_INV_0 (XLXI_1/XLXI_8/Maddsub_z[6][19]_z[6][19]_mux_113_OUT_lut<0>)
+     MUXCY:CI->O           1   0.019   0.000  XLXI_1/XLXI_8/Maddsub_z[6][19]_z[6][19]_mux_113_OUT_cy<0> (XLXI_1/XLXI_8/Maddsub_z[6][19]_z[6][19]_mux_113_OUT_cy<0>)
+     MUXCY:CI->O           1   0.019   0.000  XLXI_1/XLXI_8/Maddsub_z[6][19]_z[6][19]_mux_113_OUT_cy<1> (XLXI_1/XLXI_8/Maddsub_z[6][19]_z[6][19]_mux_113_OUT_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  XLXI_1/XLXI_8/Maddsub_z[6][19]_z[6][19]_mux_113_OUT_cy<2> (XLXI_1/XLXI_8/Maddsub_z[6][19]_z[6][19]_mux_113_OUT_cy<2>)
+     MUXCY:CI->O           1   0.019   0.000  XLXI_1/XLXI_8/Maddsub_z[6][19]_z[6][19]_mux_113_OUT_cy<3> (XLXI_1/XLXI_8/Maddsub_z[6][19]_z[6][19]_mux_113_OUT_cy<3>)
+     MUXCY:CI->O           1   0.019   0.000  XLXI_1/XLXI_8/Maddsub_z[6][19]_z[6][19]_mux_113_OUT_cy<4> (XLXI_1/XLXI_8/Maddsub_z[6][19]_z[6][19]_mux_113_OUT_cy<4>)
+     MUXCY:CI->O           1   0.019   0.000  XLXI_1/XLXI_8/Maddsub_z[6][19]_z[6][19]_mux_113_OUT_cy<5> (XLXI_1/XLXI_8/Maddsub_z[6][19]_z[6][19]_mux_113_OUT_cy<5>)
+     MUXCY:CI->O           1   0.019   0.000  XLXI_1/XLXI_8/Maddsub_z[6][19]_z[6][19]_mux_113_OUT_cy<6> (XLXI_1/XLXI_8/Maddsub_z[6][19]_z[6][19]_mux_113_OUT_cy<6>)
+     MUXCY:CI->O           1   0.019   0.000  XLXI_1/XLXI_8/Maddsub_z[6][19]_z[6][19]_mux_113_OUT_cy<7> (XLXI_1/XLXI_8/Maddsub_z[6][19]_z[6][19]_mux_113_OUT_cy<7>)
+     MUXCY:CI->O           1   0.019   0.000  XLXI_1/XLXI_8/Maddsub_z[6][19]_z[6][19]_mux_113_OUT_cy<8> (XLXI_1/XLXI_8/Maddsub_z[6][19]_z[6][19]_mux_113_OUT_cy<8>)
+     MUXCY:CI->O           1   0.019   0.000  XLXI_1/XLXI_8/Maddsub_z[6][19]_z[6][19]_mux_113_OUT_cy<9> (XLXI_1/XLXI_8/Maddsub_z[6][19]_z[6][19]_mux_113_OUT_cy<9>)
+     MUXCY:CI->O           1   0.019   0.000  XLXI_1/XLXI_8/Maddsub_z[6][19]_z[6][19]_mux_113_OUT_cy<10> (XLXI_1/XLXI_8/Maddsub_z[6][19]_z[6][19]_mux_113_OUT_cy<10>)
+     MUXCY:CI->O           1   0.019   0.000  XLXI_1/XLXI_8/Maddsub_z[6][19]_z[6][19]_mux_113_OUT_cy<11> (XLXI_1/XLXI_8/Maddsub_z[6][19]_z[6][19]_mux_113_OUT_cy<11>)
+     MUXCY:CI->O           1   0.019   0.000  XLXI_1/XLXI_8/Maddsub_z[6][19]_z[6][19]_mux_113_OUT_cy<12> (XLXI_1/XLXI_8/Maddsub_z[6][19]_z[6][19]_mux_113_OUT_cy<12>)
+     MUXCY:CI->O           1   0.019   0.000  XLXI_1/XLXI_8/Maddsub_z[6][19]_z[6][19]_mux_113_OUT_cy<13> (XLXI_1/XLXI_8/Maddsub_z[6][19]_z[6][19]_mux_113_OUT_cy<13>)
+     MUXCY:CI->O           1   0.019   0.000  XLXI_1/XLXI_8/Maddsub_z[6][19]_z[6][19]_mux_113_OUT_cy<14> (XLXI_1/XLXI_8/Maddsub_z[6][19]_z[6][19]_mux_113_OUT_cy<14>)
+     MUXCY:CI->O           1   0.019   0.000  XLXI_1/XLXI_8/Maddsub_z[6][19]_z[6][19]_mux_113_OUT_cy<15> (XLXI_1/XLXI_8/Maddsub_z[6][19]_z[6][19]_mux_113_OUT_cy<15>)
+     MUXCY:CI->O           1   0.019   0.000  XLXI_1/XLXI_8/Maddsub_z[6][19]_z[6][19]_mux_113_OUT_cy<16> (XLXI_1/XLXI_8/Maddsub_z[6][19]_z[6][19]_mux_113_OUT_cy<16>)
+     MUXCY:CI->O           1   0.019   0.000  XLXI_1/XLXI_8/Maddsub_z[6][19]_z[6][19]_mux_113_OUT_cy<17> (XLXI_1/XLXI_8/Maddsub_z[6][19]_z[6][19]_mux_113_OUT_cy<17>)
+     MUXCY:CI->O           0   0.019   0.000  XLXI_1/XLXI_8/Maddsub_z[6][19]_z[6][19]_mux_113_OUT_cy<18> (XLXI_1/XLXI_8/Maddsub_z[6][19]_z[6][19]_mux_113_OUT_cy<18>)
+     XORCY:CI->O           1   0.180   0.000  XLXI_1/XLXI_8/Maddsub_z[6][19]_z[6][19]_mux_113_OUT_xor<19> (XLXI_1/XLXI_8/z[6][19]_z[6][19]_mux_113_OUT<19>)
+     FD:D                      0.102          XLXI_1/XLXI_8/z_197
+    ----------------------------------------
+    Total                      3.351ns (1.296ns logic, 2.055ns route)
+                                       (38.7% logic, 61.3% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'XLXI_3/XLXI_6/Q'
+  Clock period: 3.351ns (frequency: 298.407MHz)
+  Total number of paths / destination ports: 4445 / 207
+-------------------------------------------------------------------------
+Delay:               3.351ns (Levels of Logic = 21)
+  Source:            XLXI_3/XLXI_8/z_196 (FF)
+  Destination:       XLXI_3/XLXI_8/z_197 (FF)
+  Source Clock:      XLXI_3/XLXI_6/Q rising
+  Destination Clock: XLXI_3/XLXI_6/Q rising
+
+  Data Path: XLXI_3/XLXI_8/z_196 to XLXI_3/XLXI_8/z_197
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q              40   0.447   1.405  XLXI_3/XLXI_8/z_196 (XLXI_3/XLXI_8/z_196)
+     INV:I->O              3   0.206   0.650  XLXI_3/XLXI_8/z<6><19>_inv2_INV_0 (XLXI_3/XLXI_8/Maddsub_z[6][19]_z[6][19]_mux_113_OUT_lut<0>)
+     MUXCY:CI->O           1   0.019   0.000  XLXI_3/XLXI_8/Maddsub_z[6][19]_z[6][19]_mux_113_OUT_cy<0> (XLXI_3/XLXI_8/Maddsub_z[6][19]_z[6][19]_mux_113_OUT_cy<0>)
+     MUXCY:CI->O           1   0.019   0.000  XLXI_3/XLXI_8/Maddsub_z[6][19]_z[6][19]_mux_113_OUT_cy<1> (XLXI_3/XLXI_8/Maddsub_z[6][19]_z[6][19]_mux_113_OUT_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  XLXI_3/XLXI_8/Maddsub_z[6][19]_z[6][19]_mux_113_OUT_cy<2> (XLXI_3/XLXI_8/Maddsub_z[6][19]_z[6][19]_mux_113_OUT_cy<2>)
+     MUXCY:CI->O           1   0.019   0.000  XLXI_3/XLXI_8/Maddsub_z[6][19]_z[6][19]_mux_113_OUT_cy<3> (XLXI_3/XLXI_8/Maddsub_z[6][19]_z[6][19]_mux_113_OUT_cy<3>)
+     MUXCY:CI->O           1   0.019   0.000  XLXI_3/XLXI_8/Maddsub_z[6][19]_z[6][19]_mux_113_OUT_cy<4> (XLXI_3/XLXI_8/Maddsub_z[6][19]_z[6][19]_mux_113_OUT_cy<4>)
+     MUXCY:CI->O           1   0.019   0.000  XLXI_3/XLXI_8/Maddsub_z[6][19]_z[6][19]_mux_113_OUT_cy<5> (XLXI_3/XLXI_8/Maddsub_z[6][19]_z[6][19]_mux_113_OUT_cy<5>)
+     MUXCY:CI->O           1   0.019   0.000  XLXI_3/XLXI_8/Maddsub_z[6][19]_z[6][19]_mux_113_OUT_cy<6> (XLXI_3/XLXI_8/Maddsub_z[6][19]_z[6][19]_mux_113_OUT_cy<6>)
+     MUXCY:CI->O           1   0.019   0.000  XLXI_3/XLXI_8/Maddsub_z[6][19]_z[6][19]_mux_113_OUT_cy<7> (XLXI_3/XLXI_8/Maddsub_z[6][19]_z[6][19]_mux_113_OUT_cy<7>)
+     MUXCY:CI->O           1   0.019   0.000  XLXI_3/XLXI_8/Maddsub_z[6][19]_z[6][19]_mux_113_OUT_cy<8> (XLXI_3/XLXI_8/Maddsub_z[6][19]_z[6][19]_mux_113_OUT_cy<8>)
+     MUXCY:CI->O           1   0.019   0.000  XLXI_3/XLXI_8/Maddsub_z[6][19]_z[6][19]_mux_113_OUT_cy<9> (XLXI_3/XLXI_8/Maddsub_z[6][19]_z[6][19]_mux_113_OUT_cy<9>)
+     MUXCY:CI->O           1   0.019   0.000  XLXI_3/XLXI_8/Maddsub_z[6][19]_z[6][19]_mux_113_OUT_cy<10> (XLXI_3/XLXI_8/Maddsub_z[6][19]_z[6][19]_mux_113_OUT_cy<10>)
+     MUXCY:CI->O           1   0.019   0.000  XLXI_3/XLXI_8/Maddsub_z[6][19]_z[6][19]_mux_113_OUT_cy<11> (XLXI_3/XLXI_8/Maddsub_z[6][19]_z[6][19]_mux_113_OUT_cy<11>)
+     MUXCY:CI->O           1   0.019   0.000  XLXI_3/XLXI_8/Maddsub_z[6][19]_z[6][19]_mux_113_OUT_cy<12> (XLXI_3/XLXI_8/Maddsub_z[6][19]_z[6][19]_mux_113_OUT_cy<12>)
+     MUXCY:CI->O           1   0.019   0.000  XLXI_3/XLXI_8/Maddsub_z[6][19]_z[6][19]_mux_113_OUT_cy<13> (XLXI_3/XLXI_8/Maddsub_z[6][19]_z[6][19]_mux_113_OUT_cy<13>)
+     MUXCY:CI->O           1   0.019   0.000  XLXI_3/XLXI_8/Maddsub_z[6][19]_z[6][19]_mux_113_OUT_cy<14> (XLXI_3/XLXI_8/Maddsub_z[6][19]_z[6][19]_mux_113_OUT_cy<14>)
+     MUXCY:CI->O           1   0.019   0.000  XLXI_3/XLXI_8/Maddsub_z[6][19]_z[6][19]_mux_113_OUT_cy<15> (XLXI_3/XLXI_8/Maddsub_z[6][19]_z[6][19]_mux_113_OUT_cy<15>)
+     MUXCY:CI->O           1   0.019   0.000  XLXI_3/XLXI_8/Maddsub_z[6][19]_z[6][19]_mux_113_OUT_cy<16> (XLXI_3/XLXI_8/Maddsub_z[6][19]_z[6][19]_mux_113_OUT_cy<16>)
+     MUXCY:CI->O           1   0.019   0.000  XLXI_3/XLXI_8/Maddsub_z[6][19]_z[6][19]_mux_113_OUT_cy<17> (XLXI_3/XLXI_8/Maddsub_z[6][19]_z[6][19]_mux_113_OUT_cy<17>)
+     MUXCY:CI->O           0   0.019   0.000  XLXI_3/XLXI_8/Maddsub_z[6][19]_z[6][19]_mux_113_OUT_cy<18> (XLXI_3/XLXI_8/Maddsub_z[6][19]_z[6][19]_mux_113_OUT_cy<18>)
+     XORCY:CI->O           1   0.180   0.000  XLXI_3/XLXI_8/Maddsub_z[6][19]_z[6][19]_mux_113_OUT_xor<19> (XLXI_3/XLXI_8/z[6][19]_z[6][19]_mux_113_OUT<19>)
+     FD:D                      0.102          XLXI_3/XLXI_8/z_197
+    ----------------------------------------
+    Total                      3.351ns (1.296ns logic, 2.055ns route)
+                                       (38.7% logic, 61.3% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 1.913ns (frequency: 522.821MHz)
+  Total number of paths / destination ports: 3 / 3
+-------------------------------------------------------------------------
+Delay:               1.913ns (Levels of Logic = 1)
+  Source:            XLXI_1/XLXI_6/Q (FF)
+  Destination:       XLXI_1/XLXI_6/Q (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: XLXI_1/XLXI_6/Q to XLXI_1/XLXI_6/Q
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              1   0.447   0.579  Q (Q)
+     INV:I->O              1   0.206   0.579  Q_INV_1_o1_INV_0 (Q_INV_1_o)
+     FDE:D                     0.102          Q
+    ----------------------------------------
+    Total                      1.913ns (0.755ns logic, 1.158ns route)
+                                       (39.5% logic, 60.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'XLXI_7/angle_adjust_A_1_G'
+  Total number of paths / destination ports: 61 / 22
+-------------------------------------------------------------------------
+Offset:              2.826ns (Levels of Logic = 2)
+  Source:            HALL<2> (PAD)
+  Destination:       XLXI_7/angle_adjust_C_6 (LATCH)
+  Destination Clock: XLXI_7/angle_adjust_A_1_G falling
+
+  Data Path: HALL<2> to XLXI_7/angle_adjust_C_6
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            22   1.222   1.362  HALL_2_IBUF (HALL_2_IBUF)
+     LUT3:I0->O            1   0.205   0.000  XLXI_7/angle_adjust_C_1_D (XLXI_7/angle_adjust_C_1_D)
+     LD:D                      0.037          XLXI_7/angle_adjust_C_1
+    ----------------------------------------
+    Total                      2.826ns (1.464ns logic, 1.362ns route)
+                                       (51.8% logic, 48.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'XLXI_3/XLXI_6/Q'
+  Total number of paths / destination ports: 72 / 1
+-------------------------------------------------------------------------
+Offset:              7.301ns (Levels of Logic = 8)
+  Source:            XLXI_3/XLXI_5/temp_0 (FF)
+  Destination:       PHASE_A (PAD)
+  Source Clock:      XLXI_3/XLXI_6/Q rising
+
+  Data Path: XLXI_3/XLXI_5/temp_0 to PHASE_A
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               3   0.447   0.879  XLXI_3/XLXI_5/temp_0 (XLXI_3/XLXI_5/temp_0)
+     LUT4:I1->O            1   0.205   0.000  XLXI_3/XLXI_3/Mcompar_swave[9]_twave[9]_LessThan_1_o_lut<0> (XLXI_3/XLXI_3/Mcompar_swave[9]_twave[9]_LessThan_1_o_lut<0>)
+     MUXCY:S->O            1   0.172   0.000  XLXI_3/XLXI_3/Mcompar_swave[9]_twave[9]_LessThan_1_o_cy<0> (XLXI_3/XLXI_3/Mcompar_swave[9]_twave[9]_LessThan_1_o_cy<0>)
+     MUXCY:CI->O           1   0.019   0.000  XLXI_3/XLXI_3/Mcompar_swave[9]_twave[9]_LessThan_1_o_cy<1> (XLXI_3/XLXI_3/Mcompar_swave[9]_twave[9]_LessThan_1_o_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  XLXI_3/XLXI_3/Mcompar_swave[9]_twave[9]_LessThan_1_o_cy<2> (XLXI_3/XLXI_3/Mcompar_swave[9]_twave[9]_LessThan_1_o_cy<2>)
+     MUXCY:CI->O           1   0.213   0.808  XLXI_3/XLXI_3/Mcompar_swave[9]_twave[9]_LessThan_1_o_cy<3> (XLXI_3/XLXI_3/Mcompar_swave[9]_twave[9]_LessThan_1_o_cy<3>)
+     LUT5:I2->O            2   0.205   0.981  XLXI_3/XLXI_3/Mcompar_swave[9]_twave[9]_LessThan_1_o_cy<4>_inv1 (XLXN_14)
+     NOR2:I0->O            1   0.203   0.579  XLXI_4 (PHASE_A_OBUF)
+     OBUF:I->O                 2.571          PHASE_A_OBUF (PHASE_A)
+    ----------------------------------------
+    Total                      7.301ns (4.054ns logic, 3.247ns route)
+                                       (55.5% logic, 44.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'XLXI_1/XLXI_6/Q'
+  Total number of paths / destination ports: 72 / 1
+-------------------------------------------------------------------------
+Offset:              7.301ns (Levels of Logic = 8)
+  Source:            XLXI_1/XLXI_5/temp_0 (FF)
+  Destination:       PHASE_B (PAD)
+  Source Clock:      XLXI_1/XLXI_6/Q rising
+
+  Data Path: XLXI_1/XLXI_5/temp_0 to PHASE_B
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               3   0.447   0.879  XLXI_1/XLXI_5/temp_0 (XLXI_1/XLXI_5/temp_0)
+     LUT4:I1->O            1   0.205   0.000  XLXI_1/XLXI_3/Mcompar_swave[9]_twave[9]_LessThan_1_o_lut<0> (XLXI_1/XLXI_3/Mcompar_swave[9]_twave[9]_LessThan_1_o_lut<0>)
+     MUXCY:S->O            1   0.172   0.000  XLXI_1/XLXI_3/Mcompar_swave[9]_twave[9]_LessThan_1_o_cy<0> (XLXI_1/XLXI_3/Mcompar_swave[9]_twave[9]_LessThan_1_o_cy<0>)
+     MUXCY:CI->O           1   0.019   0.000  XLXI_1/XLXI_3/Mcompar_swave[9]_twave[9]_LessThan_1_o_cy<1> (XLXI_1/XLXI_3/Mcompar_swave[9]_twave[9]_LessThan_1_o_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  XLXI_1/XLXI_3/Mcompar_swave[9]_twave[9]_LessThan_1_o_cy<2> (XLXI_1/XLXI_3/Mcompar_swave[9]_twave[9]_LessThan_1_o_cy<2>)
+     MUXCY:CI->O           1   0.213   0.808  XLXI_1/XLXI_3/Mcompar_swave[9]_twave[9]_LessThan_1_o_cy<3> (XLXI_1/XLXI_3/Mcompar_swave[9]_twave[9]_LessThan_1_o_cy<3>)
+     LUT5:I2->O            2   0.205   0.981  XLXI_1/XLXI_3/Mcompar_swave[9]_twave[9]_LessThan_1_o_cy<4>_inv1 (XLXN_16)
+     NOR2:I0->O            1   0.203   0.579  XLXI_5 (PHASE_B_OBUF)
+     OBUF:I->O                 2.571          PHASE_B_OBUF (PHASE_B)
+    ----------------------------------------
+    Total                      7.301ns (4.054ns logic, 3.247ns route)
+                                       (55.5% logic, 44.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'XLXI_2/XLXI_6/Q'
+  Total number of paths / destination ports: 72 / 1
+-------------------------------------------------------------------------
+Offset:              7.301ns (Levels of Logic = 8)
+  Source:            XLXI_2/XLXI_5/temp_0 (FF)
+  Destination:       PHASE_C (PAD)
+  Source Clock:      XLXI_2/XLXI_6/Q rising
+
+  Data Path: XLXI_2/XLXI_5/temp_0 to PHASE_C
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               3   0.447   0.879  XLXI_2/XLXI_5/temp_0 (XLXI_2/XLXI_5/temp_0)
+     LUT4:I1->O            1   0.205   0.000  XLXI_2/XLXI_3/Mcompar_swave[9]_twave[9]_LessThan_1_o_lut<0> (XLXI_2/XLXI_3/Mcompar_swave[9]_twave[9]_LessThan_1_o_lut<0>)
+     MUXCY:S->O            1   0.172   0.000  XLXI_2/XLXI_3/Mcompar_swave[9]_twave[9]_LessThan_1_o_cy<0> (XLXI_2/XLXI_3/Mcompar_swave[9]_twave[9]_LessThan_1_o_cy<0>)
+     MUXCY:CI->O           1   0.019   0.000  XLXI_2/XLXI_3/Mcompar_swave[9]_twave[9]_LessThan_1_o_cy<1> (XLXI_2/XLXI_3/Mcompar_swave[9]_twave[9]_LessThan_1_o_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  XLXI_2/XLXI_3/Mcompar_swave[9]_twave[9]_LessThan_1_o_cy<2> (XLXI_2/XLXI_3/Mcompar_swave[9]_twave[9]_LessThan_1_o_cy<2>)
+     MUXCY:CI->O           1   0.213   0.808  XLXI_2/XLXI_3/Mcompar_swave[9]_twave[9]_LessThan_1_o_cy<3> (XLXI_2/XLXI_3/Mcompar_swave[9]_twave[9]_LessThan_1_o_cy<3>)
+     LUT5:I2->O            2   0.205   0.981  XLXI_2/XLXI_3/Mcompar_swave[9]_twave[9]_LessThan_1_o_cy<4>_inv1 (XLXN_18)
+     NOR2:I0->O            1   0.203   0.579  XLXI_6 (PHASE_C_OBUF)
+     OBUF:I->O                 2.571          PHASE_C_OBUF (PHASE_C)
+    ----------------------------------------
+    Total                      7.301ns (4.054ns logic, 3.247ns route)
+                                       (55.5% logic, 44.5% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock Q0
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+Q0             |    1.852|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock XLXI_1/XLXI_6/Q
+-------------------------+---------+---------+---------+---------+
+                         | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock             |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-------------------------+---------+---------+---------+---------+
+Q0                       |    4.297|         |         |         |
+XLXI_1/XLXI_6/Q          |    3.351|         |         |         |
+XLXI_7/angle_adjust_A_1_G|         |    4.175|         |         |
+-------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock XLXI_2/XLXI_6/Q
+-------------------------+---------+---------+---------+---------+
+                         | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock             |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-------------------------+---------+---------+---------+---------+
+Q0                       |    4.297|         |         |         |
+XLXI_2/XLXI_6/Q          |    3.351|         |         |         |
+XLXI_7/angle_adjust_A_1_G|         |    4.175|         |         |
+-------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock XLXI_3/XLXI_6/Q
+-------------------------+---------+---------+---------+---------+
+                         | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock             |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-------------------------+---------+---------+---------+---------+
+Q0                       |    4.297|         |         |         |
+XLXI_3/XLXI_6/Q          |    3.351|         |         |         |
+XLXI_7/angle_adjust_A_1_G|         |    4.175|         |         |
+-------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock XLXI_7/angle_adjust_A_1_G
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+Q0             |         |         |    1.134|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    1.913|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 20.00 secs
+Total CPU time to Xst completion: 15.89 secs
+ 
+--> 
+
+
+Total memory usage is 489284 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  481 (   0 filtered)
+Number of infos    :   36 (   0 filtered)
+

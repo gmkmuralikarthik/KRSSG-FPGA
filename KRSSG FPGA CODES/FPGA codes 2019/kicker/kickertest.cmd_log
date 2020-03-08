@@ -1,0 +1,82 @@
+sch2hdl -intstyle ise -family spartan6 -verilog kickertest_drc.vf -w {/home/ise/ism_projects/xi share/not my codes/kicker/kickertest.sch} 
+xst -intstyle ise -ifn "/home/ise/ism_projects/xi share/not my codes/kicker/kickertest.xst" -ofn "/home/ise/ism_projects/xi share/not my codes/kicker/kickertest.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx9-tqg144-3 "kickertest.ngc" kickertest.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o kickertest_map.ncd kickertest.ngd kickertest.pcf 
+par -w -intstyle ise -ol high -mt off kickertest_map.ncd kickertest.ncd kickertest.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml kickertest.twx kickertest.ncd -o kickertest.twr kickertest.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx9-tqg144-3 "kickertest.ngc" kickertest.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o kickertest_map.ncd kickertest.ngd kickertest.pcf 
+par -w -intstyle ise -ol high -mt off kickertest_map.ncd kickertest.ncd kickertest.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml kickertest.twx kickertest.ncd -o kickertest.twr kickertest.pcf 
+bitgen -intstyle ise -f kickertest.ut kickertest.ncd 
+bitgen -intstyle ise -f kickertest.ut kickertest.ncd 
+xst -intstyle ise -ifn "/home/ise/ism_projects/xi share/not my codes/kicker/kickertest.xst" -ofn "/home/ise/ism_projects/xi share/not my codes/kicker/kickertest.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc test.ucf -p xc6slx9-tqg144-3 "kickertest.ngc" kickertest.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc test.ucf -p xc6slx9-tqg144-3 "kickertest.ngc" kickertest.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o kickertest_map.ncd kickertest.ngd kickertest.pcf 
+par -w -intstyle ise -ol high -mt off kickertest_map.ncd kickertest.ncd kickertest.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml kickertest.twx kickertest.ncd -o kickertest.twr kickertest.pcf -ucf test.ucf 
+bitgen -intstyle ise -f kickertest.ut kickertest.ncd 
+xst -intstyle ise -ifn "/home/ise/ism_projects/xi share/not my codes/kicker/kickertest.xst" -ofn "/home/ise/ism_projects/xi share/not my codes/kicker/kickertest.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc test.ucf -p xc6slx9-tqg144-3 "kickertest.ngc" kickertest.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o kickertest_map.ncd kickertest.ngd kickertest.pcf 
+par -w -intstyle ise -ol high -mt off kickertest_map.ncd kickertest.ncd kickertest.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml kickertest.twx kickertest.ncd -o kickertest.twr kickertest.pcf -ucf test.ucf 
+bitgen -intstyle ise -f kickertest.ut kickertest.ncd 
+xst -intstyle ise -ifn "/home/ise/ism_projects/xi share/not my codes/kicker/kickertest.xst" -ofn "/home/ise/ism_projects/xi share/not my codes/kicker/kickertest.syr" 
+xst -intstyle ise -ifn "/home/ise/ism_projects/xi share/not my codes/kicker/kickertest.xst" -ofn "/home/ise/ism_projects/xi share/not my codes/kicker/kickertest.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc test.ucf -p xc6slx9-tqg144-3 "kickertest.ngc" kickertest.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o kickertest_map.ncd kickertest.ngd kickertest.pcf 
+par -w -intstyle ise -ol high -mt off kickertest_map.ncd kickertest.ncd kickertest.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml kickertest.twx kickertest.ncd -o kickertest.twr kickertest.pcf -ucf test.ucf 
+bitgen -intstyle ise -f kickertest.ut kickertest.ncd 
+xst -intstyle ise -ifn "/home/ise/ism_projects/xi share/not my codes/kicker/kickertest.xst" -ofn "/home/ise/ism_projects/xi share/not my codes/kicker/kickertest.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc test.ucf -p xc6slx9-tqg144-3 "kickertest.ngc" kickertest.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o kickertest_map.ncd kickertest.ngd kickertest.pcf 
+par -w -intstyle ise -ol high -mt off kickertest_map.ncd kickertest.ncd kickertest.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml kickertest.twx kickertest.ncd -o kickertest.twr kickertest.pcf -ucf test.ucf 
+bitgen -intstyle ise -f kickertest.ut kickertest.ncd 
+xst -intstyle ise -ifn "/home/ise/ism_projects/xi share/not my codes/kicker/kickertest.xst" -ofn "/home/ise/ism_projects/xi share/not my codes/kicker/kickertest.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc test.ucf -p xc6slx9-tqg144-3 "kickertest.ngc" kickertest.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o kickertest_map.ncd kickertest.ngd kickertest.pcf 
+par -w -intstyle ise -ol high -mt off kickertest_map.ncd kickertest.ncd kickertest.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml kickertest.twx kickertest.ncd -o kickertest.twr kickertest.pcf -ucf test.ucf 
+bitgen -intstyle ise -f kickertest.ut kickertest.ncd 
+xst -intstyle ise -ifn "/home/ise/ism_projects/xi share/not my codes/kicker/kickertest.xst" -ofn "/home/ise/ism_projects/xi share/not my codes/kicker/kickertest.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc test.ucf -p xc6slx9-tqg144-3 "kickertest.ngc" kickertest.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o kickertest_map.ncd kickertest.ngd kickertest.pcf 
+par -w -intstyle ise -ol high -mt off kickertest_map.ncd kickertest.ncd kickertest.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml kickertest.twx kickertest.ncd -o kickertest.twr kickertest.pcf -ucf test.ucf 
+bitgen -intstyle ise -f kickertest.ut kickertest.ncd 
+bitgen -intstyle ise -f kickertest.ut kickertest.ncd 
+xst -intstyle ise -ifn "/home/ise/ism_projects/xi share/not my codes/kicker/kickertest.xst" -ofn "/home/ise/ism_projects/xi share/not my codes/kicker/kickertest.syr" 
+xst -intstyle ise -ifn "/home/ise/ism_projects/xi share/not my codes/kicker/kickertest.xst" -ofn "/home/ise/ism_projects/xi share/not my codes/kicker/kickertest.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc test.ucf -p xc6slx9-tqg144-3 "kickertest.ngc" kickertest.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o kickertest_map.ncd kickertest.ngd kickertest.pcf 
+par -w -intstyle ise -ol high -mt off kickertest_map.ncd kickertest.ncd kickertest.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml kickertest.twx kickertest.ncd -o kickertest.twr kickertest.pcf -ucf test.ucf 
+bitgen -intstyle ise -f kickertest.ut kickertest.ncd 
+xst -intstyle ise -ifn "/home/ise/ism_projects/xi share/not my codes/kicker/kickertest.xst" -ofn "/home/ise/ism_projects/xi share/not my codes/kicker/kickertest.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc test.ucf -p xc6slx9-tqg144-3 "kickertest.ngc" kickertest.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o kickertest_map.ncd kickertest.ngd kickertest.pcf 
+par -w -intstyle ise -ol high -mt off kickertest_map.ncd kickertest.ncd kickertest.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml kickertest.twx kickertest.ncd -o kickertest.twr kickertest.pcf -ucf test.ucf 
+bitgen -intstyle ise -f kickertest.ut kickertest.ncd 
+xst -intstyle ise -ifn "/home/ise/ism_projects/xi share/not my codes/kicker/kickertest.xst" -ofn "/home/ise/ism_projects/xi share/not my codes/kicker/kickertest.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc test.ucf -p xc6slx9-tqg144-3 "kickertest.ngc" kickertest.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o kickertest_map.ncd kickertest.ngd kickertest.pcf 
+par -w -intstyle ise -ol high -mt off kickertest_map.ncd kickertest.ncd kickertest.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml kickertest.twx kickertest.ncd -o kickertest.twr kickertest.pcf -ucf test.ucf 
+bitgen -intstyle ise -f kickertest.ut kickertest.ncd 
+xst -intstyle ise -ifn "/home/ise/ism_projects/xi share/not my codes/kicker/kickertest.xst" -ofn "/home/ise/ism_projects/xi share/not my codes/kicker/kickertest.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc test.ucf -p xc6slx9-tqg144-3 "kickertest.ngc" kickertest.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o kickertest_map.ncd kickertest.ngd kickertest.pcf 
+par -w -intstyle ise -ol high -mt off kickertest_map.ncd kickertest.ncd kickertest.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml kickertest.twx kickertest.ncd -o kickertest.twr kickertest.pcf -ucf test.ucf 
+bitgen -intstyle ise -f kickertest.ut kickertest.ncd 
+xst -intstyle ise -ifn "/home/ise/ism_projects/xi share/not my codes/kicker/kickertest.xst" -ofn "/home/ise/ism_projects/xi share/not my codes/kicker/kickertest.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc test.ucf -p xc6slx9-tqg144-3 "kickertest.ngc" kickertest.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o kickertest_map.ncd kickertest.ngd kickertest.pcf 
+par -w -intstyle ise -ol high -mt off kickertest_map.ncd kickertest.ncd kickertest.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml kickertest.twx kickertest.ncd -o kickertest.twr kickertest.pcf -ucf test.ucf 
+bitgen -intstyle ise -f kickertest.ut kickertest.ncd 
