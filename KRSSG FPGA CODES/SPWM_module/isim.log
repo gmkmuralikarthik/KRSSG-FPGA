@@ -1,0 +1,20 @@
+ISim log file
+Running: /home/ise/ism_projects/xi share/KRSSG FPGA CODES/SPWM_module/Control_block_Control_block_sch_tb_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb /home/ise/ism_projects/xi share/KRSSG FPGA CODES/SPWM_module/Control_block_Control_block_sch_tb_isim_beh.wdb 
+ISim P.20160913 (signature 0xfbc00daa)
+----------------------------------------------------------------------
+WARNING:Security:42 - Your software subscription period has lapsed. Your current version of Xilinx tools will continue to function, but you no longer qualify for Xilinx software updates or new releases.
+
+
+----------------------------------------------------------------------
+This is a Full version of ISim.
+WARNING: File "/home/ise/ism_projects/xi share/KRSSG FPGA CODES/SPWM_module/testSPWM.v" Line 16.  For instance Control_block_Control_block_sch_tb/UUT/, width 20 of formal port angle_A is not equal to width 1 of actual signal angle_A.
+WARNING: File "/home/ise/ism_projects/xi share/KRSSG FPGA CODES/SPWM_module/testSPWM.v" Line 17.  For instance Control_block_Control_block_sch_tb/UUT/, width 10 of formal port encode is not equal to width 1 of actual signal encode.
+Time resolution is 1 ps
+# onerror resume
+# wave add /
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+# run all
+Stopped at time : 2729187 ns : File "/home/ise/ism_projects/xi share/KRSSG FPGA CODES/SPWM_module/scompare.v" Line 42
+# exit 0

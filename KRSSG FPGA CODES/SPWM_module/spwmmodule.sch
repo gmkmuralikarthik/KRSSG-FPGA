@@ -10,22 +10,14 @@
         <signal name="pwm" />
         <signal name="XLXN_1" />
         <signal name="inclock" />
-        <signal name="i(5:0)" />
         <signal name="angle(19:0)" />
-        <signal name="tan(19:0)" />
         <signal name="XLXN_6(9:0)" />
         <signal name="XLXN_7(9:0)" />
         <port polarity="Output" name="pwm" />
         <port polarity="Input" name="inclock" />
-        <port polarity="Input" name="i(5:0)" />
         <port polarity="Input" name="angle(19:0)" />
-        <port polarity="Input" name="tan(19:0)" />
         <blockdef name="cordic">
             <timestamp>2020-3-8T11:59:5</timestamp>
-            <rect width="64" x="0" y="532" height="24" />
-            <line x2="0" y1="544" y2="544" x1="64" />
-            <rect width="64" x="0" y="148" height="24" />
-            <line x2="0" y1="160" y2="160" x1="64" />
             <line x2="0" y1="-224" y2="-224" x1="64" />
             <rect width="64" x="0" y="-44" height="24" />
             <line x2="0" y1="-32" y2="-32" x1="64" />
@@ -90,8 +82,6 @@
         <block symbolname="cordic" name="XLXI_8">
             <blockpin signalname="inc" name="clock" />
             <blockpin signalname="angle(19:0)" name="angle(19:0)" />
-            <blockpin signalname="tan(19:0)" name="atan_table(19:0)" />
-            <blockpin signalname="i(5:0)" name="A(5:0)" />
             <blockpin signalname="XLXN_6(9:0)" name="sine(9:0)" />
         </block>
     </netlist>
@@ -128,18 +118,10 @@
         </instance>
         <instance x="1120" y="1680" name="XLXI_5" orien="R0">
         </instance>
-        <branch name="i(5:0)">
-            <wire x2="1216" y1="1376" y2="1376" x1="1184" />
-        </branch>
-        <iomarker fontsize="28" x="1184" y="1376" name="i(5:0)" orien="R180" />
         <branch name="angle(19:0)">
             <wire x2="1216" y1="800" y2="800" x1="1184" />
         </branch>
         <iomarker fontsize="28" x="1184" y="800" name="angle(19:0)" orien="R180" />
-        <branch name="tan(19:0)">
-            <wire x2="1216" y1="992" y2="992" x1="1184" />
-        </branch>
-        <iomarker fontsize="28" x="1184" y="992" name="tan(19:0)" orien="R180" />
         <branch name="XLXN_6(9:0)">
             <wire x2="1728" y1="800" y2="800" x1="1600" />
             <wire x2="1728" y1="800" y2="832" x1="1728" />

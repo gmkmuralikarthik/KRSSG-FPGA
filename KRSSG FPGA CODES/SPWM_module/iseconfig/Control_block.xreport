@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2020-02-28T20:35:37</DateModified>
+  <DateModified>2020-02-29T04:53:07</DateModified>
   <ModuleName>Control_block</ModuleName>
-  <SummaryTimeStamp>2020-02-28T19:28:22</SummaryTimeStamp>
-  <SavedFilePath>/home/ise/ism_projects/xi share/KRSSG FPGA CODES/FPGA codes 2019/SPWM_module/iseconfig/Control_block.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>/home/ise/ism_projects/xi share/KRSSG FPGA CODES/FPGA codes 2019/SPWM_module</ImplementationReportsDirectory>
+  <SummaryTimeStamp>2020-02-28T22:34:00</SummaryTimeStamp>
+  <SavedFilePath>/home/ise/ism_projects/xi share/KRSSG FPGA CODES/SPWM_module/iseconfig/Control_block.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>/home/ise/ism_projects/xi share/KRSSG FPGA CODES/SPWM_module/</ImplementationReportsDirectory>
   <DateInitialized>2020-02-28T17:35:42</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

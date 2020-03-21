@@ -1,0 +1,55 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : test.vf
+// /___/   /\     Timestamp : 02/29/2020 04:42:17
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog "/home/ise/ism_projects/xi share/KRSSG FPGA CODES/cordic_test/test.vf" -w "/home/ise/ism_projects/xi share/KRSSG FPGA CODES/cordic_test/test.sch"
+//Design Name: test
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module test(ang, 
+            clk, 
+            x_, 
+            y_, 
+            pw_M, 
+            s, 
+            t);
+
+    input [19:0] ang;
+    input clk;
+    input [9:0] x_;
+    input [9:0] y_;
+   output pw_M;
+   output [9:0] s;
+   output [9:0] t;
+   
+   wire [9:0] s_DUMMY;
+   wire [9:0] t_DUMMY;
+   
+   assign s[9:0] = s_DUMMY[9:0];
+   assign t[9:0] = t_DUMMY[9:0];
+   cordic  XLXI_1 (.angle(ang[19:0]), 
+                  .clock(clk), 
+                  .x_start(x_[9:0]), 
+                  .y_start(y_[9:0]), 
+                  .sine(s_DUMMY[9:0]));
+   scompare  XLXI_2 (.clk(clk), 
+                    .swave(s_DUMMY[9:0]), 
+                    .twave(t_DUMMY[9:0]), 
+                    .pwm(pw_M));
+   trianglewave  XLXI_3 (.clk(clk), 
+                        .outwave(t_DUMMY[9:0]));
+endmodule

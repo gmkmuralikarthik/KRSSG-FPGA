@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="HDLCompiler" num="370" delta="unknown" >"/home/ise/ism_projects/xi share/KRSSG FPGA CODES/SPWM_module/cordic.v" Line 5: Empty port in module declaration
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="370" delta="unknown" >"/home/ise/ism_projects/xi share/KRSSG FPGA CODES/SPWM_module/angle_check.v" Line 5: Empty port in module declaration
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"/home/ise/ism_projects/xi share/KRSSG FPGA CODES/SPWM_module/testSPWM.v" Line 29: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">angle_A</arg>&gt;. Formal port size is <arg fmt="%d" index="2">20</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"/home/ise/ism_projects/xi share/KRSSG FPGA CODES/SPWM_module/testSPWM.v" Line 30: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">encode</arg>&gt;. Formal port size is <arg fmt="%d" index="2">10</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1016" delta="unknown" >"/home/ise/ism_projects/xi share/KRSSG FPGA CODES/SPWM_module/Control_block.vf" Line 70: Port <arg fmt="%s" index="1">number 4</arg> is not connected to this instance
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="329" delta="unknown" >"/home/ise/ism_projects/xi share/KRSSG FPGA CODES/SPWM_module/cordic.v" Line 149: Target &lt;<arg fmt="%s" index="1">(null)</arg>&gt; of concurrent assignment or output port connection should be a net type.
+</msg>
+
+</messages>
+

@@ -1,0 +1,6 @@
+verilog isim_temp "trianglewave.v"
+verilog isim_temp "scompare.v"
+verilog isim_temp "cordic.v"
+verilog isim_temp "test.vf"
+verilog isim_temp "t1.v"
+verilog isim_temp "/opt/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"

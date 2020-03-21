@@ -7,11 +7,11 @@
 // \   \   \/     Version : 14.7
 //  \   \         Application : sch2hdl
 //  /   /         Filename : spwmmodule.vf
-// /___/   /\     Timestamp : 02/28/2020 20:21:17
+// /___/   /\     Timestamp : 02/28/2020 22:31:20
 // \   \  /  \ 
 //  \___\/\___\ 
 //
-//Command: sch2hdl -intstyle ise -family spartan6 -verilog "/home/ise/ism_projects/xi share/KRSSG FPGA CODES/FPGA codes 2019/SPWM_module/spwmmodule.vf" -w "/home/ise/ism_projects/xi share/KRSSG FPGA CODES/FPGA codes 2019/SPWM_module/spwmmodule.sch"
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog "/home/ise/ism_projects/xi share/KRSSG FPGA CODES/SPWM_module/spwmmodule.vf" -w "/home/ise/ism_projects/xi share/KRSSG FPGA CODES/SPWM_module/spwmmodule.sch"
 //Design Name: spwmmodule
 //Device: spartan6
 //Purpose:
@@ -43,15 +43,11 @@ endmodule
 `timescale 1ns / 1ps
 
 module spwmmodule(angle, 
-                  i, 
                   inclock, 
-                  tan, 
                   pwm);
 
     input [19:0] angle;
-    input [5:0] i;
     input inclock;
-    input [19:0] tan;
    output pwm;
    
    wire inc;
@@ -71,9 +67,7 @@ module spwmmodule(angle,
                                   .T(XLXN_1), 
                                   .Q(inc));
    VCC  XLXI_7 (.P(XLXN_1));
-   cordic  XLXI_8 (.A(i[5:0]), 
-                  .angle(angle[19:0]), 
-                  .atan_table(tan[19:0]), 
+   cordic  XLXI_8 (.angle(angle[19:0]), 
                   .clock(inc), 
                   .sine(XLXN_6[9:0]));
 endmodule

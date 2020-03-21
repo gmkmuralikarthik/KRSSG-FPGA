@@ -21,8 +21,8 @@
 module Encoder( q0,TICKS
     );
 input q0;
-reg[9:0]ticks;
+reg[9:0]ticks=0;
 output [9:0]TICKS;
-always@(posedge q0) ticks=ticks+1;
+always@(posedge q0) ticks=ticks+2;
 assign TICKS=ticks;
 endmodule

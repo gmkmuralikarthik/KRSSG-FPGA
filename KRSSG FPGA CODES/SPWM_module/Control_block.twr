@@ -32,15 +32,88 @@ Data Sheet report:
 -----------------
 All values displayed in nanoseconds (ns)
 
+Clock HALL<0> to Pad
+------------+-----------------+------------+-----------------+------------+------------------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                              | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s)             | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------------------+--------+
+angle_A<10> |         9.683(F)|      SLOW  |         5.448(F)|      FAST  |XLXI_7/angle_adjust_A_0_G_BUFG|   0.000|
+angle_A<11> |         9.683(F)|      SLOW  |         5.448(F)|      FAST  |XLXI_7/angle_adjust_A_0_G_BUFG|   0.000|
+angle_A<12> |         9.683(F)|      SLOW  |         5.448(F)|      FAST  |XLXI_7/angle_adjust_A_0_G_BUFG|   0.000|
+angle_A<13> |        12.593(F)|      SLOW  |         7.221(F)|      FAST  |XLXI_7/angle_adjust_A_0_G_BUFG|   0.000|
+angle_A<14> |        13.982(F)|      SLOW  |         6.855(F)|      FAST  |XLXI_7/angle_adjust_A_0_G_BUFG|   0.000|
+angle_A<15> |        14.259(F)|      SLOW  |         6.913(F)|      FAST  |XLXI_7/angle_adjust_A_0_G_BUFG|   0.000|
+angle_A<16> |        14.572(F)|      SLOW  |         7.098(F)|      FAST  |XLXI_7/angle_adjust_A_0_G_BUFG|   0.000|
+angle_A<17> |        15.409(F)|      SLOW  |         7.590(F)|      FAST  |XLXI_7/angle_adjust_A_0_G_BUFG|   0.000|
+angle_A<18> |        15.461(F)|      SLOW  |         7.647(F)|      FAST  |XLXI_7/angle_adjust_A_0_G_BUFG|   0.000|
+angle_A<19> |        16.185(F)|      SLOW  |         8.105(F)|      FAST  |XLXI_7/angle_adjust_A_0_G_BUFG|   0.000|
+------------+-----------------+------------+-----------------+------------+------------------------------+--------+
+
+Clock HALL<1> to Pad
+------------+-----------------+------------+-----------------+------------+------------------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                              | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s)             | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------------------+--------+
+angle_A<10> |         9.528(F)|      SLOW  |         5.312(F)|      FAST  |XLXI_7/angle_adjust_A_0_G_BUFG|   0.000|
+angle_A<11> |         9.528(F)|      SLOW  |         5.312(F)|      FAST  |XLXI_7/angle_adjust_A_0_G_BUFG|   0.000|
+angle_A<12> |         9.528(F)|      SLOW  |         5.312(F)|      FAST  |XLXI_7/angle_adjust_A_0_G_BUFG|   0.000|
+angle_A<13> |        12.438(F)|      SLOW  |         7.085(F)|      FAST  |XLXI_7/angle_adjust_A_0_G_BUFG|   0.000|
+angle_A<14> |        13.827(F)|      SLOW  |         6.719(F)|      FAST  |XLXI_7/angle_adjust_A_0_G_BUFG|   0.000|
+angle_A<15> |        14.104(F)|      SLOW  |         6.777(F)|      FAST  |XLXI_7/angle_adjust_A_0_G_BUFG|   0.000|
+angle_A<16> |        14.417(F)|      SLOW  |         6.962(F)|      FAST  |XLXI_7/angle_adjust_A_0_G_BUFG|   0.000|
+angle_A<17> |        15.254(F)|      SLOW  |         7.454(F)|      FAST  |XLXI_7/angle_adjust_A_0_G_BUFG|   0.000|
+angle_A<18> |        15.306(F)|      SLOW  |         7.511(F)|      FAST  |XLXI_7/angle_adjust_A_0_G_BUFG|   0.000|
+angle_A<19> |        16.030(F)|      SLOW  |         7.969(F)|      FAST  |XLXI_7/angle_adjust_A_0_G_BUFG|   0.000|
+------------+-----------------+------------+-----------------+------------+------------------------------+--------+
+
+Clock HALL<2> to Pad
+------------+-----------------+------------+-----------------+------------+------------------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                              | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s)             | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------------------+--------+
+angle_A<10> |         9.965(F)|      SLOW  |         5.595(F)|      FAST  |XLXI_7/angle_adjust_A_0_G_BUFG|   0.000|
+angle_A<11> |         9.965(F)|      SLOW  |         5.595(F)|      FAST  |XLXI_7/angle_adjust_A_0_G_BUFG|   0.000|
+angle_A<12> |         9.965(F)|      SLOW  |         5.595(F)|      FAST  |XLXI_7/angle_adjust_A_0_G_BUFG|   0.000|
+angle_A<13> |        12.875(F)|      SLOW  |         7.368(F)|      FAST  |XLXI_7/angle_adjust_A_0_G_BUFG|   0.000|
+angle_A<14> |        14.264(F)|      SLOW  |         7.002(F)|      FAST  |XLXI_7/angle_adjust_A_0_G_BUFG|   0.000|
+angle_A<15> |        14.541(F)|      SLOW  |         7.060(F)|      FAST  |XLXI_7/angle_adjust_A_0_G_BUFG|   0.000|
+angle_A<16> |        14.854(F)|      SLOW  |         7.245(F)|      FAST  |XLXI_7/angle_adjust_A_0_G_BUFG|   0.000|
+angle_A<17> |        15.691(F)|      SLOW  |         7.737(F)|      FAST  |XLXI_7/angle_adjust_A_0_G_BUFG|   0.000|
+angle_A<18> |        15.743(F)|      SLOW  |         7.794(F)|      FAST  |XLXI_7/angle_adjust_A_0_G_BUFG|   0.000|
+angle_A<19> |        16.467(F)|      SLOW  |         8.252(F)|      FAST  |XLXI_7/angle_adjust_A_0_G_BUFG|   0.000|
+------------+-----------------+------------+-----------------+------------+------------------------------+--------+
+
+Clock Q0 to Pad
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+angle_A<14> |        14.272(R)|      SLOW  |         8.304(R)|      FAST  |Q0_BUFGP          |   0.000|
+angle_A<15> |        14.549(R)|      SLOW  |         8.110(R)|      FAST  |Q0_BUFGP          |   0.000|
+angle_A<16> |        14.862(R)|      SLOW  |         8.172(R)|      FAST  |Q0_BUFGP          |   0.000|
+angle_A<17> |        15.699(R)|      SLOW  |         8.498(R)|      FAST  |Q0_BUFGP          |   0.000|
+angle_A<18> |        15.751(R)|      SLOW  |         8.562(R)|      FAST  |Q0_BUFGP          |   0.000|
+angle_A<19> |        16.475(R)|      SLOW  |         8.985(R)|      FAST  |Q0_BUFGP          |   0.000|
+encode<1>   |        12.409(R)|      SLOW  |         7.123(R)|      FAST  |Q0_BUFGP          |   0.000|
+encode<2>   |        10.656(R)|      SLOW  |         6.062(R)|      FAST  |Q0_BUFGP          |   0.000|
+encode<3>   |        10.681(R)|      SLOW  |         6.074(R)|      FAST  |Q0_BUFGP          |   0.000|
+encode<4>   |        10.584(R)|      SLOW  |         6.015(R)|      FAST  |Q0_BUFGP          |   0.000|
+encode<5>   |        10.728(R)|      SLOW  |         6.101(R)|      FAST  |Q0_BUFGP          |   0.000|
+encode<6>   |        11.212(R)|      SLOW  |         6.443(R)|      FAST  |Q0_BUFGP          |   0.000|
+encode<7>   |        11.160(R)|      SLOW  |         6.411(R)|      FAST  |Q0_BUFGP          |   0.000|
+encode<8>   |        11.529(R)|      SLOW  |         6.615(R)|      FAST  |Q0_BUFGP          |   0.000|
+encode<9>   |        11.376(R)|      SLOW  |         6.516(R)|      FAST  |Q0_BUFGP          |   0.000|
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+
 Clock to Setup on destination clock HALL<0>
 ---------------+---------+---------+---------+---------+
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-HALL<0>        |         |         |    0.101|    0.101|
-HALL<1>        |         |         |   -0.268|   -0.268|
-HALL<2>        |         |         |   -0.054|   -0.054|
-Q0             |         |         |    1.227|         |
+HALL<0>        |         |         |    0.670|    0.670|
+HALL<1>        |         |         |    0.723|    0.723|
+HALL<2>        |         |         |    0.772|    0.772|
+Q0             |         |         |    2.927|         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock HALL<1>
@@ -48,10 +121,10 @@ Clock to Setup on destination clock HALL<1>
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-HALL<0>        |         |         |    0.264|    0.264|
-HALL<1>        |         |         |   -0.105|   -0.105|
-HALL<2>        |         |         |    0.109|    0.109|
-Q0             |         |         |    1.227|         |
+HALL<0>        |         |         |    0.806|    0.806|
+HALL<1>        |         |         |    0.871|    0.871|
+HALL<2>        |         |         |    0.920|    0.920|
+Q0             |         |         |    2.927|         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock HALL<2>
@@ -59,10 +132,10 @@ Clock to Setup on destination clock HALL<2>
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-HALL<0>        |         |         |    0.185|    0.185|
-HALL<1>        |         |         |   -0.184|   -0.184|
-HALL<2>        |         |         |    0.030|    0.030|
-Q0             |         |         |    1.227|         |
+HALL<0>        |         |         |    0.523|    0.523|
+HALL<1>        |         |         |    0.529|    0.529|
+HALL<2>        |         |         |    0.528|    0.528|
+Q0             |         |         |    2.927|         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock Q0
@@ -70,7 +143,7 @@ Clock to Setup on destination clock Q0
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-Q0             |    1.535|         |         |         |
+Q0             |    3.066|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock clk
@@ -82,14 +155,14 @@ clk            |    0.898|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 
-Analysis completed Fri Feb 28 21:23:25 2020 
+Analysis completed Sat Feb 29 05:17:29 2020 
 --------------------------------------------------------------------------------
 
 Trace Settings:
 -------------------------
 Trace Settings 
 
-Peak Memory Usage: 398 MB
+Peak Memory Usage: 402 MB
 
 
 

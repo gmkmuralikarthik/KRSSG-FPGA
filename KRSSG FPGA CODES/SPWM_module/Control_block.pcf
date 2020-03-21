@@ -1,5 +1,5 @@
 //! **************************************************************************
-// Written by: Map P.20160913 on Fri Feb 28 21:22:45 2020
+// Written by: Map P.20160913 on Sat Feb 29 05:16:41 2020
 //! **************************************************************************
 
 SCHEMATIC START;
@@ -10,8 +10,11 @@ COMP "clk" LOCATE = SITE "P126" LEVEL 1;
 COMP "HALL<0>" LOCATE = SITE "P87" LEVEL 1;
 COMP "HALL<1>" LOCATE = SITE "P92" LEVEL 1;
 COMP "HALL<2>" LOCATE = SITE "P94" LEVEL 1;
-COMP "PHASE_A" LOCATE = SITE "P50" LEVEL 1;
-COMP "PHASE_B" LOCATE = SITE "P74" LEVEL 1;
-COMP "PHASE_C" LOCATE = SITE "P80" LEVEL 1;
+COMP "PHASE_A1" LOCATE = SITE "P50" LEVEL 1;
+COMP "PHASE_B1" LOCATE = SITE "P74" LEVEL 1;
+COMP "PHASE_C1" LOCATE = SITE "P80" LEVEL 1;
+COMP "PHASE_A" LOCATE = SITE "P47" LEVEL 1;
+COMP "PHASE_B" LOCATE = SITE "P55" LEVEL 1;
+COMP "PHASE_C" LOCATE = SITE "P78" LEVEL 1;
 SCHEMATIC END;
 

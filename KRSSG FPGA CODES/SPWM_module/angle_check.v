@@ -13,14 +13,14 @@ output [19:0]sineangle_B;
 output [19:0]sineangle_C;
 
 
-reg [9:0]angle_adjust_A;
-reg [9:0]angle_adjust_B;
-reg [9:0]angle_adjust_C;
-reg [9:0]angle_correct;
+reg [9:0]angle_adjust_A=0;
+reg [9:0]angle_adjust_B=0;
+reg [9:0]angle_adjust_C=0;
+reg [9:0]angle_correct=0;
 
 wire [9:0]correction;
 
-always@(hall) begin
+always@(hall[0]) begin
 
 if(hall==3'b011)begin
 angle_adjust_A=32*1024/360;

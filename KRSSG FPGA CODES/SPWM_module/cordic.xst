@@ -1,7 +1,7 @@
-set -tmpdir "/home/ise/ism_projects/xi share/KRSSG FPGA CODES/FPGA codes 2019/SPWM_module/xst/projnav.tmp"
-set -xsthdpdir "/home/ise/ism_projects/xi share/KRSSG FPGA CODES/FPGA codes 2019/SPWM_module/xst"
+set -tmpdir "/home/ise/ism_projects/xi share/KRSSG FPGA CODES/SPWM_module/xst/projnav.tmp"
+set -xsthdpdir "/home/ise/ism_projects/xi share/KRSSG FPGA CODES/SPWM_module/xst"
 run -compileonly yes
--p xc6slx9-3-csg324
+-p xc6slx9-3-tqg144
 -top cordic
 -opt_mode Speed
 -opt_level 1

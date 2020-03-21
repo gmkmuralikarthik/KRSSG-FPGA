@@ -1,0 +1,28 @@
+Command line:
+   encoderest_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  47256
+
+Fri Feb 28 22:48:45 2020
+
+
+ Elaboration Time: 0.05 sec
+
+ Current Memory Usage: 198.574 Meg
+
+ Total Signals          : 16
+ Total Nets             : 24
+ Total Signal Drivers   : 7
+ Total Blocks           : 3
+ Total Primitive Blocks : 2
+ Total Processes        : 11
+ Total Traceable Variables  : 20
+ Total Scalar Nets and Variables : 115
+
+ Total Simulation Time: 5.31 sec
+
+ Current Memory Usage: 276.173 Meg
+
+Fri Feb 28 22:48:57 2020
+

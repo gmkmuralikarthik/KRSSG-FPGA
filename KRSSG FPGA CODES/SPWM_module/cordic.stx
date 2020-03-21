@@ -1,18 +1,18 @@
 Release 14.7 - xst P.20160913 (lin64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 --> 
-Parameter TMPDIR set to /home/ise/ism_projects/xi share/KRSSG FPGA CODES/FPGA codes 2019/SPWM_module/xst/projnav.tmp
+Parameter TMPDIR set to /home/ise/ism_projects/xi share/KRSSG FPGA CODES/SPWM_module/xst/projnav.tmp
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.05 secs
+Total CPU time to Xst completion: 0.04 secs
  
 --> 
-Parameter xsthdpdir set to /home/ise/ism_projects/xi share/KRSSG FPGA CODES/FPGA codes 2019/SPWM_module/xst
+Parameter xsthdpdir set to /home/ise/ism_projects/xi share/KRSSG FPGA CODES/SPWM_module/xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.05 secs
+Total CPU time to Xst completion: 0.04 secs
  
 --> 
 Reading design: cordic.prj
@@ -42,19 +42,19 @@ TABLE OF CONTENTS
 =========================================================================
 *                          HDL Parsing                                  *
 =========================================================================
-Analyzing Verilog file "/home/ise/ism_projects/xi share/KRSSG FPGA CODES/FPGA codes 2019/SPWM_module/cordic.v" into library work
+Analyzing Verilog file "/home/ise/ism_projects/xi share/KRSSG FPGA CODES/SPWM_module/cordic.v" into library work
 Parsing module <cordic>.
-
-
-Total REAL time to Xst completion: 10.00 secs
-Total CPU time to Xst completion: 8.57 secs
- 
+WARNING:HDLCompiler:370 - "/home/ise/ism_projects/xi share/KRSSG FPGA CODES/SPWM_module/cordic.v" Line 5: Empty port in module declaration
+ERROR:HDLCompiler:251 - "/home/ise/ism_projects/xi share/KRSSG FPGA CODES/SPWM_module/cordic.v" Line 140: Cannot access memory atan_table directly
+ERROR:HDLCompiler:971 - "/home/ise/ism_projects/xi share/KRSSG FPGA CODES/SPWM_module/cordic.v" Line 140: Illegal operand for operator +
+ERROR:HDLCompiler:598 - "/home/ise/ism_projects/xi share/KRSSG FPGA CODES/SPWM_module/cordic.v" Line 5: Module <cordic> ignored due to previous errors.
+Verilog file /home/ise/ism_projects/xi share/KRSSG FPGA CODES/SPWM_module/cordic.v ignored due to errors
 --> 
 
 
-Total memory usage is 394404 kilobytes
+Total memory usage is 394296 kilobytes
 
-Number of errors   :    0 (   0 filtered)
-Number of warnings :    0 (   0 filtered)
+Number of errors   :    3 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
 Number of infos    :    0 (   0 filtered)
 

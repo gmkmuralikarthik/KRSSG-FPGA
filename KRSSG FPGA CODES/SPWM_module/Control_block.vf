@@ -7,11 +7,11 @@
 // \   \   \/     Version : 14.7
 //  \   \         Application : sch2hdl
 //  /   /         Filename : Control_block.vf
-// /___/   /\     Timestamp : 02/28/2020 20:21:17
+// /___/   /\     Timestamp : 02/28/2020 23:17:11
 // \   \  /  \ 
 //  \___\/\___\ 
 //
-//Command: sch2hdl -intstyle ise -family spartan6 -verilog "/home/ise/ism_projects/xi share/KRSSG FPGA CODES/FPGA codes 2019/SPWM_module/Control_block.vf" -w "/home/ise/ism_projects/xi share/KRSSG FPGA CODES/FPGA codes 2019/SPWM_module/Control_block.sch"
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog "/home/ise/ism_projects/xi share/KRSSG FPGA CODES/SPWM_module/Control_block.vf" -w "/home/ise/ism_projects/xi share/KRSSG FPGA CODES/SPWM_module/Control_block.sch"
 //Design Name: Control_block
 //Device: spartan6
 //Purpose:
@@ -43,15 +43,11 @@ endmodule
 `timescale 1ns / 1ps
 
 module spwmmodule_MUSER_Control_block(angle, 
-                                      i, 
                                       inclock, 
-                                      tan, 
                                       pwm);
 
     input [19:0] angle;
-    input [5:0] i;
     input inclock;
-    input [19:0] tan;
    output pwm;
    
    wire inc;
@@ -65,15 +61,13 @@ module spwmmodule_MUSER_Control_block(angle,
                     .pwm(pwm));
    trianglewave  XLXI_5 (.clk(inc), 
                         .outwave(XLXN_7[9:0]));
-   (* HU_SET = "XLXI_6_1" *) 
+   (* HU_SET = "XLXI_6_0" *) 
    FTP_HXILINX_Control_block  XLXI_6 (.C(inclock), 
                                      .PRE(), 
                                      .T(XLXN_1), 
                                      .Q(inc));
    VCC  XLXI_7 (.P(XLXN_1));
-   cordic  XLXI_8 (.A(i[5:0]), 
-                  .angle(angle[19:0]), 
-                  .atan_table(tan[19:0]), 
+   cordic  XLXI_8 (.angle(angle[19:0]), 
                   .clock(inc), 
                   .sine(XLXN_6[9:0]));
 endmodule
@@ -82,45 +76,45 @@ endmodule
 module Control_block(clk, 
                      HALL, 
                      Q0, 
+                     angle_A, 
+                     encode, 
                      PHASE_A, 
+                     PHASE_A1, 
                      PHASE_B, 
-                     PHASE_C);
+                     PHASE_B1, 
+                     PHASE_C, 
+                     PHASE_C1);
 
     input clk;
     input [2:0] HALL;
     input Q0;
+   output [19:0] angle_A;
+   output [9:0] encode;
    output PHASE_A;
+   output PHASE_A1;
    output PHASE_B;
+   output PHASE_B1;
    output PHASE_C;
+   output PHASE_C1;
    
    wire XLXN_14;
    wire XLXN_16;
    wire XLXN_18;
-   wire [9:0] XLXN_28;
-   wire [19:0] XLXN_67;
    wire [19:0] XLXN_68;
    wire [19:0] XLXN_69;
-   wire [19:0] XLXN_70;
-   wire [5:0] XLXN_71;
-   wire [19:0] XLXN_72;
-   wire [5:0] XLXN_74;
-   wire [19:0] XLXN_75;
-   wire [5:0] XLXN_76;
+   wire [19:0] angle_A_DUMMY;
+   wire [9:0] encode_DUMMY;
    
+   assign angle_A[19:0] = angle_A_DUMMY[19:0];
+   assign encode[9:0] = encode_DUMMY[9:0];
    spwmmodule_MUSER_Control_block  XLXI_1 (.angle(XLXN_68[19:0]), 
-                                          .i(XLXN_74[5:0]), 
                                           .inclock(clk), 
-                                          .tan(XLXN_72[19:0]), 
                                           .pwm(XLXN_16));
    spwmmodule_MUSER_Control_block  XLXI_2 (.angle(XLXN_69[19:0]), 
-                                          .i(XLXN_76[5:0]), 
                                           .inclock(clk), 
-                                          .tan(XLXN_75[19:0]), 
                                           .pwm(XLXN_18));
-   spwmmodule_MUSER_Control_block  XLXI_3 (.angle(XLXN_67[19:0]), 
-                                          .i(XLXN_71[5:0]), 
+   spwmmodule_MUSER_Control_block  XLXI_3 (.angle(angle_A_DUMMY[19:0]), 
                                           .inclock(clk), 
-                                          .tan(XLXN_70[19:0]), 
                                           .pwm(XLXN_14));
    NOR2  XLXI_4 (.I0(XLXN_14), 
                 .I1(XLXN_14), 
@@ -131,17 +125,20 @@ module Control_block(clk,
    NOR2  XLXI_6 (.I0(XLXN_18), 
                 .I1(XLXN_18), 
                 .O(PHASE_C));
-   angle_check  XLXI_7 (.angle_in(XLXN_28[9:0]), 
+   angle_check  XLXI_7 (.angle_in(encode_DUMMY[9:0]), 
                        .hall(HALL[2:0]), 
-                       .sineangle_A(XLXN_67[19:0]), 
+                       .sineangle_A(angle_A_DUMMY[19:0]), 
                        .sineangle_B(XLXN_68[19:0]), 
                        .sineangle_C(XLXN_69[19:0]));
    Encoder  XLXI_9 (.q0(Q0), 
-                   .TICKS(XLXN_28[9:0]));
-   TAN_DOC  XLXI_10 (.A(XLXN_76[5:0]), 
-                    .B(XLXN_74[5:0]), 
-                    .C(XLXN_71[5:0]), 
-                    .atan_table_A(XLXN_75[19:0]), 
-                    .atan_table_B(XLXN_72[19:0]), 
-                    .atan_table_C(XLXN_70[19:0]));
+                   .TICKS(encode_DUMMY[9:0]));
+   NOR2  XLXI_11 (.I0(XLXN_14), 
+                 .I1(XLXN_14), 
+                 .O(PHASE_A1));
+   NOR2  XLXI_12 (.I0(XLXN_16), 
+                 .I1(XLXN_16), 
+                 .O(PHASE_B1));
+   NOR2  XLXI_13 (.I0(XLXN_18), 
+                 .I1(XLXN_18), 
+                 .O(PHASE_C1));
 endmodule

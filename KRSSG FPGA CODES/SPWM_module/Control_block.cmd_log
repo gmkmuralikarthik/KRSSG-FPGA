@@ -48,3 +48,79 @@ map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -reg
 par -w -intstyle ise -ol high -mt off Control_block_map.ncd Control_block.ncd Control_block.pcf 
 trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Control_block.twx Control_block.ncd -o Control_block.twr Control_block.pcf -ucf test.ucf 
 bitgen -intstyle ise -f Control_block.ut Control_block.ncd 
+xst -intstyle ise -ifn "/home/ise/ism_projects/xi share/KRSSG FPGA CODES/SPWM_module/Control_block.xst" -ofn "/home/ise/ism_projects/xi share/KRSSG FPGA CODES/SPWM_module/Control_block.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc test.ucf -p xc6slx9-tqg144-3 "Control_block.ngc" Control_block.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Control_block_map.ncd Control_block.ngd Control_block.pcf 
+par -w -intstyle ise -ol high -mt off Control_block_map.ncd Control_block.ncd Control_block.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Control_block.twx Control_block.ncd -o Control_block.twr Control_block.pcf -ucf test.ucf 
+bitgen -intstyle ise -f Control_block.ut Control_block.ncd 
+sch2hdl -intstyle ise -family spartan6 -verilog Control_block_drc.vf -w {/home/ise/ism_projects/xi share/KRSSG FPGA CODES/SPWM_module/Control_block.sch} 
+xst -intstyle ise -ifn "/home/ise/ism_projects/xi share/KRSSG FPGA CODES/SPWM_module/Control_block.xst" -ofn "/home/ise/ism_projects/xi share/KRSSG FPGA CODES/SPWM_module/Control_block.syr" 
+xst -intstyle ise -ifn "/home/ise/ism_projects/xi share/KRSSG FPGA CODES/SPWM_module/Control_block.xst" -ofn "/home/ise/ism_projects/xi share/KRSSG FPGA CODES/SPWM_module/Control_block.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc test.ucf -p xc6slx9-tqg144-3 "Control_block.ngc" Control_block.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Control_block_map.ncd Control_block.ngd Control_block.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc test.ucf -p xc6slx9-tqg144-3 "Control_block.ngc" Control_block.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Control_block_map.ncd Control_block.ngd Control_block.pcf 
+par -w -intstyle ise -ol high -mt off Control_block_map.ncd Control_block.ncd Control_block.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Control_block.twx Control_block.ncd -o Control_block.twr Control_block.pcf -ucf test.ucf 
+bitgen -intstyle ise -f Control_block.ut Control_block.ncd 
+xst -intstyle ise -ifn "/home/ise/ism_projects/xi share/KRSSG FPGA CODES/SPWM_module/Control_block.xst" -ofn "/home/ise/ism_projects/xi share/KRSSG FPGA CODES/SPWM_module/Control_block.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc test.ucf -p xc6slx9-tqg144-3 "Control_block.ngc" Control_block.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Control_block_map.ncd Control_block.ngd Control_block.pcf 
+par -w -intstyle ise -ol high -mt off Control_block_map.ncd Control_block.ncd Control_block.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Control_block.twx Control_block.ncd -o Control_block.twr Control_block.pcf -ucf test.ucf 
+bitgen -intstyle ise -f Control_block.ut Control_block.ncd 
+xst -intstyle ise -ifn "/home/ise/ism_projects/xi share/KRSSG FPGA CODES/SPWM_module/Control_block.xst" -ofn "/home/ise/ism_projects/xi share/KRSSG FPGA CODES/SPWM_module/Control_block.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc test.ucf -p xc6slx9-tqg144-3 "Control_block.ngc" Control_block.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Control_block_map.ncd Control_block.ngd Control_block.pcf 
+par -w -intstyle ise -ol high -mt off Control_block_map.ncd Control_block.ncd Control_block.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Control_block.twx Control_block.ncd -o Control_block.twr Control_block.pcf -ucf test.ucf 
+bitgen -intstyle ise -f Control_block.ut Control_block.ncd 
+xst -intstyle ise -ifn "/home/ise/ism_projects/xi share/KRSSG FPGA CODES/SPWM_module/Control_block.xst" -ofn "/home/ise/ism_projects/xi share/KRSSG FPGA CODES/SPWM_module/Control_block.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc test.ucf -p xc6slx9-tqg144-3 "Control_block.ngc" Control_block.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Control_block_map.ncd Control_block.ngd Control_block.pcf 
+par -w -intstyle ise -ol high -mt off Control_block_map.ncd Control_block.ncd Control_block.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Control_block.twx Control_block.ncd -o Control_block.twr Control_block.pcf -ucf test.ucf 
+bitgen -intstyle ise -f Control_block.ut Control_block.ncd 
+xst -intstyle ise -ifn "/home/ise/ism_projects/xi share/KRSSG FPGA CODES/SPWM_module/Control_block.xst" -ofn "/home/ise/ism_projects/xi share/KRSSG FPGA CODES/SPWM_module/Control_block.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc test.ucf -p xc6slx9-tqg144-3 "Control_block.ngc" Control_block.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Control_block_map.ncd Control_block.ngd Control_block.pcf 
+par -w -intstyle ise -ol high -mt off Control_block_map.ncd Control_block.ncd Control_block.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Control_block.twx Control_block.ncd -o Control_block.twr Control_block.pcf -ucf test.ucf 
+bitgen -intstyle ise -f Control_block.ut Control_block.ncd 
+xst -intstyle ise -ifn "/home/ise/ism_projects/xi share/KRSSG FPGA CODES/SPWM_module/Control_block.xst" -ofn "/home/ise/ism_projects/xi share/KRSSG FPGA CODES/SPWM_module/Control_block.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc test.ucf -p xc6slx9-tqg144-3 "Control_block.ngc" Control_block.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Control_block_map.ncd Control_block.ngd Control_block.pcf 
+par -w -intstyle ise -ol high -mt off Control_block_map.ncd Control_block.ncd Control_block.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Control_block.twx Control_block.ncd -o Control_block.twr Control_block.pcf -ucf test.ucf 
+bitgen -intstyle ise -f Control_block.ut Control_block.ncd 
+xst -intstyle ise -ifn "/home/ise/ism_projects/xi share/KRSSG FPGA CODES/SPWM_module/Control_block.xst" -ofn "/home/ise/ism_projects/xi share/KRSSG FPGA CODES/SPWM_module/Control_block.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc test.ucf -p xc6slx9-tqg144-3 "Control_block.ngc" Control_block.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Control_block_map.ncd Control_block.ngd Control_block.pcf 
+par -w -intstyle ise -ol high -mt off Control_block_map.ncd Control_block.ncd Control_block.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Control_block.twx Control_block.ncd -o Control_block.twr Control_block.pcf -ucf test.ucf 
+bitgen -intstyle ise -f Control_block.ut Control_block.ncd 
+xst -intstyle ise -ifn "/home/ise/ism_projects/xi share/KRSSG FPGA CODES/SPWM_module/Control_block.xst" -ofn "/home/ise/ism_projects/xi share/KRSSG FPGA CODES/SPWM_module/Control_block.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc test.ucf -p xc6slx9-tqg144-3 "Control_block.ngc" Control_block.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Control_block_map.ncd Control_block.ngd Control_block.pcf 
+par -w -intstyle ise -ol high -mt off Control_block_map.ncd Control_block.ncd Control_block.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Control_block.twx Control_block.ncd -o Control_block.twr Control_block.pcf -ucf test.ucf 
+bitgen -intstyle ise -f Control_block.ut Control_block.ncd 
+xst -intstyle ise -ifn "/home/ise/ism_projects/xi share/KRSSG FPGA CODES/SPWM_module/Control_block.xst" -ofn "/home/ise/ism_projects/xi share/KRSSG FPGA CODES/SPWM_module/Control_block.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc test.ucf -p xc6slx9-tqg144-3 "Control_block.ngc" Control_block.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Control_block_map.ncd Control_block.ngd Control_block.pcf 
+par -w -intstyle ise -ol high -mt off Control_block_map.ncd Control_block.ncd Control_block.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Control_block.twx Control_block.ncd -o Control_block.twr Control_block.pcf -ucf test.ucf 
+bitgen -intstyle ise -f Control_block.ut Control_block.ncd 
+xst -intstyle ise -ifn "/home/ise/ism_projects/xi share/KRSSG FPGA CODES/SPWM_module/Control_block.xst" -ofn "/home/ise/ism_projects/xi share/KRSSG FPGA CODES/SPWM_module/Control_block.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc test.ucf -p xc6slx9-tqg144-3 "Control_block.ngc" Control_block.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Control_block_map.ncd Control_block.ngd Control_block.pcf 
+par -w -intstyle ise -ol high -mt off Control_block_map.ncd Control_block.ncd Control_block.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Control_block.twx Control_block.ncd -o Control_block.twr Control_block.pcf -ucf test.ucf 
+bitgen -intstyle ise -f Control_block.ut Control_block.ncd 
+xst -intstyle ise -ifn "/home/ise/ism_projects/xi share/KRSSG FPGA CODES/SPWM_module/Control_block.xst" -ofn "/home/ise/ism_projects/xi share/KRSSG FPGA CODES/SPWM_module/Control_block.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc test.ucf -p xc6slx9-tqg144-3 "Control_block.ngc" Control_block.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Control_block_map.ncd Control_block.ngd Control_block.pcf 
+par -w -intstyle ise -ol high -mt off Control_block_map.ncd Control_block.ncd Control_block.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Control_block.twx Control_block.ncd -o Control_block.twr Control_block.pcf -ucf test.ucf 
+bitgen -intstyle ise -f Control_block.ut Control_block.ncd 

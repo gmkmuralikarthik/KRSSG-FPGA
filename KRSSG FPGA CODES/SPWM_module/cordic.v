@@ -2,10 +2,10 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module cordic(clock, sine,  angle, atan_table,A );
+module cordic(clock, sine,  angle, );
 
   parameter width = 10;
-  input [5:0]A;
+ // input [5:0]A;
   // Inputs
   input clock;
   //input signed [width-1:0] x_start,y_start; 
@@ -14,15 +14,38 @@ module cordic(clock, sine,  angle, atan_table,A );
   wire signed [width-1:0] x_start;
   wire signed [width-1:0] y_start;  
   
-assign  x_start = 16000;
+assign  x_start = 800;
 assign  y_start = 0;
 
   // Outputs
   output signed  [width-1:0] sine;
 
   // Generate table of atan values
-  input signed [19:0] atan_table;
+  //input signed [19:0] atan_table;
   
+  
+	wire signed [19:0] atan_table [0:18];
+                          
+  assign atan_table[00] = 'b00100000000000000000; // 45.000 degrees -> atan(2^0)
+  assign atan_table[01] = 'b00010010111001000000; // 26.565 degrees -> atan(2^-1)
+  assign atan_table[02] = 'b00001001111110110011; // 14.036 degrees -> atan(2^-2)
+  assign atan_table[03] = 'b00000101000100010001; // atan(2^-3)
+  assign atan_table[04] = 'b00000010100010110000;
+  assign atan_table[05] = 'b00000001010001011101;
+  assign atan_table[06] = 'b00000000101000101111;
+  assign atan_table[07] = 'b00000000010100010111;
+  assign atan_table[08] = 'b00000000001010001011;
+  assign atan_table[09] = 'b00000000000101000101;
+  assign atan_table[10] = 'b00000000000010100010;
+  assign atan_table[11] = 'b00000000000001010001;
+  assign atan_table[12] = 'b00000000000000101000;
+  assign atan_table[13] = 'b00000000000000010100;
+  assign atan_table[14] = 'b00000000000000001010;
+  assign atan_table[15] = 'b00000000000000000101;
+  assign atan_table[16] = 'b00000000000000000010;
+  assign atan_table[17] = 'b00000000000000000001;
+  assign atan_table[18] = 'b00000000000000000000;
+
   /*
                           
   assign atan_table[00] = 'b00100000000000000000000000000000; // 45.000 degrees -> atan(2^0)
@@ -114,7 +137,7 @@ assign  y_start = 0;
       // add/subtract shifted data
       x[i+1] <= z_sign ? x[i] + y_shr : x[i] - y_shr;
       y[i+1] <= z_sign ? y[i] - x_shr : y[i] + x_shr;
-      z[i+1] <= z_sign ? z[i] + atan_table : z[i] - atan_table;
+      z[i+1] <= z_sign ? z[i] + atan_table[i] : z[i] - atan_table[i];
     end
   end
   endgenerate
@@ -122,6 +145,6 @@ assign  y_start = 0;
   // assign output
  // assign cosine = x[width-1];
   assign sine = y[width-1];
-  assign A=i;
+ // assign A=i;
 endmodule
 
